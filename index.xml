@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>amureki</title>
+    <link>https://amureki.me/</link>
+    <description>Recent content on amureki</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://amureki.me/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://amureki.me/cv/</link>
+      <pubDate>Sun, 24 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://amureki.me/cv/</guid>
+      <description>Rustem Saiargaliev - Software Engineer Berlin, Germany (born in Ufa, Russia)
+Experience Thermondo GmbH March 2016 - today
+Software Engineer
+Building and maintaining monolith and microservice applications for company business processes. Integrating 3rd-party systems like Salesforce and Closeio with the backend infrastructure and data.
+MKCorp Fall 2014 - March 2016
+Web Developer
+Engineering a website with a forum, payment system and game APIs an indie MMORPG.
+Smena October 2013 - December 2015</description>
+    </item>
+    
+    <item>
+      <title>Revoke third-party access</title>
+      <link>https://amureki.me/posts/2017-08-10-revokeaccess-en/</link>
+      <pubDate>Thu, 10 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://amureki.me/posts/2017-08-10-revokeaccess-en/</guid>
+      <description>Somewhere in a Twitter, I found a couple of links to social networks settings and advice to check the list of third-party services, which have access to your account. I started going through my social accounts and cleaning there.
+That was a horrible mess, sometimes I did not recognize what is this service is used for and why I gave it permissions.
+So, I&amp;rsquo;ve just decided to keep a list of links to social accounts settings, so I can revisit it sometimes and clean up again.</description>
+    </item>
+    
+    <item>
+      <title>Podcasts</title>
+      <link>https://amureki.me/posts/2016-10-29-podcasts-en/</link>
+      <pubDate>Sat, 29 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://amureki.me/posts/2016-10-29-podcasts-en/</guid>
+      <description>Here is a list of podcast shows, I&amp;rsquo;m trying to listen to
+ Zavtracast [ru]
+An entertaining podcast about media and games. (iTunes)
+ Radio-T [ru]
+Popular russian IT podcast. Really old one, right from 2006. (iTunes)
+ Hobby Talks Podcast [ru]
+Entertaining podcast about books and games worlds, historical events and mysteries. (iTunes)
+ Welcome to Night Vale [en]
+An unusual radio show about weird and mysterious stories happening in a fictional town.</description>
+    </item>
+    
+    <item>
+      <title>How GitHub uses GitHub to develop and deploy GitHub</title>
+      <link>https://amureki.me/posts/2016-10-21-how-github-uses-github-to-deploy-github-en/</link>
+      <pubDate>Fri, 21 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://amureki.me/posts/2016-10-21-how-github-uses-github-to-deploy-github-en/</guid>
+      <description>So, the talk was from Johannes Nicolai from Enterprise Solutions Engineering team. There were almost no marketing stuff, but about their inner structure and flow.
+Сompany-wise they have around 600 people, half of them working remotely from everywhere, half of them SF-based. And they are operating the 51st popular website on the internet.
+They are doing everything over Github, like literally everything. Marketing, finance, legal and agreements teams all using only Github and markdown for issues, documents reviewing and stuff.</description>
+    </item>
+    
+    <item>
+      <title>Количество строк кода в Django-проекте</title>
+      <link>https://amureki.me/posts/2015-01-20-django-project-loc-ru/</link>
+      <pubDate>Tue, 20 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://amureki.me/posts/2015-01-20-django-project-loc-ru/</guid>
+      <description>Составил недавно небольшую команду для подсчета количества строчек полезного (более-менее) кода в своих Django-проектах.
+git ls-files | grep .py | grep -vE &#39;(migrations|__init__|staticfiles|layout)&#39; | xargs cat | grep -v ^\s*$ | wc -l  Коротко про команду: берем все гитовые файлы с расширением .py, исключаем файлы с ключами migrations, __init__, staticfiles, layout в названии, после чего уже внутри самих файлов считаем все не пустые строчки.</description>
+    </item>
+    
+    <item>
+      <title>Регистрация при восстановлении пароля</title>
+      <link>https://amureki.me/posts/2015-01-17-signup-on-password-recovery-ru/</link>
+      <pubDate>Sat, 17 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://amureki.me/posts/2015-01-17-signup-on-password-recovery-ru/</guid>
+      <description>На одном из сервисов недавно возникла ситуация: в поддержку пришло письмо, с жалобой пользователя, которому не приходит письмо для восстановления пароля.
+После короткой проверки выяснил, что такого пользователя просто нет в системе.
+И в голову пришла мысль, а почему бы не регистрировать пользователей, которые по какой-либо причине считают что уже имеют аккаунт на сайте? Их цель - получить свой пароль и зайти на сервис, так давайте позволим им это.</description>
+    </item>
+    
+    <item>
+      <title>My presence on the internet</title>
+      <link>https://amureki.me/links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://amureki.me/links/</guid>
+      <description> website email github stackoverflow linkedin twitter instagram  </description>
+    </item>
+    
+  </channel>
+</rss>
