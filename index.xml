@@ -17,9 +17,8 @@
       <pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://amureki.me/cv/</guid>
-      <description>Rustem Saiargaliev - Software Engineer Berlin, Germany (born in Ufa, Russia)
-Toolset  Python - Django, Flask, Celery, pytest Go - Hello world Databases - PostgreSQL, MySQL, Redis Javascript - jQuery, React.js, Vue.js CI - Travis, CircleCI, GitLab CI Other - Heroku, Linux, Bash, Docker, nginx, uWSGI, git, Salesforce Management - Basecamp, GitHub, JIRA, Redmine, Trello, YouTrack  Experience Thermondo GmbH March 2016 - today
-Software Engineer
+      <description>Rustem Saiargaliev, Software Engineer Berlin, Germany (born in Ufa, Russia)
+Toolset  Python — Django, Flask, Celery, pytest Go — Hello world Javascript — jQuery, React.js, Vue.js Databases — PostgreSQL, MySQL, Redis CI — Travis, CircleCI, GitLab CI Management — Basecamp, GitHub, JIRA, Redmine, Trello, YouTrack Other — Heroku, Linux, Bash, Docker, nginx, uWSGI, git, Salesforce  Experience Thermondo GmbH [March 2016 — today] Software Engineer
 Developing backend monolithic (150kloc) and microservice applications for company business processes.</description>
     </item>
     
