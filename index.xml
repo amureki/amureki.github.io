@@ -6,21 +6,10 @@
     <description>Recent content on amureki</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Aug 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://amureki.me/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title></title>
-      <link>https://amureki.me/cv/</link>
-      <pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://amureki.me/cv/</guid>
-      <description>Rustem Saiargaliev, Software Engineer Berlin, Germany (born in Ufa, Russia)
-Toolset  Python — Django, Flask, Celery, pytest Go — Hello world Javascript — jQuery, React.js, Vue.js Databases — PostgreSQL, MySQL, Redis CI — Travis, CircleCI, GitLab CI Management — Basecamp, GitHub, JIRA, Redmine, Trello, YouTrack Other — Heroku, Linux, Bash, Docker, nginx, uWSGI, git, Salesforce  Experience Thermondo GmbH [March 2016 — today] Software Engineer
-Developing backend monolithic (150kloc) and microservice applications for company business processes.</description>
-    </item>
     
     <item>
       <title>Revoke third-party access</title>
@@ -83,12 +72,31 @@ git ls-files | grep .py | grep -vE &#39;(migrations|__init__|staticfiles|layout)
     </item>
     
     <item>
-      <title>My presence on the internet</title>
+      <title>My OSS contributions | amureki.me</title>
+      <link>https://amureki.me/contributions/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://amureki.me/contributions/</guid>
+      <description>My OSS contributions  https://github.com/django/django https://github.com/django/djangoproject.com https://github.com/berinhard/model_mommy https://github.com/romgar/django-dirtyfields https://github.com/etianen/django-reversion https://github.com/etianen/django-watson https://github.com/jedie/django-reversion-compare https://github.com/DjangoGirls/djangogirls https://github.com/dateutil/dateutil https://github.com/LambdaLint https://github.com/Thermondo https://github.com/django-ru https://github.com/flashcode/msgcheck https://github.com/pennersr/django-allauth  Back to CV</description>
+    </item>
+    
+    <item>
+      <title>My presence on the internet | amureki.me</title>
       <link>https://amureki.me/links/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://amureki.me/links/</guid>
-      <description> email linkedin github stackoverflow stackshare twitter instagram website  </description>
+      <description> My presence on the internet  email linkedin github stackoverflow stackshare twitter instagram website  </description>
+    </item>
+    
+    <item>
+      <title>Rustem Saiargaliev, Software Engineer</title>
+      <link>https://amureki.me/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://amureki.me/cv/</guid>
+      <description>Rustem Saiargaliev, Software Engineer Berlin, Germany (born in Ufa, Russia)
+Skill set  Python — Django, Flask, Celery, pytest Javascript — jQuery, React, Vue Databases — PostgreSQL, MySQL, Redis, Heroku Connect CI — Travis, CircleCI, GitLab CI Management — Basecamp, GitHub, JIRA, Redmine, Trello, YouTrack, Scrum Misc — Heroku, Salesforce, Linux, Bash, Docker, git Communications — sharing knowledge, team-player  Experience (ask for references) Software Engineer @ Thermondo GmbH [March 2016 — today] Developing backend monolithic (~150kloc) and microservice applications for company business processes.</description>
     </item>
     
   </channel>

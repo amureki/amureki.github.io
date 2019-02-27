@@ -4,7 +4,9 @@
 <head>
     <meta charset="utf-8"/>
 
-    <meta http-equiv="Content-Security-Policy" content="default-src https:">
+    
+<meta http-equiv="Content-Security-Policy" content="default-src https:">
+
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 <meta name="description" content=""/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -38,7 +40,7 @@
 <meta
         name="twitter:description"
         content="Составил недавно небольшую команду для подсчета количества строчек полезного (более-менее) кода в своих Django-проектах.
-git ls-files | grep .py | grep -vE &#39;(migrations|__init__|staticfiles|layout)&#39; | xargs cat | grep -v ^\s*$ | wc -l  Коротко про команду: берем все гитовые файлы с расширением .py, исключаем файлы с ключами migrations, __init__, staticfiles, layout в названии, после чего уже внутри самих файлов считаем все не пустые строчки.|Software Engineer, making things at Thermondo &lt;2."
+git ls-files | grep .py | grep -vE &#39;(migrations|__init__|staticfiles|layout)&#39; | xargs cat | grep -v ^\s*$ | wc -l  Коротко про команду: берем все гитовые файлы с расширением .py, исключаем файлы с ключами migrations, __init__, staticfiles, layout в названии, после чего уже внутри самих файлов считаем все не пустые строчки.|"
 />
 <meta name="twitter:image:src" content=""/>
 <meta name="twitter:domain" content="https://amureki.me/posts/2015-01-20-django-project-loc-ru/"/>
@@ -59,7 +61,7 @@ git ls-files | grep .py | grep -vE &#39;(migrations|__init__|staticfiles|layout)
 </head>
 
 
-<body class="sans-serif w-80 center mv5 mv5-ns mw7 bg-washed-blue">
+<body class="sans-serif w-80 center mv5 mv5-ns mw7">
 
 <section id="breadcrumps" class="pa3">
 
@@ -71,7 +73,7 @@ git ls-files | grep .py | grep -vE &#39;(migrations|__init__|staticfiles|layout)
 </section>
 
 <section id="main" class="mt5">
-    <h1 itemprop="name" id="title">Количество строк кода в Django-проекте</h1>
+    
     
         <span class="f6 gray">January 20, 2015</span>
     

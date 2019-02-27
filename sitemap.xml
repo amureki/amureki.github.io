@@ -3,11 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://amureki.me/cv/</loc>
-    <lastmod>2019-02-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://amureki.me/posts/2017-08-10-revokeaccess-en/</loc>
     <lastmod>2017-08-10T00:00:00+00:00</lastmod>
   </url>
@@ -38,6 +33,10 @@
   </url>
   
   <url>
+    <loc>https://amureki.me/contributions/</loc>
+  </url>
+  
+  <url>
     <loc>https://amureki.me/links/</loc>
   </url>
   
@@ -48,13 +47,17 @@
   </url>
   
   <url>
+    <loc>https://amureki.me/cv/</loc>
+  </url>
+  
+  <url>
     <loc>https://amureki.me/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://amureki.me/</loc>
-    <lastmod>2019-02-27T00:00:00+00:00</lastmod>
+    <lastmod>2017-08-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
