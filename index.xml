@@ -6,7 +6,7 @@
     <description>Recent content on amureki</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://amureki.me/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,17 +14,13 @@
     <item>
       <title></title>
       <link>https://amureki.me/cv/</link>
-      <pubDate>Sun, 24 Feb 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 27 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://amureki.me/cv/</guid>
       <description>Rustem Saiargaliev - Software Engineer Berlin, Germany (born in Ufa, Russia)
-Experience Thermondo GmbH March 2016 - today
+Toolset  Python - Django, Flask, Celery, pytest Go - Hello world Databases - PostgreSQL, MySQL, Redis Javascript - jQuery, React.js, Vue.js CI - Travis, CircleCI, GitLab CI Other - Heroku, Linux, Bash, Docker, nginx, uWSGI, git, Salesforce Management - Basecamp, GitHub, JIRA, Redmine, Trello, YouTrack  Experience Thermondo GmbH March 2016 - today
 Software Engineer
-Building and maintaining monolith and microservice applications for company business processes. Integrating 3rd-party systems like Salesforce and Closeio with the backend infrastructure and data.
-MKCorp Fall 2014 - March 2016
-Web Developer
-Engineering a website with a forum, payment system and game APIs an indie MMORPG.
-Smena October 2013 - December 2015</description>
+Developing backend monolithic (150kloc) and microservice applications for company business processes.</description>
     </item>
     
     <item>
@@ -93,7 +89,7 @@ git ls-files | grep .py | grep -vE &#39;(migrations|__init__|staticfiles|layout)
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://amureki.me/links/</guid>
-      <description> website email github stackoverflow linkedin twitter instagram  </description>
+      <description> email linkedin github stackoverflow stackshare twitter instagram website  </description>
     </item>
     
   </channel>
