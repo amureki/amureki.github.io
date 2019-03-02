@@ -39,7 +39,7 @@
 />
 <meta
         name="twitter:description"
-        content="Составил недавно небольшую команду для подсчета количества строчек полезного (более-менее) кода в своих Django-проектах.
+        content="Количество строк кода в Django-проекте Составил недавно небольшую команду для подсчета количества строчек полезного (более-менее) кода в своих Django-проектах.
 git ls-files | grep .py | grep -vE &#39;(migrations|__init__|staticfiles|layout)&#39; | xargs cat | grep -v ^\s*$ | wc -l  Коротко про команду: берем все гитовые файлы с расширением .py, исключаем файлы с ключами migrations, __init__, staticfiles, layout в названии, после чего уже внутри самих файлов считаем все не пустые строчки.|"
 />
 <meta name="twitter:image:src" content=""/>
@@ -79,7 +79,11 @@ git ls-files | grep .py | grep -vE &#39;(migrations|__init__|staticfiles|layout)
     
 
     <article itemprop="articleBody" id="content" class="w-90 lh-copy">
-        <p>Составил недавно небольшую команду для подсчета количества строчек полезного (более-менее) кода в своих Django-проектах.</p>
+        
+
+<h1 id="количество-строк-кода-в-django-проекте">Количество строк кода в Django-проекте</h1>
+
+<p>Составил недавно небольшую команду для подсчета количества строчек полезного (более-менее) кода в своих Django-проектах.</p>
 
 <pre><code>git ls-files | grep .py | grep -vE '(migrations|__init__|staticfiles|layout)' | xargs cat | grep -v ^\s*$ | wc -l
 </code></pre>
