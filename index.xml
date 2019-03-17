@@ -6,10 +6,21 @@
     <description>Recent content on amureki</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 10 Aug 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 17 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://amureki.me/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Heroku CLI aliases</title>
+      <link>https://amureki.me/posts/2019-03-15-heroku-aliases/</link>
+      <pubDate>Sun, 17 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://amureki.me/posts/2019-03-15-heroku-aliases/</guid>
+      <description>Heroku CLI aliases Heroku has nice and powerful CLI, which I am using quite heavily for company and personal stuff almost every day.
+Very often I need to login to one of my apps or to the addons, but default commands are very verbose, so here are my shorter aliases:
+# Heroku alias heroku-login=&amp;quot;heroku login&amp;quot; alias heroku-logs=&amp;quot;heroku logs -t&amp;quot; alias heroku-bash=&amp;quot;heroku run bash&amp;quot; ## Addons alias heroku-cloudamqp=&amp;quot;heroku addons:open cloudamqp&amp;quot; alias heroku-newrelic=&amp;quot;heroku addons:open newrelic&amp;quot; alias heroku-scheduler=&amp;quot;heroku addons:open scheduler&amp;quot; alias heroku-librato=&amp;quot;heroku addons:open librato&amp;quot; alias heroku-logentries=&amp;quot;heroku addons:open logentries&amp;quot; alias heroku-connect=&amp;quot;heroku addons:open herokuconnect&amp;quot; ## Django-related alias heroku-shell-plus=&amp;quot;heroku run python manage.</description>
+    </item>
     
     <item>
       <title>Revoke third-party access</title>

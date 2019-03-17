@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8"/>
+
+    
+<meta http-equiv="Content-Security-Policy" content="default-src https:">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="keywords" content="">
+
+
+<meta property="og:type" content="article"/>
+<meta property="og:description" content=""/>
+<meta property="og:title" content="amureki"/>
+<meta property="og:site_name" content="amureki"/>
+<meta property="og:image" content=""/>
+<meta property="og:image:type" content="image/jpeg"/>
+<meta property="og:image:width" content=""/>
+<meta property="og:image:height" content=""/>
+<meta property="og:url" content="https://amureki.me/posts/2019-03-15-heroku-aliases/"/>
+<meta property="og:locale" content="en-us"/>
+<meta property="article:published_time" content=" 2019-03-17
+" />
+<meta property="article:modified_time" content=" 2019-03-17
+" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:site" content="@amureki"/>
+<meta name="twitter:creator" content="@amureki"/>
+<meta
+        name="twitter:title"
+        content="Heroku CLI aliases | amureki"
+/>
+<meta
+        name="twitter:description"
+        content="Heroku CLI aliases"
+/>
+<meta name="twitter:image:src" content=""/>
+<meta name="twitter:domain" content="https://amureki.me/posts/2019-03-15-heroku-aliases/"/>
+
+
+    <base href="https://amureki.me"/>
+    <title>Heroku CLI aliases</title>
+    <link rel="canonical" href="https://amureki.me/posts/2019-03-15-heroku-aliases/"/>
+
+    <link rel="stylesheet" href="/css/tachyons.min.css"/>
+
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+
+</head>
+
+
+<body class="sans-serif w-80 center mv5 mv5-ns mw7">
+
+<section id="breadcrumps" class="pa3">
+
+    <span class="b">/ </span>
+    <a href="https://amureki.me" class="b bb bw1 pb1 no-underline black">amureki</a>
+    <span class="b"> / </span>
+    <a href="/posts" class="b bb bw1 pb1 no-underline black">posts</a>
+
+</section>
+
+<section id="main" class="mt5">
+    
+    
+        <span class="f6 gray">March 17, 2019</span>
+    
+
+    <article itemprop="articleBody" id="content" class="w-90 lh-copy">
+        
+
+<h1 id="heroku-cli-aliases">Heroku CLI aliases</h1>
+
+<p>Heroku has nice and powerful <a href="https://devcenter.heroku.com/articles/heroku-cli">CLI</a>, which I am using quite heavily for company and personal stuff almost every day.</p>
+
+<p>Very often I need to login to one of my apps or to the addons, but default commands are very verbose, so here are my shorter aliases:</p>
+
+<pre><code class="language-bash"># Heroku
+alias heroku-login=&quot;heroku login&quot;
+alias heroku-logs=&quot;heroku logs -t&quot;
+alias heroku-bash=&quot;heroku run bash&quot;
+
+## Addons
+alias heroku-cloudamqp=&quot;heroku addons:open cloudamqp&quot;
+alias heroku-newrelic=&quot;heroku addons:open newrelic&quot;
+alias heroku-scheduler=&quot;heroku addons:open scheduler&quot;
+alias heroku-librato=&quot;heroku addons:open librato&quot;
+alias heroku-logentries=&quot;heroku addons:open logentries&quot;
+alias heroku-connect=&quot;heroku addons:open herokuconnect&quot;
+
+## Django-related
+alias heroku-shell-plus=&quot;heroku run python manage.py shell_plus&quot;
+alias heroku-dbshell=&quot;heroku run python manage.py dbshell&quot;
+</code></pre>
+
+    </article>
+</section>
+
+<footer>
+    <div>
+        <p class="f6 gray mt6 lh-copy">
+            
+        </p>
+    </div>
+</footer>
+
+
+</body>
+</html>
