@@ -77,7 +77,8 @@ git ls-files | grep .py | grep -vE &#39;(migrations|__init__|staticfiles|layout)
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://amureki.me/contributions/</guid>
-      <description>My OSS contributions  https://github.com/django/django https://github.com/django/djangoproject.com https://github.com/berinhard/model_mommy https://github.com/romgar/django-dirtyfields https://github.com/etianen/django-reversion https://github.com/etianen/django-watson https://github.com/jedie/django-reversion-compare https://github.com/DjangoGirls/djangogirls https://github.com/dateutil/dateutil https://github.com/LambdaLint https://github.com/Thermondo https://github.com/django-ru https://github.com/flashcode/msgcheck https://github.com/pennersr/django-allauth  Back to CV</description>
+      <description>My OSS contributions This is not a full list, but contributions that I could find/remember and are more or less notable.
+ https://github.com/django/django https://github.com/django/djangoproject.com https://github.com/berinhard/model_mommy https://github.com/romgar/django-dirtyfields https://github.com/etianen/django-reversion https://github.com/etianen/django-watson https://github.com/jedie/django-reversion-compare https://github.com/DjangoGirls/djangogirls https://github.com/dateutil/dateutil https://github.com/LambdaLint https://github.com/Thermondo https://github.com/django-ru https://github.com/flashcode/msgcheck https://github.com/pennersr/django-allauth  Back to CV</description>
     </item>
     
     <item>
@@ -96,7 +97,7 @@ git ls-files | grep .py | grep -vE &#39;(migrations|__init__|staticfiles|layout)
       
       <guid>https://amureki.me/cv/</guid>
       <description>Rustem Saiargaliev, Software Engineer Berlin, Germany (born in Ufa, Russia)
-Skill set  Python — Django, Flask, Celery, pytest Javascript — jQuery, React, Vue Databases — PostgreSQL, MySQL, Redis, Heroku Connect CI — Travis, CircleCI, GitLab CI Management — Basecamp, GitHub, JIRA, Redmine, Trello, YouTrack, Scrum Misc — Heroku, Salesforce, Linux, Bash, Docker, git Communications — mentoring, knowledge sharing, team-player  Experience (ask for references) Software Engineer @ Thermondo GmbH [March 2016 — today] Developing backend monolithic (~150kloc) and microservice applications for company business processes.</description>
+Skill set  Python — Django, Flask, Celery, pytest Javascript — jQuery, React, Vue Databases — PostgreSQL, MySQL, Redis, Heroku Connect CI — Travis, CircleCI, GitLab CI Management — Basecamp, GitHub, JIRA, Redmine, Trello, YouTrack, Scrum Misc — Heroku, Salesforce, Linux, Bash, Docker, git Communications — mentoring, knowledge sharing, team work  Experience (ask for references) Software Engineer @ Thermondo GmbH [March 2016 — now] Developing backend monolithic (~150kloc) and microservice applications for company business processes.</description>
     </item>
     
   </channel>
