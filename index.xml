@@ -108,7 +108,7 @@ git ls-files | grep .py | grep -vE &#39;(migrations|__init__|staticfiles|layout)
       
       <guid>https://amureki.me/cv/</guid>
       <description>Rustem Saiargaliev, Software Engineer Berlin, Germany (born in Ufa, Russia)
-Skill set  Python — Django, Flask, Celery, pytest Javascript — jQuery, React, Vue Databases — PostgreSQL, MySQL, Redis, Heroku Connect CI — Travis, CircleCI, GitLab CI Management — Basecamp, GitHub, JIRA, Redmine, Trello, YouTrack, Scrum Misc — Heroku, Salesforce, Linux, Bash, Docker, git Communications — mentoring, knowledge sharing, team work  Experience (ask for references) Software Engineer @ Thermondo GmbH [March 2016 — now] Developing backend monolithic (~150kloc) and microservice applications for company business processes.</description>
+Skill set  Python — Django, Flask, Celery, pytest Javascript — jQuery, React, Vue Databases — PostgreSQL, MySQL, Redis, Heroku Connect CI — Travis, CircleCI, GitLab CI Management — Basecamp, GitHub, JIRA, Redmine, Trello, YouTrack, Scrum Misc — Heroku, Salesforce, Linux, Bash, Docker, git Communications — mentoring, knowledge sharing, team work  Experience (ask for references) Senior Software Engineer @ Thermondo GmbH [March 2016 — now] Developing backend monolithic (~150kloc) and microservice applications for company business processes.</description>
     </item>
     
   </channel>
