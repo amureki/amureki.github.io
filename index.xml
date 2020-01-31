@@ -19,7 +19,7 @@
       <guid>https://amureki.me/posts/2019-03-15-heroku-aliases/</guid>
       <description>Heroku CLI aliases Heroku has nice and powerful CLI, which I am using quite heavily for company and personal stuff almost every day.
 Very often I need to login to one of my apps or to the addons, but default commands are very verbose, so here are my shorter aliases:
-# Heroku alias heroku-login=&amp;#34;heroku login&amp;#34; alias heroku-logs=&amp;#34;heroku logs -t&amp;#34; alias heroku-bash=&amp;#34;heroku run bash&amp;#34; ## Addons alias heroku-cloudamqp=&amp;#34;heroku addons:open cloudamqp&amp;#34; alias heroku-newrelic=&amp;#34;heroku addons:open newrelic&amp;#34; alias heroku-scheduler=&amp;#34;heroku addons:open scheduler&amp;#34; alias heroku-librato=&amp;#34;heroku addons:open librato&amp;#34; alias heroku-logentries=&amp;#34;heroku addons:open logentries&amp;#34; alias heroku-connect=&amp;#34;heroku addons:open herokuconnect&amp;#34; ## Django-related alias heroku-shell-plus=&amp;#34;heroku run python manage.</description>
+# Heroku alias heroku-login=&amp;quot;heroku login&amp;quot; alias heroku-logs=&amp;quot;heroku logs -t&amp;quot; alias heroku-bash=&amp;quot;heroku run bash&amp;quot; ## Addons alias heroku-cloudamqp=&amp;quot;heroku addons:open cloudamqp&amp;quot; alias heroku-newrelic=&amp;quot;heroku addons:open newrelic&amp;quot; alias heroku-scheduler=&amp;quot;heroku addons:open scheduler&amp;quot; alias heroku-librato=&amp;quot;heroku addons:open librato&amp;quot; alias heroku-logentries=&amp;quot;heroku addons:open logentries&amp;quot; alias heroku-connect=&amp;quot;heroku addons:open herokuconnect&amp;quot; ## Django-related alias heroku-shell-plus=&amp;quot;heroku run python manage.</description>
     </item>
     
     <item>
@@ -89,7 +89,7 @@ git ls-files | grep .py | grep -vE &#39;(migrations|__init__|staticfiles|layout)
       
       <guid>https://amureki.me/contributions/</guid>
       <description>My OSS contributions This is not a full list, but contributions that I could find/remember and are more or less notable.
- https://github.com/django/django https://github.com/django/djangoproject.com https://github.com/berinhard/model_mommy https://github.com/romgar/django-dirtyfields https://github.com/etianen/django-reversion https://github.com/etianen/django-watson https://github.com/jedie/django-reversion-compare https://github.com/DjangoGirls/djangogirls https://github.com/dateutil/dateutil https://github.com/LambdaLint https://github.com/Thermondo https://github.com/django-ru https://github.com/flashcode/msgcheck https://github.com/pennersr/django-allauth  Back to CV</description>
+ django djangoproject.com model_bakery (core contributor) django-dirtyfields django-reversion django-watson django-reversion-compare djangogirls dateutil LambdaLint Thermondo django-ru (creator) msgcheck django-allauth django-suit  Back to CV</description>
     </item>
     
     <item>
@@ -108,7 +108,7 @@ git ls-files | grep .py | grep -vE &#39;(migrations|__init__|staticfiles|layout)
       
       <guid>https://amureki.me/cv/</guid>
       <description>Rustem Saiargaliev, Software Engineer Berlin, Germany (born in Ufa, Russia)
- Skill set  Python — Django, Flask, Celery, pytest Javascript — jQuery, React, Vue Databases — PostgreSQL, MySQL, Redis, Heroku Connect CI — Travis, CircleCI, GitLab CI Management — Basecamp, GitHub, JIRA, Redmine, Trello, YouTrack, Scrum Misc — Heroku, Salesforce, Linux, Bash, Docker, git Communications — mentoring, knowledge sharing, team work   Experience (ask for references) Senior Software Engineer @ Thermondo GmbH [March 2016 — now] Developing backend monolithic (~150kloc) and microservice applications for company business processes.</description>
+ Skill set  Python — Django, Flask, Celery, pytest Javascript — jQuery, React, Vue Databases — PostgreSQL, MySQL, Redis, Heroku Connect CI — Travis, CircleCI, GitLab CI, Heroku CI, GitHub Actions Management — Basecamp, GitHub, JIRA, Confluence, Redmine, Trello, YouTrack Misc — Heroku, Salesforce, Linux, Bash, Docker, git Communication — mentoring, knowledge sharing, team work   Experience (ask for references) Senior Software Engineer @ Thermondo GmbH [March 2016 — now] Developing backend monolithic (~150kloc) and microservice applications for company business processes.</description>
     </item>
     
   </channel>
