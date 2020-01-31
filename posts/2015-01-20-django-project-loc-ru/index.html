@@ -78,15 +78,10 @@
     
 
     <article itemprop="articleBody" id="content" class="w-90 lh-copy">
-        
-
-<h1 id="количество-строк-кода-в-django-проекте">Количество строк кода в Django-проекте</h1>
-
+        <h1 id="количество-строк-кода-в-django-проекте">Количество строк кода в Django-проекте</h1>
 <p>Составил недавно небольшую команду для подсчета количества строчек полезного (более-менее) кода в своих Django-проектах.</p>
-
 <pre><code>git ls-files | grep .py | grep -vE '(migrations|__init__|staticfiles|layout)' | xargs cat | grep -v ^\s*$ | wc -l
 </code></pre>
-
 <p>Коротко про команду: берем все гитовые файлы с расширением <strong>.py</strong>, исключаем файлы с ключами <code>migrations</code>, <code>__init__</code>, <code>staticfiles</code>, <code>layout</code> в названии, после чего уже внутри самих файлов считаем все не пустые строчки.</p>
 
     </article>

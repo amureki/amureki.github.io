@@ -78,34 +78,19 @@
     
 
     <article itemprop="articleBody" id="content" class="w-90 lh-copy">
-        
-
-<h1 id="how-github-uses-github-to-develop-and-deploy-github">How GitHub uses GitHub to develop and deploy GitHub</h1>
-
+        <h1 id="how-github-uses-github-to-develop-and-deploy-github">How GitHub uses GitHub to develop and deploy GitHub</h1>
 <p>So, the talk was from Johannes Nicolai from Enterprise Solutions Engineering team. There were almost no marketing stuff, but about their inner structure and flow.</p>
-
 <p>Сompany-wise they have around 600 people, half of them working remotely from everywhere, half of them SF-based. And they are operating the 51st popular website on the internet.</p>
-
 <p>They are doing everything over Github, like literally everything. Marketing, finance, legal and agreements teams all using only Github and markdown for issues, documents reviewing and stuff. They all against email - want to be everything documented on Github, so if in case it could be pointed to right issue or discussion.</p>
-
 <p>Interesting thing - even for documents and non-code repositories, they have different CI checks and linters, for example for the blog they have text errors, buzzwords, passive-aggressive style checks (around 10-16 different linters only for text).</p>
-
 <p>They are doing around 500 deploys per week. All devops stuff - deployments, metrics, changing some devops configurations, increasing limits they are doing via hubot in Slack. If something is going wrong, for example, DDoS, online team is talking about it and doing some performance checks and fixes right in Slack commands - that helps to see in the future what happened and what was done to check it and to fix it (also helps other people to learn how to be in that kind of situations).</p>
-
 <p>Github engineers have deployment timeline - you can see if there were increased errors rate or some spikes, you see after which PRs that happened, who made it, who fixed it.</p>
-
 <p>If you want to deploy your feature (from feature-branch only), you are queuing up for it in Slack, hubot will notify when you can deploy feature, notify where you can deploy it and here you go. If you’re ready for production, first your branch goes for canary-production (for a small part of the servers), then after 5-15 minutes, it goes for all servers. Only after that, your branch is merged to master. :)</p>
-
 <p>Also, they are actively using feature-flags, so deployed features they can turn on for themselves/some teams/some repositories/part of end users.</p>
-
 <h4 id="some-useful-links">Some useful links:</h4>
-
 <p><a href="https://www.youtube.com/watch?v=YIpNpptGX6Q">FutureStack15: Changing the Laws of Engineering with Pull Requests (talk from New Relic)</a></p>
-
 <p><a href="https://hubot.github.com/">Hubot - chatops bot used in Github</a></p>
-
 <p><a href="http://githubengineering.com/">Github Engineering Blog</a></p>
-
 <p><a href="https://github.com/jnunemaker/flipper">Package for feature-flags</a></p>
 
     </article>

@@ -78,32 +78,26 @@
     
 
     <article itemprop="articleBody" id="content" class="w-90 lh-copy">
-        
-
-<h1 id="heroku-cli-aliases">Heroku CLI aliases</h1>
-
+        <h1 id="heroku-cli-aliases">Heroku CLI aliases</h1>
 <p>Heroku has nice and powerful <a href="https://devcenter.heroku.com/articles/heroku-cli">CLI</a>, which I am using quite heavily for company and personal stuff almost every day.</p>
-
 <p>Very often I need to login to one of my apps or to the addons, but default commands are very verbose, so here are my shorter aliases:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># Heroku</span>
+alias heroku-login<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;heroku login&#34;</span>
+alias heroku-logs<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;heroku logs -t&#34;</span>
+alias heroku-bash<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;heroku run bash&#34;</span>
 
-<pre><code class="language-bash"># Heroku
-alias heroku-login=&quot;heroku login&quot;
-alias heroku-logs=&quot;heroku logs -t&quot;
-alias heroku-bash=&quot;heroku run bash&quot;
+<span style="color:#75715e">## Addons</span>
+alias heroku-cloudamqp<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;heroku addons:open cloudamqp&#34;</span>
+alias heroku-newrelic<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;heroku addons:open newrelic&#34;</span>
+alias heroku-scheduler<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;heroku addons:open scheduler&#34;</span>
+alias heroku-librato<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;heroku addons:open librato&#34;</span>
+alias heroku-logentries<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;heroku addons:open logentries&#34;</span>
+alias heroku-connect<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;heroku addons:open herokuconnect&#34;</span>
 
-## Addons
-alias heroku-cloudamqp=&quot;heroku addons:open cloudamqp&quot;
-alias heroku-newrelic=&quot;heroku addons:open newrelic&quot;
-alias heroku-scheduler=&quot;heroku addons:open scheduler&quot;
-alias heroku-librato=&quot;heroku addons:open librato&quot;
-alias heroku-logentries=&quot;heroku addons:open logentries&quot;
-alias heroku-connect=&quot;heroku addons:open herokuconnect&quot;
-
-## Django-related
-alias heroku-shell-plus=&quot;heroku run python manage.py shell_plus&quot;
-alias heroku-dbshell=&quot;heroku run python manage.py dbshell&quot;
-</code></pre>
-
+<span style="color:#75715e">## Django-related</span>
+alias heroku-shell-plus<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;heroku run python manage.py shell_plus&#34;</span>
+alias heroku-dbshell<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;heroku run python manage.py dbshell&#34;</span>
+</code></pre></div>
     </article>
 </section>
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on amureki</title>
@@ -19,7 +19,7 @@
       <guid>https://amureki.me/posts/2019-03-15-heroku-aliases/</guid>
       <description>Heroku CLI aliases Heroku has nice and powerful CLI, which I am using quite heavily for company and personal stuff almost every day.
 Very often I need to login to one of my apps or to the addons, but default commands are very verbose, so here are my shorter aliases:
-# Heroku alias heroku-login=&amp;quot;heroku login&amp;quot; alias heroku-logs=&amp;quot;heroku logs -t&amp;quot; alias heroku-bash=&amp;quot;heroku run bash&amp;quot; ## Addons alias heroku-cloudamqp=&amp;quot;heroku addons:open cloudamqp&amp;quot; alias heroku-newrelic=&amp;quot;heroku addons:open newrelic&amp;quot; alias heroku-scheduler=&amp;quot;heroku addons:open scheduler&amp;quot; alias heroku-librato=&amp;quot;heroku addons:open librato&amp;quot; alias heroku-logentries=&amp;quot;heroku addons:open logentries&amp;quot; alias heroku-connect=&amp;quot;heroku addons:open herokuconnect&amp;quot; ## Django-related alias heroku-shell-plus=&amp;quot;heroku run python manage.</description>
+# Heroku alias heroku-login=&amp;#34;heroku login&amp;#34; alias heroku-logs=&amp;#34;heroku logs -t&amp;#34; alias heroku-bash=&amp;#34;heroku run bash&amp;#34; ## Addons alias heroku-cloudamqp=&amp;#34;heroku addons:open cloudamqp&amp;#34; alias heroku-newrelic=&amp;#34;heroku addons:open newrelic&amp;#34; alias heroku-scheduler=&amp;#34;heroku addons:open scheduler&amp;#34; alias heroku-librato=&amp;#34;heroku addons:open librato&amp;#34; alias heroku-logentries=&amp;#34;heroku addons:open logentries&amp;#34; alias heroku-connect=&amp;#34;heroku addons:open herokuconnect&amp;#34; ## Django-related alias heroku-shell-plus=&amp;#34;heroku run python manage.</description>
     </item>
     
     <item>
@@ -40,13 +40,13 @@ So, I&amp;rsquo;ve just decided to keep a list of links to social accounts setti
       
       <guid>https://amureki.me/posts/2016-10-29-podcasts-en/</guid>
       <description>Podcasts Here is a list of podcast shows, I&amp;rsquo;m trying to listen to
- Zavtracast [ru]
+  Zavtracast [ru]
 An entertaining podcast about media and games. (iTunes)
- Radio-T [ru]
+  Radio-T [ru]
 Popular russian IT podcast. Really old one, right from 2006. (iTunes)
- Hobby Talks Podcast [ru]
+  Hobby Talks Podcast [ru]
 Entertaining podcast about books and games worlds, historical events and mysteries. (iTunes)
- Welcome to Night Vale [en]
+  Welcome to Night Vale [en]
 An unusual radio show about weird and mysterious stories happening in a fictional town.</description>
     </item>
     
