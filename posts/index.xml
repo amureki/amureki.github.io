@@ -6,11 +6,7 @@
     <description>Recent content in Posts on amureki</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Mar 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://amureki.me/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 17 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://amureki.me/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Heroku CLI aliases</title>
       <link>https://amureki.me/posts/2019-03-15-heroku-aliases/</link>

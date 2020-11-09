@@ -6,11 +6,7 @@
     <description>Recent content on amureki</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Mar 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://amureki.me/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 17 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://amureki.me/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Heroku CLI aliases</title>
       <link>https://amureki.me/posts/2019-03-15-heroku-aliases/</link>
@@ -108,7 +104,7 @@ git ls-files | grep .py | grep -vE &#39;(migrations|__init__|staticfiles|layout)
       
       <guid>https://amureki.me/cv/</guid>
       <description>Rustem Saiargaliev, Software Engineer Currently based in Berlin, Germany (born in Ufa, Russia)
- Skill set  Python — Django, Flask, Celery, pytest Javascript — jQuery, React, Vue Databases — PostgreSQL, MySQL, Redis, Heroku Connect CI — Travis, CircleCI, GitLab CI, Heroku CI, GitHub Actions Management — GitHub, JIRA, Confluence, Redmine, Trello, YouTrack Misc — Heroku, Salesforce, Linux, Bash, Docker, git Soft skills — hiring, mentoring and 1x1s, team coordination and alignment   Experience Senior Software Engineer @ Thermondo GmbH [March 2016 — now] Developing backend monolithic (~150kloc) and microservice applications for company business processes.</description>
+ Skill set  Python — Django, Flask, Celery, DRF, pytest Javascript — jQuery, React, Vue Databases — PostgreSQL, MySQL, Redis, Heroku Connect CI — Travis, CircleCI, GitLab CI, Heroku CI, GitHub Actions Management — GitHub, Jira, Confluence, Redmine, Trello, YouTrack Misc — Heroku, Salesforce, Linux, Bash, Docker, git Soft skills — hiring, onboarding, mentoring and 1x1s, team coordination and alignment   Experience Senior Software Engineer @ Thermondo GmbH [March 2016 — now] Developing backend monolithic (~150kloc) and microservice applications for company business processes.</description>
     </item>
     
   </channel>
