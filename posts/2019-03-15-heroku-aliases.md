@@ -7,7 +7,7 @@ Heroku has nice and powerful [CLI](https://devcenter.heroku.com/articles/heroku-
 
 Very often I need to log in to one of my apps or to the addons, but default commands are very verbose, so here are my shorter aliases:
 
-```
+```bash
 # Heroku
 alias heroku-login="heroku login"
 alias heroku-logs="heroku logs -t"
