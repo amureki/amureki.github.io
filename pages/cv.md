@@ -60,7 +60,7 @@ Built and maintained various websites and complex web services for external clie
 
 ## Extra
 * __Languages__ — English (fluent), Russian (native), German (basic)
-* __Open Source__ — [active OSS contributor]({{< ref "contributions.md" >}})
+* __Open Source__ — [active OSS contributor](/oss/)
 * __Community__ — Moderating [@pydjango](https://t.me/pydjango) (~2k people) and founded [@django_jobs](https://t.me/django_jobs) (~1k people)
 * __Talks__ — Speaker at Django User Group Berlin, PyBerlin, Python User Group Berlin
 * __Hobbies__ — jogging, drone photography, video games
