@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Rust Saiargaliev / How GitHub uses GitHub to develop and deploy GitHub</title>
+  
+  <meta name="description" content="Software Engineer, making great things.">
+  <link rel="stylesheet" href="/css/tailwind.css">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="alternate" href="." type="application/atom+xml"
+        title="Rust Saiargaliev">
+  <link rel="alternate" href="." type="application/json"
+        title="Rust Saiargaliev">
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+  
+</head>
+<body>
+
+<div class="leading-relaxed">
+  <div class="flex items-center justify-center h-full">
+
+  <div class="p-10">
+
+    <div class="">
+
+      <h1>
+        <a href="/">Rust Saiargaliev</a>
+        /
+        <a href="/posts">Posts</a>
+        /
+        <br>
+        How GitHub uses GitHub to develop and deploy GitHub
+      </h1>
+
+      <p>So, the talk was from Johannes Nicolai from Enterprise Solutions Engineering team. There were almost no marketing stuff, but about their inner structure and flow.</p>
+<p>Company-wise they have around 600 people, half of them working remotely from everywhere, half of them based in San Francisco. And they are operating the 51st popular website on the internet.</p>
+<p>They are doing everything over GitHub, like literally everything. Marketing, finance, legal and agreements teams all using only GitHub and markdown for issues, documents reviewing and stuff. They all against email - want to be everything documented on GitHub, so if in case it could be pointed to right issue or discussion.</p>
+<p>An interesting thing - even for documents and non-code repositories, they have different CI checks and linters, for example for the blog they have text errors, buzzwords, passive-aggressive style checks (around 10-16 different linters only for text).</p>
+<p>They are doing around 500 deploys per week. All devops stuff - deployments, metrics, changing some devops configurations, increasing limits they are doing via hubot in Slack. If something is going wrong, for example, DDoS, online team is talking about it and doing some performance checks and fixes right in Slack commands - that helps to see in the future what happened and what was done to check it and to fix it (also helps other people to learn how to be in that kind of situations).</p>
+<p>GitHub's engineers have deployment timeline - you can see if there were increased errors rate or some spikes, you see after which PRs that happened, who made it, who fixed it.</p>
+<p>If you want to deploy your feature (from feature-branch only), you are queuing up for it in Slack, hubot will notify when you can deploy a feature, notify where you can deploy it and here you go. If you’re ready for production, first your branch goes for canary-production (for a small part of the servers), then after 5-15 minutes, it goes for all servers. Only after that, your branch is merged to main. :)</p>
+<p>Also, they are actively using feature-flags, so deployed features they can turn on for themselves/certain teams/some repositories/part of end users.</p>
+<h4 id="some-useful-links%3A">Some useful links: <a class="direct-link" href="#some-useful-links%3A">#</a></h4>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=YIpNpptGX6Q">FutureStack15: Changing the Laws of Engineering with Pull Requests (talk from New Relic)</a></li>
+<li><a href="https://hubot.github.com/">Hubot - chatops bot used in GitHub</a></li>
+<li><a href="http://githubengineering.com/">GitHub Engineering Blog</a></li>
+<li><a href="https://github.com/jnunemaker/flipper">Package for feature-flags</a></li>
+</ul>
+
+
+      <hr/>
+
+      <h2>Navigation</h2>
+      <ul>
+        
+        
+          <li>Next: <a href="/posts/2016-10-29-podcasts-en/">Podcasts</a></li>
+        
+        
+        
+          <li>Previous: <a href="/posts/2015-01-20-django-project-loc-ru/">Количество строк кода в Django-проекте</a></li>
+        
+      </ul>
+
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+
+<footer></footer>
+
+<!-- Current page: /posts/2016-10-21-how-github-uses-github-to-deploy-github-en/ -->
+</body>
+</html>

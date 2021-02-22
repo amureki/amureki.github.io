@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Rust Saiargaliev / Heroku CLI aliases</title>
+  
+  <meta name="description" content="Software Engineer, making great things.">
+  <link rel="stylesheet" href="/css/tailwind.css">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="alternate" href="." type="application/atom+xml"
+        title="Rust Saiargaliev">
+  <link rel="alternate" href="." type="application/json"
+        title="Rust Saiargaliev">
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+  
+</head>
+<body>
+
+<div class="leading-relaxed">
+  <div class="flex items-center justify-center h-full">
+
+  <div class="p-10">
+
+    <div class="">
+
+      <h1>
+        <a href="/">Rust Saiargaliev</a>
+        /
+        <a href="/posts">Posts</a>
+        /
+        <br>
+        Heroku CLI aliases
+      </h1>
+
+      <p>Heroku has nice and powerful <a href="https://devcenter.heroku.com/articles/heroku-cli">CLI</a>, which I am using quite heavily for company and personal stuff almost every day.</p>
+<p>Very often I need to log in to one of my apps or to the addons, but default commands are very verbose, so here are my shorter aliases:</p>
+<pre><code># Heroku
+alias heroku-login=&quot;heroku login&quot;
+alias heroku-logs=&quot;heroku logs -t&quot;
+alias heroku-bash=&quot;heroku run bash&quot;
+
+## Addons
+alias heroku-cloudamqp=&quot;heroku addons:open cloudamqp&quot;
+alias heroku-newrelic=&quot;heroku addons:open newrelic&quot;
+alias heroku-scheduler=&quot;heroku addons:open scheduler&quot;
+alias heroku-librato=&quot;heroku addons:open librato&quot;
+alias heroku-logentries=&quot;heroku addons:open logentries&quot;
+alias heroku-connect=&quot;heroku addons:open herokuconnect&quot;
+
+## Django-related
+alias heroku-shell-plus=&quot;heroku run python manage.py shell_plus&quot;
+alias heroku-dbshell=&quot;heroku run python manage.py dbshell&quot;
+</code></pre>
+
+
+      <hr/>
+
+      <h2>Navigation</h2>
+      <ul>
+        
+        
+        
+        
+          <li>Previous: <a href="/posts/2017-08-10-revokeaccess-en/">Revoke third-party access</a></li>
+        
+      </ul>
+
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+
+<footer></footer>
+
+<!-- Current page: /posts/2019-03-15-heroku-aliases/ -->
+</body>
+</html>
