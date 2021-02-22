@@ -1,0 +1,34 @@
+---
+layout: layouts/base.njk
+---
+<div class="flex items-center justify-center h-screen">
+
+  <div class="p-10">
+
+    <div class="grid sm:grid-cols-5 grid-cols-2 gap-4">
+      <div class="col-span-2">
+        <img alt="logo" src="/img/logo.png" class="object-contain h-48 w-full">
+      </div>
+      <div class="col-span-3">
+
+        <h1>
+          {{ metadata.title }}
+        </h1>
+
+        {{ content | safe }}
+
+        <ul class="p-0">
+          {% for entry in collections.all | eleventyNavigation %}
+            <li class="list-none">
+              <a href="{{ entry.url | url }}" class="font-bold">{{ entry.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

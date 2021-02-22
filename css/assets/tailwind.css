@@ -1,0 +1,39 @@
+@tailwind base;
+
+/* https://tailwindcss.com/docs/preflight#extending-preflight */
+@layer base {
+  h1 {
+    @apply text-3xl font-bold my-5;
+  }
+
+  h2 {
+    @apply text-2xl font-bold my-4;
+  }
+
+  h3 {
+    @apply text-lg font-bold my-3;
+  }
+
+  a {
+    @apply underline;
+  }
+
+  a:hover {
+    @apply no-underline;
+  }
+
+  p {
+    @apply my-3;
+  }
+
+  ul {
+    @apply list-disc list-inside pl-8;
+  }
+
+  hr {
+    @apply m-2;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;

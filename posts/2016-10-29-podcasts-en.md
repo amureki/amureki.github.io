@@ -1,0 +1,52 @@
+---
+title: Podcasts
+date: 2016-10-29
+layout: layouts/post.njk
+---
+Here is a list of podcast shows, I'm trying to listen to
+
+## [Zavtracast](http://zavtracast.ru/) [ru]
+
+An entertaining podcast about media and games. ([iTunes](https://itunes.apple.com/ru/podcast/zavtrakast-podkast-ob-igrah/id1068329384?mt=2&ls=1))
+
+## [Radio-T](https://radio-t.com/) [ru]
+
+Popular russian IT podcast. Really old one, right from 2006. ([iTunes](https://itunes.apple.com/podcast/radio-t/id256504435?mt=2))
+
+## [Hobby Talks Podcast](http://hobbytalks.org/) [ru]
+
+Entertaining podcast about books and games worlds, historical events and mysteries. ([iTunes](https://itunes.apple.com/ru/podcast/hobby-talks/id622693725))
+
+## [Welcome to Night Vale](http://www.welcometonightvale.com/) [en]
+
+An unusual radio show about weird and mysterious stories happening in a fictional town. ([iTunes](https://itunes.apple.com/us/podcast/welcome-to-night-vale/id536258179?mt=2))
+
+## [UWP](https://podcast.umputun.com/) (ru)
+
+Hobby podcast about everyday life recorded by Umputun, russian IT guy, living in the US, Chicago. ([iTunes](https://itunes.apple.com/podcast/uwp-ezenedel-nyj-podkast-ot/id77546991?mt=2))
+
+## [CHILL](http://chillrussia.ru/) [music]
+
+Perfect chill music sets produced by Artem Dmitriev. ([iTunes](https://itunes.apple.com/ru/podcast/chill/id432614039?mt=2))
+
+## [Zavtratunes](http://zavtracast.ru/tunes) [music]
+
+Some nice background music mixes. ([iTunes](https://itunes.apple.com/ru/podcast/zavtratunes/id1116487065?mt=2))
+
+## [KCALTTM](https://promodj.com/deejayrouche) [music]
+
+Chilltrap music podcast, which sometimes fits me well. ([iTunes](https://itunes.apple.com/us/podcast/kcalttm-deejay-rouche-podcast/id905392389?mt=2))
+
+And here some new ones for me, but promising:
+
+## [Sick and Wrong](http://www.sickandwrongpodcast.com/) [en]
+
+This is a new one for me, I didn't listen to it much yet, but seems promising. ([iTunes](https://itunes.apple.com/us/podcast/sick-and-wrong-podcast/id121816499?mt=2))
+
+## [Hardcore History](https://www.dancarlin.com/) [en]
+
+History in a new way of telling right in your ears. ([iTunes](https://itunes.apple.com/us/podcast/dan-carlins-hardcore-history/id173001861?mt=2))
+
+## [My Father Philosoph](https://soundcloud.com/myfatherphilosoph) [ru]
+
+New podcast about philosophy in a simple way. It is interesting sometimes to get into a field where you know absolutely nothing. ([iTunes](https://itunes.apple.com/de/podcast/moj-otec-filosof/id1168295235?l=en&mt=2))
