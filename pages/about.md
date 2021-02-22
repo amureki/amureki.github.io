@@ -9,7 +9,7 @@ eleventyNavigation:
 
 Software engineer based in Berlin, making **great things** at [Thermondo](https://www.thermondo.de/).
 In love with **Python** and **Django**, but also curious about **Rust**.
-Passionate about **open source**, contributing to [model_bakery](https://github.com/model-bakers/model_bakery) and others.
+Passionate about **open source**, contributing to [model_bakery](https://github.com/model-bakers/model_bakery) and [others](/oss/).
 Building [Monitar.io](https://monitar.io/) during free time (which is rare).
 
 
