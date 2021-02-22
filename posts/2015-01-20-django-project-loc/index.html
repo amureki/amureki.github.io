@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Rust Saiargaliev / Количество строк кода в Django-проекте</title>
+  
+  <meta name="description" content="Software Engineer, making great things.">
+  <link rel="stylesheet" href="/css/tailwind.css">
+  <link rel="stylesheet" href="/css/index.css">
+  <link rel="alternate" href="." type="application/atom+xml"
+        title="Rust Saiargaliev">
+  <link rel="alternate" href="." type="application/json"
+        title="Rust Saiargaliev">
+  <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon"/>
+  
+</head>
+<body>
+
+<div class="leading-relaxed">
+  <div class="flex items-center justify-center h-full">
+
+  <div class="p-10">
+
+    <div class="">
+
+      <h1>
+        <a href="/">Rust Saiargaliev</a>
+        /
+        <a href="/posts">Posts</a>
+        /
+        <br>
+        Количество строк кода в Django-проекте
+      </h1>
+
+      <p>Составил недавно небольшую команду для подсчета количества строчек полезного (более или менее) кода в своих Django-проектах.</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">find</span> <span class="token builtin class-name">.</span> -name <span class="token string">"*.py"</span> -type f <span class="token operator">!</span> -path <span class="token string">'*/migrations/*'</span> -exec <span class="token function">grep</span> <span class="token builtin class-name">.</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token punctuation">\</span><span class="token punctuation">;</span> <span class="token operator">|</span> <span class="token function">wc</span> -l</code></pre>
+<p>Коротко про команду: берем все файлы с расширением <code>.py</code>, исключаем папки миграций, после чего уже внутри самих файлов считаем все не пустые строчки.</p>
+<p>Update: Нашел <a href="https://github.com/AlDanial/cloc">cloc</a> - отличная утилитка для подробного подсчета количества строчек в проектах для разных языков программирования.</p>
+
+
+      <hr/>
+
+      <h2>Navigation</h2>
+      <ul>
+        
+        
+          <li>Next: <a href="/posts/2016-10-21-how-github-uses-github-to-deploy-github/">How GitHub uses GitHub to develop and deploy GitHub</a></li>
+        
+        
+        
+          <li>Previous: <a href="/posts/2015-01-17-signup-on-password-recovery/">Регистрация при восстановлении пароля</a></li>
+        
+      </ul>
+
+    </div>
+
+  </div>
+
+</div>
+
+</div>
+
+<footer></footer>
+
+<!-- Current page: /posts/2015-01-20-django-project-loc/ -->
+</body>
+</html>
