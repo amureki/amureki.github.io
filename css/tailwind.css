@@ -204,7 +204,6 @@ Correct the inability to style clickable types in iOS and Safari.
 
 button,
 [type='button'],
-[type='reset'],
 [type='submit'] {
   -webkit-appearance: button;
 }
@@ -753,10 +752,6 @@ hr {
 
 .border-opacity-10 {
   --tw-border-opacity: 0.1;
-}
-
-.rounded {
-  border-radius: 0.25rem;
 }
 
 .rounded-md {
