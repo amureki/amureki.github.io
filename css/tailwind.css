@@ -788,10 +788,6 @@ hr {
   cursor: pointer;
 }
 
-.block {
-  display: block;
-}
-
 .inline {
   display: inline;
 }
@@ -1118,11 +1114,6 @@ hr {
 
 .absolute {
   position: absolute;
-}
-
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
 }
 
 .inset-0 {
