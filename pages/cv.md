@@ -15,7 +15,7 @@ _Currently based in Berlin, Germany (born in [Ufa](https://en.wikipedia.org/wiki
 
 * __Python__ — Django, Flask, Celery, DRF, pytest
 * __Javascript__ — jQuery, React, Vue
-* __Databases__ — PostgreSQL, MySQL, Redis, Heroku Connect
+* __Databases__ — PostgreSQL, MySQL, Redis, Heroku Connect, Metabase
 * __CI__ — Travis, CircleCI, GitLab CI, Heroku CI, GitHub Actions
 * __Management__ — GitHub, Jira, Confluence, Redmine, Trello, YouTrack
 * __Misc__ — Heroku, Salesforce, Linux, Bash, Docker, git
@@ -25,7 +25,7 @@ _Currently based in Berlin, Germany (born in [Ufa](https://en.wikipedia.org/wiki
 
 ## Experience
 
-### Senior Software Engineer @ [voiio](https://www.voiio.de/) [_June 2021 - Present]
+### Senior Software Engineer @ [voiio](https://www.voiio.de/) [_June 2021 - Present_]
 
 Working in a brilliant small team, maintaining and enhancing digital B2B-platform and related services.
 
