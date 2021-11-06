@@ -25,7 +25,11 @@ _Currently based in Berlin, Germany (born in [Ufa](https://en.wikipedia.org/wiki
 
 ## Experience
 
-### Senior Software Engineer @ [Thermondo GmbH](https://www.thermondo.de/) [_March 2016 — May 2021, 5 years_]
+### Senior Software Engineer @ [voiio](https://www.voiio.de/) [_June 2021 - Present]
+
+Working in a brilliant small team, maintaining and enhancing digital B2B-platform and related services.
+
+### Senior Software Engineer @ [Thermondo](https://www.thermondo.de/) [_March 2016 — May 2021, 5 years_]
 
 Developing backend monolithic (~150kloc) and microservice applications for company business processes. Keeping the stack and open-source/closed-source libraries up-to-date and well-tested (90%+ coverage).
 
