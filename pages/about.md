@@ -7,11 +7,9 @@ eleventyNavigation:
   order: 1
 ---
 
-Software engineer based in Berlin, making **great things** at [Thermondo](https://www.thermondo.de/).
+Software engineer based in Berlin, making **great things** at [voiio](https://www.voiio.de/).
 In love with **Python** and **Django**, but also curious about **Rust**.
 Passionate about **open source**, contributing to [model_bakery](https://github.com/model-bakers/model_bakery) and [others](/oss/).
-Building [Monitar.io](https://monitar.io/) during free time (which is rare).
-
 
 ## My presence on the internet
 
