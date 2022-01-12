@@ -13,7 +13,6 @@ Passionate about **open source**, contributing to [model_bakery](https://github.
 
 ## My presence on the internet
 
-* [Email](mailto:amureki@hey.com)
 * [Linkedin](https://linkedin.com/in/amureki)
 * [Github](https://github.com/amureki)
 * [Stackoverflow](https://stackoverflow.com/users/2024807/amureki)
