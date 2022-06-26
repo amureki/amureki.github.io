@@ -13,13 +13,13 @@ _Currently based in Berlin, Germany (born in [Ufa](https://en.wikipedia.org/wiki
 
 ## Skill set
 
-* __Python__ — Django, Flask, Celery, DRF, pytest
-* __Javascript__ — jQuery, React, Vue
+* __Python__ — Django, DRF, Flask, Celery, Dramatiq, pytest
+* __Javascript__ — jQuery, React, Vue, Svelte
 * __Databases__ — PostgreSQL, MySQL, Redis, Heroku Connect, Metabase
 * __CI__ — Travis, CircleCI, GitLab CI, Heroku CI, GitHub Actions
 * __Management__ — GitHub, Jira, Confluence, Redmine, Trello, YouTrack
 * __Misc__ — Heroku, Salesforce, Linux, Bash, Docker, git
-* __Soft skills__ — hiring, onboarding, mentoring and 1x1s, team coordination and alignment
+* __Soft skills__ — hiring, onboarding and mentoring
 
 ***
 
@@ -29,9 +29,12 @@ _Currently based in Berlin, Germany (born in [Ufa](https://en.wikipedia.org/wiki
 
 Working in a brilliant small team, maintaining and enhancing digital B2B-platform and related services.
 
+* Revamped existing data warehouse solution and lifted overall company's data culture via workshops and internal training.
+
 ### Senior Software Engineer @ [Thermondo](https://www.thermondo.de/) [_March 2016 — May 2021, 5 years_]
 
-Developing backend monolithic (~150kloc) and microservice applications for company business processes. Keeping the stack and open-source/closed-source libraries up-to-date and well-tested (90%+ coverage).
+Developing backend monolithic (~150kloc) and microservice applications for company business processes.
+Keeping the stack and open-source/closed-source libraries up-to-date and well-tested (90%+ coverage).
 
 * Improved engineering processes (architectural decision notes, post-mortems, maintenance)
 * Established data communication between backend and Salesforce via API from scratch
@@ -41,7 +44,8 @@ Developing backend monolithic (~150kloc) and microservice applications for compa
 
 ### Web Developer (volunteering) @ MKCorp [_November 2014 — March 2016, 1.5 years_]
 
-With a bunch of people we decided to make an indie MMORPG (without any funding). I was responsible for building the website, forum and integrating it with game's API.
+With a bunch of people we decided to make an indie MMORPG (without any funding). I was responsible for building the website,
+forum and integrating it with game's API.
 
 * Bootstrapped a website
 * Developed a fully functional game forum from scratch
