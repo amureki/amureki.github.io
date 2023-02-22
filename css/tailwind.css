@@ -516,23 +516,11 @@ video {
 }
 
 /* https://tailwindcss.com/docs/preflight#extending-preflight */
-.static {
-  position: static;
-}
-.relative {
-  position: relative;
-}
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
 .col-span-3 {
   grid-column: span 3 / span 3;
-}
-.block {
-  display: block;
-}
-.inline {
-  display: inline;
 }
 .flex {
   display: flex;
@@ -542,9 +530,6 @@ video {
 }
 .grid {
   display: grid;
-}
-.hidden {
-  display: none;
 }
 .h-screen {
   height: 100vh;
@@ -573,9 +558,6 @@ video {
 .gap-4 {
   gap: 1rem;
 }
-.border {
-  border-width: 1px;
-}
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -589,22 +571,13 @@ video {
 .font-bold {
   font-weight: 700;
 }
-.uppercase {
-  text-transform: uppercase;
-}
 .leading-relaxed {
   line-height: 1.625;
-}
-.underline {
-  text-decoration-line: underline;
 }
 .shadow {
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-.outline {
-  outline-style: solid;
 }
 .blur {
   --tw-blur: blur(8px);
