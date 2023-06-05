@@ -45,4 +45,9 @@
     <loc>https://amureki.me/posts/</loc>
     <lastmod>2023-06-05</lastmod>
   </url>
+  
+  <url>
+    <loc>https://amureki.me/</loc>
+    <lastmod>2023-06-05</lastmod>
+  </url>
 </urlset>
