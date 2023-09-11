@@ -31,7 +31,7 @@
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "autoprefixer": "^10.4.15",
-    "luxon": "^3.4.2",
+    "luxon": "^3.4.3",
     "markdown-it": "^13.0.1",
     "markdown-it-anchor": "^8.6.7",
     "postcss": "^8.4.29",
