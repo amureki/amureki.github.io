@@ -1,0 +1,25 @@
+@tailwind base;
+@layer base {
+  h2 {
+    @apply pt-4 pb-2 font-bold text-lg text-neutral-400;
+  }
+
+  h3 {
+    @apply pt-4 font-bold text-lg;
+  }
+
+  ul {
+    @apply list-disc list-inside pl-2;
+  }
+
+  p, li {
+    @apply text-base;
+  }
+
+  li a {
+    @apply font-semibold;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;

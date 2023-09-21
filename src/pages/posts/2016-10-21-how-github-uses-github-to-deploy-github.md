@@ -25,5 +25,5 @@ Also, they are actively using feature-flags, so deployed features they can turn 
 
 - [FutureStack15: Changing the Laws of Engineering with Pull Requests (talk from New Relic)](https://www.youtube.com/watch?v=YIpNpptGX6Q)
 - [Hubot - chatops bot used in GitHub](https://hubot.github.com/)
-- [GitHub Engineering Blog](http://githubengineering.com/)
+- [GitHub Engineering Blog](https://githubengineering.com/)
 - [Package for feature-flags](https://github.com/jnunemaker/flipper)
