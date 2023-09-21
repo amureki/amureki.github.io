@@ -1,41 +1,17 @@
 {
-  "name": "amureki-eleventy",
+  "name": "amureki.me",
+  "type": "module",
   "version": "1.0.0",
-  "description": "Source code for personal static website.",
   "scripts": {
-    "build": "eleventy",
-    "dev:postcss": "postcss css/assets/tailwind.css -d _site/css/ --config ./postcss.config.js -w",
-    "prod:postcss": "NODE_ENV=production postcss css/assets/tailwind.css -d _site/css/ --config ./postcss.config.js",
-    "watch": "eleventy --watch",
-    "serve": "eleventy --serve",
-    "start": "eleventy --serve",
-    "debug": "DEBUG=* eleventy"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/amureki/amureki.github.io.git"
-  },
-  "author": {
-    "name": "Rust Saiargaliev",
-    "email": "amureki@hey.com",
-    "url": "https://amureki.me/"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/amureki/amureki.github.io/issues"
-  },
-  "homepage": "https://github.com/amureki/amureki.github.io#readme",
-  "devDependencies": {
-    "@11ty/eleventy": "^2.0.1",
-    "@11ty/eleventy-navigation": "^0.3.5",
-    "@11ty/eleventy-plugin-rss": "^1.2.0",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-    "autoprefixer": "^10.4.15",
-    "luxon": "^3.4.3",
-    "markdown-it": "^13.0.1",
-    "markdown-it-anchor": "^8.6.7",
-    "postcss": "^8.4.29",
-    "postcss-cli": "^10.1.0",
+  "dependencies": {
+    "@astrojs/tailwind": "^5.0.0",
+    "astro": "^3.1.2",
     "tailwindcss": "^3.3.3"
   }
 }

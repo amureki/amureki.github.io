@@ -2,4 +2,7 @@
 
 Source code for personal static website https://amureki.github.io
 
-Built with the help of [11ty](https://github.com/11ty/eleventy) - javascript static site generator.
+Used technologies:
+- [astro](https://astro.build/)
+- [tailwindcss](https://tailwindcss.com/)
+- [markdown](https://www.markdownguide.org/)
