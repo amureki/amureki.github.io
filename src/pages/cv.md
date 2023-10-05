@@ -16,7 +16,7 @@ I am working in a brilliant small team, maintaining and enhancing digital B2B-pl
 
 * Revamped the existing data warehouse and lifted the overall company's data culture by conducting workshops
 * Implemented a video-on-demand solution based on AWS infrastructure (MediaConvert, Lambda, CloudFront)
-* Co-developed [emark](https://github.com/voiio/emark) - a Django library to create and send markdown-based emails
+* Co-developed [emark](https://github.com/voiio/emark) - an open-source Django library to create and send markdown-based emails
 * Introduced OTP authentication to the platform
 
 ### Senior Software Engineer @ [Thermondo](https://www.thermondo.de/)
@@ -77,7 +77,7 @@ Thesis: "Innovations in a corporate network security infrastructure"
 
 ## Extra
 * __Languages__ — English (fluent), Russian (native), German (basic)
-* __Open Source__ — [active OSS contributor](https://github.com/amureki)
-* __Community__ — Moderated [@pydjango](https://t.me/pydjango) (6000 people) and founded [@django_jobs](https://t.me/django_jobs) (4000 people)
-* __Talks__ — co-organized DUG Berlin meetups, talked at PyBerlin, PUG Berlin
+* __Open Source__ — active OSS contributor, see [github.com/amureki](https://github.com/amureki)
+* __Community__ — Moderated [t.me/pydjango](https://t.me/pydjango) (6000 people) and founded [t.me/django_jobs](https://t.me/django_jobs) (4000 people)
+* __Talks__ — co-organized and talked at DUG and PUG Berlin meetups
 * __Hobbies__ — jogging, drone photography, video games
