@@ -21,7 +21,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   </div>
 
   <div class="flex flex-col lg:flex-row max-w-2xl xl:max-w-4xl lg:gap-10">
-    <div class="min-w-min">
+    <div class="min-w-96">
       <h3 class="pt-8 pb-2 font-bold text-neutral-400 dark:text-neutral-500">Experience</h3>
       <ul>
         <li class="font-bold">
@@ -53,12 +53,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <span class="block md:inline" title="5 years">2008-2013</span>
           </span>
         </li>
+        <li class="font-bold">
+          &nbsp;
+        </li>
+        <li class="font-bold"><a href="/cv">Full CV →</a></li>
       </ul>
     </div>
-    <div class="min-w-min">
+    <div>
       <h3 class="pt-8 pb-2 font-bold text-neutral-400 dark:text-neutral-500">Links</h3>
       <ul>
-        <li class="font-bold"><a href="/cv">Full CV</a></li>
         <li class="font-bold"><a href="https://github.com/amureki" target="_blank">GitHub</a></li>
         <li class="font-bold"><a href="https://linkedin.com/in/amureki" target="_blank">LinkedIn</a></li>
         <li class="font-bold"><a href="https://stackoverflow.com/users/2024807/amureki" target="_blank">Stack
@@ -71,22 +74,35 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </div>
   </div>
 
-  <h3 class="pt-8 lg:pt-4 pb-2 font-bold text-neutral-400 dark:text-neutral-500">Side Hustles</h3>
-  <ul>
-    <li class="font-bold"><a href="https://limethat.com/" target="_blank"
-                                  title="Stack: Django, Lit, Heroku, PostgreSQL, Redis">Limethat</a>,
-      <span class="text-neutral-400 dark:text-neutral-500">2021-now</span>
-    </li>
-    <li class="font-bold"><a href="https://emojipatterns.amureki.me/" target="_blank"
-                                  title="Stack: Lit, SVG, Vite, Vercel, 🫠🔥😁🍑">Emoji
-      Patterns</a>,
-      <span class="text-neutral-400 dark:text-neutral-500">2023</span>
-    </li>
-    <li class="font-bold"><a href="https://loot.amureki.me/" target="_blank"
-                                  title="Stack: Django, fly.io, PostgreSQL">Loot Log</a>,
-      <span class="text-neutral-400 dark:text-neutral-500">2023</span>
-    </li>
-  </ul>
-
+  <div class="flex flex-col lg:flex-row max-w-2xl xl:max-w-4xl lg:gap-10">
+    <!--<div class="min-w-96">-->
+    <!--  <h3 class="pt-8 pb-2 font-bold text-neutral-400 dark:text-neutral-500">Notes</h3>-->
+    <!--  <ul>-->
+    <!--    <li class="font-bold">-->
+    <!--      <a href="#" target="_blank">OpenAI prompt deployment pipeline</a>,-->
+    <!--      <span class="text-neutral-400 dark:text-neutral-500">-->
+    <!--        2024-04-26-->
+    <!--      </span>-->
+    <!--    </li>-->
+    <!--  </ul>-->
+    <!--</div>-->
+    <div>
+      <h3 class="pt-8 pb-2 font-bold text-neutral-400 dark:text-neutral-500">Sides</h3>
+      <ul>
+        <li class="font-bold"><a href="https://limethat.com/" target="_blank"
+                                 title="Stack: Django, Lit, Heroku, PostgreSQL, Redis">Limethat</a>,
+          <span class="text-neutral-400 dark:text-neutral-500">2021-now</span>
+        </li>
+        <li class="font-bold"><a href="https://emojipatterns.amureki.me/" target="_blank"
+                                 title="Stack: Lit, SVG, Vite, Vercel, 🫠🔥😁🍑">Emoji
+          Patterns</a>,
+          <span class="text-neutral-400 dark:text-neutral-500">2023</span>
+        </li>
+        <li class="font-bold"><a href="https://loot.amureki.me/" target="_blank"
+                                 title="Stack: Django, fly.io, PostgreSQL">Loot Log</a>,
+          <span class="text-neutral-400 dark:text-neutral-500">2023</span>
+        </li>
+      </ul>
+    </div>
+  </div>
 </BaseLayout>
-
