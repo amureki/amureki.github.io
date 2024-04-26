@@ -17,10 +17,16 @@ I am working in a brilliant small team, maintaining and enhancing digital B2B-pl
 * Revamped the existing data warehouse and lifted the overall company's data culture by conducting workshops
 * Implemented a video-on-demand solution based on AWS infrastructure (MediaConvert, Lambda, CloudFront)
 * Co-developed [emark](https://github.com/voiio/emark) - an open-source Django library to create and send markdown-based emails
-* Introduced OTP authentication to the platform
+* Created an AI deployment pipeline for OpenAI-based internal and external assistants 
+
+### Core Maintainer @ [Model Bakery](https://github.com/model-bakers/model_bakery)
+_December 2018 - present, 6 years and counting_
+
+Honored to be a part of the core team of a popular library for creating fixtures for tests.
 
 ### Senior Software Engineer @ [Thermondo](https://www.thermondo.de/)
-_March 2016 - May 2021, 5 years_
+_April 2019 - May 2021, 2 years_  
+_March 2016 - March 2019, 3 years as a software engineer_
 
 I was maintaining backend monolithic (~150kloc) and microservice applications for company business processes.
 
@@ -70,13 +76,13 @@ Thesis: "Innovations in a corporate network security infrastructure"
 * __Databases__ — PostgreSQL, MySQL, Redis, Heroku Connect, Metabase
 * __CI__ — GitHub Actions, Travis, CircleCI, GitLab CI, Heroku CI
 * __Management__ — GitHub, Jira, Confluence, Redmine, Trello, YouTrack
-* __Misc__ — Heroku, Salesforce, Docker, AWS (Lambda, S3, SES, etc.), ChatGPT
+* __Misc__ — Heroku, Salesforce, Docker, AWS (Lambda, S3, SES, etc.), LLM
 * __Soft skills__ — hiring, onboarding, and mentoring
 
 ***
 
 ## Extra
-* __Languages__ — English (fluent), Russian (native), German (basic)
+* __Languages__ — English (fluent), Russian (native), German (intermediate)
 * __Open Source__ — active OSS contributor, see [github.com/amureki](https://github.com/amureki)
 * __Community__ — Moderated [t.me/pydjango](https://t.me/pydjango) (6000 people) and founded [t.me/django_jobs](https://t.me/django_jobs) (4000 people)
 * __Talks__ — co-organized and talked at DUG and PUG Berlin meetups
