@@ -9,15 +9,17 @@ in Berlin, Germany
 
 ## Experience
 
-### Senior Software Engineer @ [voiio](https://www.voiio.de/)
-_June 2021 - present_
+### Lead Software Engineer @ [voiio](https://www.voiio.de/)
+_July 2024 - present_
+
+_June 2021 - July 2024, 3 years_
 
 I am working in a brilliant small team, maintaining and enhancing digital B2B-platform and related services.
 
 * Revamped the existing data warehouse and lifted the overall company's data culture by conducting workshops
 * Implemented a video-on-demand solution based on AWS infrastructure (MediaConvert, Lambda, CloudFront)
 * Co-developed [emark](https://github.com/voiio/emark) - an open-source Django library to create and send markdown-based emails
-* Created an AI deployment pipeline for OpenAI-based internal and external assistants 
+* Created an AI deployment pipeline for OpenAI-based internal and external assistants
 
 ### Core Maintainer @ [Model Bakery](https://github.com/model-bakers/model_bakery)
 _December 2018 - present, 6 years and counting_
@@ -25,8 +27,9 @@ _December 2018 - present, 6 years and counting_
 Honored to be a part of the core team of a popular library for creating fixtures for tests.
 
 ### Senior Software Engineer @ [Thermondo](https://www.thermondo.de/)
-_April 2019 - May 2021, 2 years_  
-_March 2016 - March 2019, 3 years as a software engineer_
+_April 2019 - May 2021, 2 years_
+
+_March 2016 - April 2019, 3 years as a software engineer_
 
 I was maintaining backend monolithic (~150kloc) and microservice applications for company business processes.
 
@@ -40,7 +43,7 @@ I was maintaining backend monolithic (~150kloc) and microservice applications fo
 ### Web Developer (volunteering) @ MKCorp
 _November 2014 - March 2016, 1.5 years_
 
-With a bunch of creative people around the world, we were building an indie MMORPG game.  
+With a bunch of creative people around the world, we were building an indie MMORPG game.
 Lack of time and any funding stopped us from going any further than a basic prototype.
 
 * Bootstrapped a website
