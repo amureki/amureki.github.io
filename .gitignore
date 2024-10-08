@@ -2,6 +2,9 @@
 dist/
 # generated types
 .astro/
+# zola
+public/
+static/*.css
 
 # dependencies
 node_modules/

@@ -1,17 +1,11 @@
 {
   "name": "amureki.me",
-  "type": "module",
-  "version": "1.0.0",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "build": "NODE_ENV=production npx tailwindcss -i styles/styles.css -o static/styles.css",
+    "watch": "npx tailwindcss -i styles/styles.css -o static/styles.css --watch"
   },
-  "dependencies": {
-    "@astrojs/tailwind": "^5.1.1",
-    "astro": "^4.15.9",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.15",
     "tailwindcss": "^3.4.13"
   }
 }
