@@ -1,6 +1,6 @@
 ---
-title: Rust Saiargaliev, Software Engineer
-template: cv.html
+title: Curriculum vitae
+template: page.html
 ---
 
 based in Berlin, Germany

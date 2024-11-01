@@ -99,7 +99,7 @@
     <div>
       <h3 class="pt-8 pb-2 font-bold text-neutral-400 dark:text-neutral-500">Notes</h3>
       <ul>
-      {% set notes_section = get_section(path="notes/_index.md") %}
+        {% set notes_section = get_section(path="notes/_index.md") %}
         {% for note in notes_section.pages %}
           {% if loop.index > 3 %}
             {% break %}

@@ -1,15 +1,15 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <div class="max-w-3xl xl:max-w-4xl">
-        <h1>
+  <div class="max-w-3xl xl:max-w-4xl">
+    <h1>
     <span class="text-neutral-400 dark:text-neutral-500">
       <a href="/">Rust Saiargaliev</a>
        /
     </span>
-            Curriculum vitae
-        </h1>
-        <div class="
+      {{ page.title }}
+    </h1>
+    <div class="
                     max-w-3xl xl:max-w-4xl
                     prose dark:prose-invert
                     prose-h2:m-0
@@ -18,7 +18,7 @@
                     prose-p:mb-1
                     prose-hr:my-3
         ">
-            {{ page.content | safe }}
-        </div>
+      {{ page.content | safe }}
     </div>
+  </div>
 {% endblock content %}
