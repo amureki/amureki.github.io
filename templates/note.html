@@ -3,13 +3,13 @@
 {% block content %}
   <div class="max-w-2xl xl:max-w-4xl">
     <header>
-  <span class="text-neutral-400 dark:text-neutral-500">
-    <a href="/">Rust Saiargaliev</a>
-     /
-  </span>
+      <span class="text-neutral-400 dark:text-neutral-500">
+        <a href="/">Rust Saiargaliev</a>
+         /
+      </span>
       <span class="text-neutral-900 dark:text-neutral-100">
-    {{ page.date }}
-  </span>
+        {{ page.date }}
+      </span>
     </header>
     <article class="
                     max-w-2xl xl:max-w-4xl
@@ -21,17 +21,23 @@
       {{ page.content | safe }}
     </article>
 
-    <footer class="pt-10 font-normal text-neutral-500 text-xs lg:text-sm dark:text-neutral-500">
-      <p>
-        <b><a href="{{ get_url(path='/') }}">Rust Saiargaliev</a></b> is a Software Engineer at voiio,
-        working mainly with Python and Django and based in Berlin.
-        He is passionate about open-source contributions and code quality.
-        When he is not coding, you can find him photographing the world around him
-        or playing video games.
-      </p>
-      <a href="{{ get_url(path='@/notes/_index.md') }}" class="block pt-8">
+    <div class="pt-10">
+      <a href="{{ get_url(path='@/notes/_index.md') }}" class="text-neutral-500 dark:text-neutral-400">
         ← Back to notes
       </a>
+      <a href="{{ get_url(path='@/tip.md') }}" class="text-neutral-500 dark:text-neutral-400 float-right">
+        Say thanks 🙏→
+      </a>
+    </div>
+
+    <footer class="pt-10 font-normal text-neutral-500 text-xs lg:text-sm dark:text-neutral-500">
+      <p>
+        My name is <b><a href="{{ get_url(path='/') }}">Rust Saiargaliev</a></b>, and I am a Software Engineer at voiio,
+        working mainly with Python and Django and based in Berlin.
+        I am passionate about open-source contributions and code quality.
+        When I am not coding, you can find me photographing the world around
+        or playing video games.
+      </p>
     </footer>
   </div>
 {% endblock content %}

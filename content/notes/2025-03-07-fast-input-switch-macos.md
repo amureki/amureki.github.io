@@ -30,6 +30,9 @@ For whatever reason, Apple made the slower one the default. The fix?
 
 **_Just swap the shortcuts._**
 
+Now, the *Control + Space* shortcut switches input languages instantly, 
+and the *Control + Option + Space* shortcut has the delay (who cares?).
+
 ## But why?
 
 I still have questions:
