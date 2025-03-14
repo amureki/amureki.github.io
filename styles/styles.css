@@ -1,4 +1,7 @@
-@tailwind base;
+@import 'tailwindcss';
+
+@plugin "@tailwindcss/typography";
+
 @layer base {
   header {
     @apply pb-2 text-3xl xl:text-4xl font-bold text-neutral-400 dark:text-neutral-500;
@@ -12,6 +15,3 @@
     @apply text-lg font-bold text-neutral-400 dark:text-neutral-500;
   }
 }
-
-@tailwind components;
-@tailwind utilities;
