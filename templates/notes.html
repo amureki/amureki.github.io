@@ -3,19 +3,19 @@
 {% block content %}
   <div class="max-w-2xl xl:max-w-4xl">
     <h1>
-  <span class="text-neutral-400 dark:text-neutral-500">
-    <a href="/">Rust Saiargaliev</a>
-     /
-  </span>
-      <span class="text-neutral-900 dark:text-neutral-100">
-    Notes
-  </span>
+      <span class="text-neutral-400 dark:text-neutral-500">
+        <a href="/">Rust Saiargaliev</a>
+         /
+      </span>
+      <span class="title-page">
+        Notes
+      </span>
     </h1>
     {% for year, notes in section.pages | group_by(attribute="year") %}
-      <h2 class="pt-6 pb-2 font-bold text-neutral-400 dark:text-neutral-500">{{ year }}</h2>
+      <h2>{{ year }}</h2>
       <ul>
         {% for note in notes %}
-          <li class="font-bold">
+          <li class="nav-item">
             <a href="{{ note.permalink | safe }}">{{ note.title }}</a>
             <span class="text-neutral-400 dark:text-neutral-500">{{ note.date }}</span>
           </li>

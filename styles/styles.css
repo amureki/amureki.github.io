@@ -3,11 +3,34 @@
 @plugin "@tailwindcss/typography";
 
 @layer base {
+  /* Common text styles */
+  a {
+    @apply transition-colors duration-200;
+  }
+  
+  /* Heading styles */
   h1 {
-    @apply pb-2 text-3xl xl:text-4xl font-bold text-neutral-900 dark:text-neutral-100;
+    @apply pb-2 text-3xl xl:text-4xl font-bold;
+  }
+  
+  h1.title-main {
+    @apply text-neutral-400 dark:text-neutral-500;
+  }
+  
+  h1.title-page {
+    @apply text-neutral-900 dark:text-neutral-100;
   }
 
   h2 {
     @apply text-lg font-bold text-neutral-400 dark:text-neutral-500;
+  }
+  
+  h3 {
+    @apply pt-8 pb-2 font-bold text-neutral-400 dark:text-neutral-500;
+  }
+  
+  /* List item styling */
+  li.nav-item {
+    @apply font-bold;
   }
 }

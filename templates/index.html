@@ -2,7 +2,7 @@
 
 {% block content %}
   <header class="pb-2 max-w-2xl xl:max-w-4xl">
-    <h1 class="pb-2 text-3xl xl:text-4xl font-bold text-neutral-400 dark:text-neutral-500">Rust Saiargaliev</h1>
+    <h1 class="title-main">Rust Saiargaliev</h1>
   </header>
 
   <h2 class="max-w-2xl xl:max-w-4xl pt-0 pb-0 text-3xl xl:text-4xl font-bold text-neutral-900 dark:text-neutral-100">
@@ -18,45 +18,45 @@
 
   <div class="flex flex-col lg:flex-row max-w-2xl xl:max-w-4xl lg:gap-10">
     <div class="min-w-96">
-      <h3 class="pt-8 pb-2 font-bold text-neutral-400 dark:text-neutral-500">Experience</h3>
+      <h3>Experience</h3>
       <ul>
-        <li class="font-bold">
+        <li class="nav-item">
           Lead Software Engineer, <span class="text-neutral-400 dark:text-neutral-500">
           <a href="https://voiio.de" target="_blank">voiio</a><span class="hidden md:inline">, </span>
           <span class="block md:inline" title="3+ years">2021-now</span></span>
         </li>
-        <li class="font-bold">
+        <li class="nav-item">
           Senior Software Engineer, <span class="text-neutral-400 dark:text-neutral-500">
           <a href="https://thermondo.de" target="_blank">Thermondo</a><span class="hidden md:inline">, </span>
           <span class="block md:inline" title="5 years">2016-2021</span></span>
         </li>
-        <li class="font-bold">
+        <li class="nav-item">
           Web Developer, <span class="text-neutral-400 dark:text-neutral-500">
           <a href="https://smena.space" target="_blank">SMENA</a><span class="hidden md:inline">, </span>
           <span class="block md:inline" title="2 years">2013-2015</span></span>
         </li>
-        <li class="font-bold">
+        <li class="nav-item">
           &nbsp;
         </li>
-        <li class="font-bold"><a href="{{ get_url(path='@/cv.md') }}">Full CV →</a></li>
+        <li class="nav-item"><a href="{{ get_url(path='@/cv.md') }}">Full CV →</a></li>
       </ul>
     </div>
     <div>
-      <h3 class="pt-8 pb-2 font-bold text-neutral-400 dark:text-neutral-500">Links</h3>
+      <h3>Links</h3>
       <ul>
-        <li class="font-bold">
+        <li class="nav-item">
           <a href="https://github.com/amureki" target="_blank">GitHub</a>
         </li>
-        <li class="font-bold">
+        <li class="nav-item">
           <a href="https://linkedin.com/in/amureki" target="_blank">LinkedIn</a>
         </li>
-        <li class="font-bold">
+        <li class="nav-item">
           <a href="https://stackoverflow.com/users/2024807/amureki" target="_blank">Stack Overflow</a>
         </li>
-        <li class="font-bold">
+        <li class="nav-item">
           <a href="https://www.instagram.com/amureki" target="_blank">Instagram</a>
         </li>
-        <li class="font-bold">
+        <li class="nav-item">
           <a href="https://twitter.com/amureki" target="_blank">Twitter</a>
         </li>
       </ul>
@@ -65,14 +65,14 @@
 
   <div class="flex flex-col lg:flex-row max-w-2xl xl:max-w-4xl lg:gap-10">
     <div>
-      <h3 class="pt-8 pb-2 font-bold text-neutral-400 dark:text-neutral-500">Sides</h3>
+      <h3>Sides</h3>
       <ul>
-        <li class="font-bold">
+        <li class="nav-item">
           <a href="https://limethat.com/" target="_blank"
              title="Stack: Django, Lit, Heroku, PostgreSQL, Redis">Limethat</a>,
           <span class="text-neutral-400 dark:text-neutral-500">2021-now</span>
         </li>
-        <li class="font-bold">
+        <li class="nav-item">
           <a href="https://emojipatterns.amureki.me/" target="_blank" title="Stack: Lit, SVG, Vite, Vercel, 🫠🔥😁🍑">Emoji
             Patterns</a>,
           <span class="text-neutral-400 dark:text-neutral-500">2023</span>
@@ -83,22 +83,22 @@
 
   <div class="flex flex-col lg:flex-row max-w-2xl xl:max-w-4xl lg:gap-10">
     <div>
-      <h3 class="pt-8 pb-2 font-bold text-neutral-400 dark:text-neutral-500">Notes</h3>
+      <h3>Notes</h3>
       <ul>
         {% set notes_section = get_section(path="notes/_index.md") %}
         {% for note in notes_section.pages %}
           {% if loop.index > 3 %}
             {% break %}
           {% endif %}
-          <li class="font-bold">
+          <li class="nav-item">
             <a href="{{ note.permalink | safe }}">{{ note.title }}</a>
             <span class="text-neutral-400 dark:text-neutral-500">{{ note.date }}</span>
           </li>
         {% endfor %}
-        <li class="font-bold">
+        <li class="nav-item">
           &nbsp;
         </li>
-        <li class="font-bold">
+        <li class="nav-item">
           <a href="{{ notes_section.permalink | safe }}">All notes →</a>
         </li>
       </ul>
