@@ -12,12 +12,12 @@
       </span>
     </h1>
     {% for year, notes in section.pages | group_by(attribute="year") %}
-      <h2>{{ year }}</h2>
-      <ul>
+      <h2 class="year-heading">{{ year }}</h2>
+      <ul class="article-list">
         {% for note in notes %}
           <li class="nav-item">
             <a href="{{ note.permalink | safe }}">{{ note.title }}</a>
-            <span class="text-neutral-400 dark:text-neutral-500">{{ note.date }}</span>
+            <span class="article-date">{{ note.date }}</span>
           </li>
         {% endfor %}
       </ul>
