@@ -35,6 +35,9 @@
 
   <meta name="description" content="{{ page_desc }}"/>
   <title>{{ full_title }}</title>
+  {% if current_url %}
+  <link rel="canonical" href="{{ current_url | safe }}">
+  {% endif %}
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
