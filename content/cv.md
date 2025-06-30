@@ -64,7 +64,7 @@ _February 2013 - October 2013, 9 months_
 
 Security administrator in charge of the corporate antivirus and antispam security systems covering 20,000 users.
 
-### Engineer's degree @ [Ufa State Aviation Technical University](https://www.ugatu.su/en/)
+### Engineer's degree @ [Ufa State Aviation Technical University (now UUST)](https://uust.ru/en)
 _2008 - 2013, 5 years_
 
 Thesis: "Innovations in a corporate network security infrastructure"
