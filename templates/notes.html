@@ -17,7 +17,7 @@
         {% for note in notes %}
           <li class="nav-item">
             <a href="{{ note.permalink | safe }}">{{ note.title }}</a>
-            <span class="article-date">{{ note.date }}</span>
+            <time datetime="{{ note.date }}" class="article-date">{{ note.date }}</time>
           </li>
         {% endfor %}
       </ul>

@@ -1,6 +1,8 @@
 User-agent: *
 Allow: /
 
+Sitemap: https://amureki.me/sitemap.xml
+
 # https://en.wikipedia.org/wiki/Three_Laws_of_Robotics
 Disallow: /harming/humans
 Disallow: /ignoring/human/orders

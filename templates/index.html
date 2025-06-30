@@ -41,7 +41,7 @@
         <li class="nav-item"><a href="{{ get_url(path='@/cv.md') }}">Full CV →</a></li>
       </ul>
     </div>
-    <div>
+    <nav aria-label="External links">
       <h3>Links</h3>
       <ul>
         <li class="nav-item">
@@ -60,11 +60,11 @@
           <a href="https://twitter.com/amureki" target="_blank">Twitter</a>
         </li>
       </ul>
-    </div>
+    </nav>
   </div>
 
   <div class="flex flex-col lg:flex-row max-w-2xl xl:max-w-4xl lg:gap-10">
-    <div>
+    <nav aria-label="Side projects">
       <h3>Sides</h3>
       <ul>
         <li class="nav-item">
@@ -78,11 +78,11 @@
           <span class="text-neutral-400 dark:text-neutral-500">2023</span>
         </li>
       </ul>
-    </div>
+    </nav>
   </div>
 
   <div class="flex flex-col lg:flex-row max-w-2xl xl:max-w-4xl lg:gap-10">
-    <div>
+    <nav aria-label="Recent blog posts">
       <h3>Notes</h3>
       <ul>
         {% set notes_section = get_section(path="notes/_index.md") %}
@@ -92,7 +92,7 @@
           {% endif %}
           <li class="nav-item">
             <a href="{{ note.permalink | safe }}">{{ note.title }}</a>
-            <span class="text-neutral-400 dark:text-neutral-500">{{ note.date }}</span>
+            <time datetime="{{ note.date }}" class="text-neutral-400 dark:text-neutral-500">{{ note.date }}</time>
           </li>
         {% endfor %}
         <li class="nav-item">
@@ -102,6 +102,6 @@
           <a href="{{ notes_section.permalink | safe }}">All notes →</a>
         </li>
       </ul>
-    </div>
+    </nav>
   </div>
 {% endblock content %}
