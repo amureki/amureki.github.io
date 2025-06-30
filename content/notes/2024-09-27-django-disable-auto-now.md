@@ -1,6 +1,7 @@
 ---
 title: Disable `auto_now` and `auto_now_add` in Django migrations
 date: 2024-09-27
+description: How to temporarily disable Django's auto_now and auto_now_add behavior during migrations to preserve historical timestamps when migrating data.
 ---
 # Disable `auto_now` and `auto_now_add` in Django migrations
 

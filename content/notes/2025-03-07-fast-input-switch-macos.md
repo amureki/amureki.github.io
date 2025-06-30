@@ -1,6 +1,7 @@
 ---
 title: Fast Input Switching on macOS (Sequoia)
 date: 2025-03-07
+description: How to eliminate the frustrating delay when switching input languages on macOS by swapping keyboard shortcuts in System Preferences.
 ---
 
 # Fast Input Switching on macOS (Sequoia)

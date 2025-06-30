@@ -1,6 +1,7 @@
 ---
 title: Wishlist
 template: page.html
+description: Personal wishlist including coffee gear, watches, tech accessories, and gift ideas for special occasions.
 ---
 
 - [Fellow Ode Brew Grinder (Gen 2)](https://fellowproducts.com/products/ode-brew-grinder-gen-2)

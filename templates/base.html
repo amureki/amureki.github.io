@@ -17,21 +17,34 @@
   <link rel="stylesheet" href="/styles.css">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description"
-        content="A software engineer with a curiosity for technology, a passion for open-source contributions, and a care about code quality."/>
-  <title>Rust Saiargaliev</title>
+  {% set default_desc = "A software engineer with a curiosity for technology, a passion for open-source contributions, and a care about code quality." %}
+  {% if page.description %}
+    {% set page_desc = page.description %}
+  {% elif section and section.description %}
+    {% set page_desc = section.description %}
+  {% else %}
+    {% set page_desc = default_desc %}
+  {% endif %}
+  {% if page.title %}
+    {% set full_title = page.title ~ " - Rust Saiargaliev" %}
+  {% elif section and section.title %}
+    {% set full_title = section.title ~ " - Rust Saiargaliev" %}
+  {% else %}
+    {% set full_title = "Rust Saiargaliev" %}
+  {% endif %}
+
+  <meta name="description" content="{{ page_desc }}"/>
+  <title>{{ full_title }}</title>
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Rust Saiargaliev">
-  <meta property="og:description"
-        content="A software engineer with a curiosity for technology, a passion for open-source contributions, and a care about code quality.">
+  <meta property="og:title" content="{{ full_title }}">
+  <meta property="og:description" content="{{ page_desc }}">
   <meta property="og:image" content="https://amureki.me/og.png">
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Rust Saiargaliev">
-  <meta name="twitter:description"
-        content="A software engineer with a curiosity for technology, a passion for open-source contributions, and a care about code quality.">
+  <meta name="twitter:title" content="{{ full_title }}">
+  <meta name="twitter:description" content="{{ page_desc }}">
   <meta name="twitter:image" content="https://amureki.me/og.png">
   <meta name="google-site-verification" content="CWhzutd5nWmcBYN-YovNFFM6vZyTpeS6DCjiGSBOOL4" />
   <script defer src="https://umami.mr3k.de/script.js" data-website-id="f9969ea9-2804-4e29-82f4-bddb955b68a4"></script>

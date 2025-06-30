@@ -2,6 +2,7 @@
 title: Revoke third-party access
 date: 2017-08-10
 layout: '../../layouts/BaseLayout.astro'
+description: A curated list of links to revoke third-party app access across major social media platforms and online services for better privacy and security.
 ---
 Somewhere in a Twitter, I found a couple of links to social networks settings
 and advice to check the list of third-party services, which have access to your account.

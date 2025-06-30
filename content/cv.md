@@ -1,6 +1,7 @@
 ---
 title: Curriculum vitae
 template: page.html
+description: Lead Software Engineer with 10+ years of experience in Python/Django, open source contributions, team leadership, and full-stack development.
 ---
 
 based in Berlin, Germany

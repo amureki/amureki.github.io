@@ -1,6 +1,7 @@
 ---
 title: Say thanks
 template: page.html
+description: Support my open source work and technical writing through various platforms - Buy Me a Coffee, GitHub Sponsors, PayPal, and more.
 ---
 
 If you like my work and want to keep me motivated — here are some ways to say thanks:

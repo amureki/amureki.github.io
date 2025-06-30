@@ -2,6 +2,7 @@
 title: How GitHub uses GitHub to develop and deploy GitHub
 date: 2016-10-21
 layout: '../../layouts/BaseLayout.astro'
+description: Insights from GitHub's internal workflow - 500 deploys/week, ChatOps with Hubot, feature flags, and how they dogfood their own platform for everything.
 ---
 So, the talk was from Johannes Nicolai from Enterprise Solutions Engineering team. There were almost no marketing stuff, but about their inner structure and flow.
 
