@@ -7,16 +7,16 @@
   a {
     @apply transition-colors duration-200;
   }
-  
+
   /* Heading styles */
   h1 {
     @apply pb-2 text-3xl xl:text-4xl font-bold;
   }
-  
+
   h1.title-main {
     @apply text-neutral-400 dark:text-neutral-500;
   }
-  
+
   h1.title-page {
     @apply text-neutral-900 dark:text-neutral-100;
   }
@@ -24,33 +24,33 @@
   h2 {
     @apply text-lg font-bold text-neutral-400 dark:text-neutral-500;
   }
-  
+
   h2.year-heading {
     @apply pt-6 pb-2;
   }
-  
+
   h3 {
     @apply pt-8 pb-2 font-bold text-neutral-400 dark:text-neutral-500;
   }
-  
+
   /* List item styling */
   li.nav-item {
     @apply font-bold;
   }
-  
+
   /* Article list styling */
   .article-list {
     @apply pb-2;
   }
-  
+
   .article-list li {
     @apply py-1;
   }
-  
+
   .article-list a {
     @apply text-neutral-900 dark:text-neutral-100;
   }
-  
+
   .article-date {
     @apply text-sm text-neutral-400 dark:text-neutral-500 block md:inline ml-0 md:ml-2;
   }

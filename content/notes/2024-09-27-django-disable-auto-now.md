@@ -3,7 +3,6 @@ title: Disable `auto_now` and `auto_now_add` in Django migrations
 date: 2024-09-27
 description: How to temporarily disable Django's auto_now and auto_now_add behavior during migrations to preserve historical timestamps when migrating data.
 ---
-# Disable `auto_now` and `auto_now_add` in Django migrations
 
 Django's `DateField` and `DateTimeField` fields have two options that can be set to automatically set the field to the current date and time when a new record is created or updated:
 

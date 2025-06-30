@@ -4,8 +4,6 @@ date: 2025-03-07
 description: How to eliminate the frustrating delay when switching input languages on macOS by swapping keyboard shortcuts in System Preferences.
 ---
 
-# Fast Input Switching on macOS (Sequoia)
-
 For the longest time, switching input languages on my Mac was frustratingly slow.
 The default *Control + Space* shortcut had a nearly **one-second delay** before switching languages.
 If you're a fast typist, that means typing the first few characters in the wrong language — super annoying.

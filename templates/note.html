@@ -3,20 +3,19 @@
 {% block content %}
   <div class="max-w-2xl xl:max-w-4xl">
     <header>
-      <h1>
-        <span class="text-neutral-400 dark:text-neutral-500">
-          <a href="/" rel="author">Rust Saiargaliev</a>
-           /
-        </span>
+      <div class="pb-2 text-3xl xl:text-4xl font-bold text-neutral-400 dark:text-neutral-500">
+        <a href="/" rel="author">Rust Saiargaliev</a>
+         /
         <time datetime="{{ page.date }}">{{ page.date }}</time>
-      </h1>
+      </div>
+      <h1 class="text-3xl xl:text-4xl font-bold mb-0 mt-2 pb-2">{{ page.title }}</h1>
     </header>
     <article class="
                     max-w-2xl xl:max-w-4xl
                     prose dark:prose-invert
-                    prose-h1:text-3xl xl:prose-h1:text-4xl
-                    prose-h1:mb-0 prose-h1:mt-2
-                    prose-h1:font-bold
+                    prose-h1:text-2xl xl:prose-h1:text-3xl
+                    prose-h1:mb-4 prose-h1:mt-6
+                    prose-h1:font-semibold
       ">
       {{ page.content | safe }}
     </article>

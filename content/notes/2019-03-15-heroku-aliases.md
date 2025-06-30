@@ -4,6 +4,7 @@ date: 2019-03-17
 layout: '../../layouts/BaseLayout.astro'
 description: Useful bash aliases for Heroku CLI commands to streamline app management, addon access, and Django-specific operations.
 ---
+
 Heroku has nice and powerful [CLI](https://devcenter.heroku.com/articles/heroku-cli), which I am using quite heavily for company and personal stuff almost every day.
 
 Very often I need to log in to one of my apps or to the addons, but default commands are very verbose, so here are my shorter aliases:

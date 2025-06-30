@@ -41,11 +41,13 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
+  {% if current_url %}<meta property="og:url" content="{{ current_url | safe }}">{% endif %}
   <meta property="og:title" content="{{ full_title }}">
   <meta property="og:description" content="{{ page_desc }}">
   <meta property="og:image" content="https://amureki.me/og.png">
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
+  {% if current_url %}<meta name="twitter:url" content="{{ current_url | safe }}">{% endif %}
   <meta name="twitter:title" content="{{ full_title }}">
   <meta name="twitter:description" content="{{ page_desc }}">
   <meta name="twitter:image" content="https://amureki.me/og.png">
