@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    main {
+        padding: 0 !important;
+        max-width: none !important;
+        overflow: visible !important;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .loading-spinner {
+        font-size: 4rem;
+        animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+
+<div class="loading-spinner">🥐</div>
+{% endblock %}
