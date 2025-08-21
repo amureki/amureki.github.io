@@ -40,11 +40,25 @@
   {% endif %}
 
   <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  {% if current_url %}<meta property="og:url" content="{{ current_url | safe }}">{% endif %}
+  {% if page %}
+    <meta property="og:type" content="article">
+    <meta property="article:author" content="Rust Saiargaliev">
+    <meta property="article:published_time" content="{{ page.date }}">
+    {% if page.taxonomies.tags %}
+      {% for tag in page.taxonomies.tags %}
+        <meta property="article:tag" content="{{ tag }}">
+      {% endfor %}
+    {% endif %}
+  {% else %}
+    <meta property="og:type" content="website">
+  {% endif %}
+  {% if current_url %}
+    <meta property="og:url" content="{{ current_url | safe }}">
+  {% endif %}
   <meta property="og:title" content="{{ full_title }}">
   <meta property="og:description" content="{{ page_desc }}">
   <meta property="og:image" content="https://amureki.me/og.png">
+  <meta property="og:site_name" content="Rust Saiargaliev">
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   {% if current_url %}<meta name="twitter:url" content="{{ current_url | safe }}">{% endif %}
@@ -52,6 +66,36 @@
   <meta name="twitter:description" content="{{ page_desc }}">
   <meta name="twitter:image" content="https://amureki.me/og.png">
   <meta name="google-site-verification" content="CWhzutd5nWmcBYN-YovNFFM6vZyTpeS6DCjiGSBOOL4" />
+
+  {% if page %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ page.title }}",
+    "description": "{{ page_desc }}",
+    "author": {
+      "@type": "Person",
+      "name": "Rust Saiargaliev",
+      "url": "https://amureki.me"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "Rust Saiargaliev",
+      "url": "https://amureki.me"
+    },
+    "datePublished": "{{ page.date }}",
+    "dateModified": "{{ page.date }}",
+    {% if current_url %}"url": "{{ current_url | safe }}",{% endif %}
+    "image": "https://amureki.me/og.png",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      {% if current_url %}"@id": "{{ current_url | safe }}"{% endif %}
+    }
+  }
+  </script>
+  {% endif %}
+
   <script defer src="https://umami.mr3k.de/script.js" data-website-id="f9969ea9-2804-4e29-82f4-bddb955b68a4"></script>
 </head>
 
