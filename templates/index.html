@@ -1,111 +1,165 @@
-{% extends "base.html" %}
-
-{% block content %}
-  <header class="pb-2 max-w-2xl xl:max-w-4xl">
+{% extends "base.html" %} {% block content %}
+<header class="pb-2 max-w-2xl xl:max-w-4xl">
     <h1 class="title-main">Rust Saiargaliev</h1>
-  </header>
+</header>
 
-  <h2 class="max-w-2xl xl:max-w-4xl pt-0 pb-0 text-3xl xl:text-4xl font-bold text-neutral-900 dark:text-neutral-100">
+<h2
+    class="max-w-2xl xl:max-w-4xl pt-0 pb-0 text-3xl xl:text-4xl font-bold text-neutral-900 dark:text-neutral-100"
+>
     <span class="block">
-      A software engineer with a curiosity for technology, a passion for open-source contributions,
-      and a care about code quality.
+        A software engineer with a curiosity for technology, a passion for
+        open-source contributions, and a care about code quality.
     </span>
     <span class="block">
-      Lead Software Engineer at <a href="https://voiio.de" target="_blank"
-                                   class="text-neutral-400 dark:text-neutral-500">voiio</a>.
+        Lead Software Engineer at
+        <a
+            href="https://voiio.de"
+            target="_blank"
+            class="text-neutral-400 dark:text-neutral-500"
+            >voiio</a
+        >.
     </span>
-  </h2>
+</h2>
 
-  <div class="flex flex-col lg:flex-row max-w-2xl xl:max-w-4xl lg:gap-10">
+<div class="flex flex-col lg:flex-row max-w-2xl xl:max-w-4xl lg:gap-10">
     <div class="min-w-96">
-      <h3>Experience</h3>
-      <ul>
-        <li class="nav-item">
-          Lead Software Engineer, <span class="text-neutral-400 dark:text-neutral-500">
-          <a href="https://voiio.de" target="_blank">voiio</a><span class="hidden md:inline">, </span>
-          <span class="block md:inline" title="3+ years">2021-now</span></span>
-        </li>
-        <li class="nav-item">
-          Senior Software Engineer, <span class="text-neutral-400 dark:text-neutral-500">
-          <a href="https://thermondo.de" target="_blank">Thermondo</a><span class="hidden md:inline">, </span>
-          <span class="block md:inline" title="5 years">2016-2021</span></span>
-        </li>
-        <li class="nav-item">
-          Web Developer, <span class="text-neutral-400 dark:text-neutral-500">
-          <a href="https://smena.space" target="_blank">SMENA</a><span class="hidden md:inline">, </span>
-          <span class="block md:inline" title="2 years">2013-2015</span></span>
-        </li>
-        <li class="nav-item">
-          &nbsp;
-        </li>
-        <li class="nav-item"><a href="{{ get_url(path='@/cv.md') }}">Full CV →</a></li>
-      </ul>
+        <h3>Experience</h3>
+        <ul>
+            <li class="nav-item">
+                Lead Software Engineer,
+                <span class="text-neutral-400 dark:text-neutral-500">
+                    <a href="https://voiio.de" target="_blank">voiio</a
+                    ><span class="hidden md:inline">, </span>
+                    <span class="block md:inline" title="3+ years"
+                        >2021-now</span
+                    ></span
+                >
+            </li>
+            <li class="nav-item">
+                Senior Software Engineer,
+                <span class="text-neutral-400 dark:text-neutral-500">
+                    <a href="https://thermondo.de" target="_blank">Thermondo</a
+                    ><span class="hidden md:inline">, </span>
+                    <span class="block md:inline" title="5 years"
+                        >2016-2021</span
+                    ></span
+                >
+            </li>
+            <li class="nav-item">
+                Web Developer,
+                <span class="text-neutral-400 dark:text-neutral-500">
+                    <a href="https://smena.space" target="_blank">SMENA</a
+                    ><span class="hidden md:inline">, </span>
+                    <span class="block md:inline" title="2 years"
+                        >2013-2015</span
+                    ></span
+                >
+            </li>
+            <li class="nav-item">&nbsp;</li>
+            <li class="nav-item">
+                <a href="{{ get_url(path='@/cv.md') }}">Full CV →</a>
+            </li>
+        </ul>
     </div>
     <nav aria-label="External links">
-      <h3>Links</h3>
-      <ul>
-        <li class="nav-item">
-          <a href="https://github.com/amureki" target="_blank" rel="me">GitHub</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://linkedin.com/in/amureki" target="_blank" rel="me">LinkedIn</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://stackoverflow.com/users/2024807/amureki" target="_blank" rel="me">Stack Overflow</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://www.instagram.com/amureki" target="_blank" rel="me">Instagram</a>
-        </li>
-        <li class="nav-item">
-          <a href="https://twitter.com/amureki" target="_blank" rel="me">Twitter</a>
-        </li>
-      </ul>
+        <h3>Links</h3>
+        <ul>
+            <li class="nav-item">
+                <a href="https://github.com/amureki" target="_blank" rel="me"
+                    >GitHub</a
+                >
+            </li>
+            <li class="nav-item">
+                <a
+                    href="https://linkedin.com/in/amureki"
+                    target="_blank"
+                    rel="me"
+                    >LinkedIn</a
+                >
+            </li>
+            <li class="nav-item">
+                <a
+                    href="https://stackoverflow.com/users/2024807/amureki"
+                    target="_blank"
+                    rel="me"
+                    >Stack Overflow</a
+                >
+            </li>
+            <li class="nav-item">
+                <a
+                    href="https://www.instagram.com/amureki"
+                    target="_blank"
+                    rel="me"
+                    >Instagram</a
+                >
+            </li>
+            <li class="nav-item">
+                <a href="https://twitter.com/amureki" target="_blank" rel="me"
+                    >Twitter</a
+                >
+            </li>
+        </ul>
     </nav>
-  </div>
+</div>
 
-  <div class="flex flex-col lg:flex-row max-w-2xl xl:max-w-4xl lg:gap-10">
+<div class="flex flex-col lg:flex-row max-w-2xl xl:max-w-4xl lg:gap-10">
     <nav aria-label="Side projects">
-      <h3>Sides</h3>
-      <ul>
-        <li class="nav-item">
-          <a href="https://limethat.com/" target="_blank"
-             title="Stack: Django, Lit, Heroku, PostgreSQL, Redis">Limethat</a>,
-          <span class="text-neutral-400 dark:text-neutral-500">2021-now</span>
-        </li>
-        <li class="nav-item">
-          <a href="https://emojipatterns.amureki.me/" target="_blank"
-             title="Stack: JS, SVG, Vite, Vercel, 🫠🔥😁🍑">Emoji Patterns</a>,
-          <span class="text-neutral-400 dark:text-neutral-500">2023</span>
-        </li>
-        <li class="nav-item">
-          <a href="https://github.com/amureki/metabase-explorer" target="_blank"
-             title="Stack: Go, Bubble Tea, Metabase">Metabase Explorer</a>,
-          <span class="text-neutral-400 dark:text-neutral-500">2025</span>
-      </ul>
+        <h3>Sides</h3>
+        <ul>
+            <li class="nav-item">
+                <a
+                    href="https://limethat.com/"
+                    target="_blank"
+                    title="Stack: Django, Lit, Heroku, PostgreSQL, Redis"
+                    >Limethat</a
+                >,
+                <span class="text-neutral-400 dark:text-neutral-500"
+                    >2021-now</span
+                >
+            </li>
+            <li class="nav-item">
+                <a
+                    href="https://emoji.amureki.me/"
+                    target="_blank"
+                    title="Stack: JS, SVG, Vite, Vercel, 🫠🔥😁🍑"
+                    >Emoji Patterns</a
+                >,
+                <span class="text-neutral-400 dark:text-neutral-500">2023</span>
+            </li>
+            <li class="nav-item">
+                <a
+                    href="https://github.com/amureki/metabase-explorer"
+                    target="_blank"
+                    title="Stack: Go, Bubble Tea, Metabase"
+                    >Metabase Explorer</a
+                >,
+                <span class="text-neutral-400 dark:text-neutral-500">2025</span>
+            </li>
+        </ul>
     </nav>
-  </div>
+</div>
 
-  <div class="flex flex-col lg:flex-row max-w-2xl xl:max-w-4xl lg:gap-10">
+<div class="flex flex-col lg:flex-row max-w-2xl xl:max-w-4xl lg:gap-10">
     <nav aria-label="Recent blog posts">
-      <h3>Notes</h3>
-      <ul>
-        {% set notes_section = get_section(path="notes/_index.md") %}
-        {% for note in notes_section.pages %}
-          {% if loop.index > 3 %}
-            {% break %}
-          {% endif %}
-          <li class="nav-item">
-            <a href="{{ note.permalink | safe }}">{{ note.title }}</a>
-            <time datetime="{{ note.date }}" class="text-neutral-400 dark:text-neutral-500">{{ note.date }}</time>
-          </li>
-        {% endfor %}
-        <li class="nav-item">
-          &nbsp;
-        </li>
-        <li class="nav-item">
-          <a href="{{ notes_section.permalink | safe }}">All notes →</a>
-        </li>
-      </ul>
+        <h3>Notes</h3>
+        <ul>
+            {% set notes_section = get_section(path="notes/_index.md") %} {% for
+            note in notes_section.pages %} {% if loop.index > 3 %} {% break %}
+            {% endif %}
+            <li class="nav-item">
+                <a href="{{ note.permalink | safe }}">{{ note.title }}</a>
+                <time
+                    datetime="{{ note.date }}"
+                    class="text-neutral-400 dark:text-neutral-500"
+                    >{{ note.date }}</time
+                >
+            </li>
+            {% endfor %}
+            <li class="nav-item">&nbsp;</li>
+            <li class="nav-item">
+                <a href="{{ notes_section.permalink | safe }}">All notes →</a>
+            </li>
+        </ul>
     </nav>
-  </div>
+</div>
 {% endblock content %}
