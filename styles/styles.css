@@ -3,55 +3,108 @@
 @plugin "@tailwindcss/typography";
 
 @layer base {
-  /* Common text styles */
-  a {
-    @apply transition-colors duration-200;
+  body {
+    @apply leading-relaxed text-lg;
   }
 
-  /* Heading styles */
+  header {
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+  }
+
   h1 {
-    @apply pb-2 text-3xl xl:text-4xl font-bold;
+    @apply font-bold pb-2 leading-tight text-neutral-400 dark:text-neutral-500;
+    font-size: clamp(1.875rem, 4vw, 3rem);
   }
 
-  h1.title-main {
-    @apply text-neutral-400 dark:text-neutral-500;
+  .about {
+    @apply font-bold mb-4 leading-tight;
+    font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+    max-width: clamp(22ch, 50vw, 28ch);
+    text-wrap: balance;
+    min-height: calc(clamp(1.5rem, 3.5vw, 2.5rem) * 1.25 * 3);
   }
 
-  h1.title-page {
-    @apply text-neutral-900 dark:text-neutral-100;
+  nav.tabs {
+    @apply flex gap-6 mb-8 pt-2;
   }
 
-  h2 {
-    @apply text-lg font-bold text-neutral-400 dark:text-neutral-500;
+  nav.tabs a.tab-link {
+    @apply text-base font-bold text-neutral-400 dark:text-neutral-500 transition-all duration-200;
+    text-decoration: none;
   }
 
-  h2.year-heading {
-    @apply pt-6 pb-2;
+  nav.tabs a.tab-link:hover {
+    @apply text-neutral-900 dark:text-white;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
   }
 
-  h3 {
-    @apply pt-8 pb-2 font-bold text-neutral-400 dark:text-neutral-500;
+  nav.tabs a.tab-link.active {
+    @apply text-neutral-900 dark:text-white;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
   }
 
-  /* List item styling */
-  li.nav-item {
+
+  section {
+    @apply mb-8;
+  }
+
+  section h3,
+  .year-heading,
+  .prose section h3 {
+    padding-top: 1rem !important;
+    padding-bottom: 0.5rem !important;
+    margin: 0 !important;
+    font-size: 1.125rem !important;
+    line-height: 1.75rem !important;
+    font-weight: 700 !important;
+    color: oklch(0.708 0 0) !important;
+  }
+
+  :is(.dark) section h3,
+  :is(.dark) .year-heading,
+  :is(.dark .prose) section h3 {
+    color: oklch(0.577 0 0) !important;
+  }
+
+  ul {
+    @apply list-none;
+  }
+
+  :not(.prose) li {
     @apply font-bold;
   }
 
-  /* Article list styling */
-  .article-list {
-    @apply pb-2;
+  .prose li {
+    font-weight: normal !important;
   }
 
-  .article-list li {
-    @apply py-1;
+  a {
+    @apply text-inherit font-bold;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
   }
 
-  .article-list a {
-    @apply text-neutral-900 dark:text-neutral-100;
+  a:hover {
+    @apply text-neutral-900 dark:text-white;
   }
 
-  .article-date {
-    @apply text-sm text-neutral-400 dark:text-neutral-500 block md:inline ml-0 md:ml-2;
+  .external-link::after,
+  .prose a[target="_blank"]::after {
+    content: " ↗";
+    @apply text-sm text-neutral-400 dark:text-neutral-500;
+    text-decoration: none;
+    display: inline-block;
   }
+
+  .year {
+    @apply text-neutral-400 dark:text-neutral-500;
+    white-space: nowrap;
+  }
+
 }

@@ -1,15 +1,12 @@
 {% extends "base.html" %}
 
+{% block header_description %}{{ page.title }}{% endblock %}
+
 {% block content %}
   <div class="max-w-2xl xl:max-w-4xl">
-    <header>
-      <div class="pb-2 text-3xl xl:text-4xl font-bold text-neutral-400 dark:text-neutral-500">
-        <a href="/" rel="author">Rust Saiargaliev</a>
-         /
-        <time datetime="{{ page.date }}">{{ page.date }}</time>
-      </div>
-      <h1 class="text-3xl xl:text-4xl font-bold mb-0 mt-2 pb-2">{{ page.title }}</h1>
-    </header>
+    <div class="text-sm text-neutral-400 dark:text-neutral-500 mb-4">
+      <time datetime="{{ page.date }}">{{ page.date }}</time>
+    </div>
     <article class="
                     max-w-2xl xl:max-w-4xl
                     prose dark:prose-invert
@@ -18,25 +15,14 @@
                     prose-h1:font-semibold
       ">
       {{ page.content | safe }}
+
+      <p class="mt-8" style="text-align: center;">
+        <a href="/thanks/">Say thanks 🙏</a>
+      </p>
     </article>
 
     <div class="pt-10">
-      <a href="{{ get_url(path='@/notes/_index.md') }}" class="text-neutral-500 dark:text-neutral-400">
-        ← Back to notes
-      </a>
-      <a href="{{ get_url(path='@/tip.md') }}" class="text-neutral-500 dark:text-neutral-400 float-right">
-        Say thanks 🙏→
-      </a>
+      <a href="{{ get_url(path='@/notes/_index.md') }}">← Back to notes</a>
     </div>
-
-    <footer class="pt-10 font-normal text-neutral-500 text-xs lg:text-sm dark:text-neutral-500">
-      <p>
-        My name is <b><a href="{{ get_url(path='/') }}">Rust Saiargaliev</a></b>, and I am a Software Engineer at voiio,
-        working mainly with Python and Django and based in Berlin.
-        I am passionate about open-source contributions and code quality.
-        When I am not coding, you can find me photographing the world around
-        or playing video games.
-      </p>
-    </footer>
   </div>
 {% endblock content %}

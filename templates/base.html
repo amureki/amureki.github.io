@@ -33,10 +33,9 @@
   <meta name="description" content="{{ page_desc }}"/>
   <title>{{ full_title }}</title>
   {% if current_url %}
-  <link rel="canonical" href="{{ current_url | safe }}">
+    <link rel="canonical" href="{{ current_url | safe }}">
   {% endif %}
 
-  <!-- Open Graph / Facebook -->
   {% if page %}
     <meta property="og:type" content="article">
     <meta property="article:author" content="Rust Saiargaliev">
@@ -56,20 +55,20 @@
   <meta property="og:description" content="{{ page_desc }}">
   <meta property="og:image" content="https://amureki.me/og.png">
   <meta property="og:site_name" content="Rust Saiargaliev">
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  {% if current_url %}<meta name="twitter:url" content="{{ current_url | safe }}">{% endif %}
+  {% if current_url %}
+    <meta name="twitter:url" content="{{ current_url | safe }}">{% endif %}
   <meta name="twitter:title" content="{{ full_title }}">
   <meta name="twitter:description" content="{{ page_desc }}">
   <meta name="twitter:image" content="https://amureki.me/og.png">
-  <meta name="google-site-verification" content="CWhzutd5nWmcBYN-YovNFFM6vZyTpeS6DCjiGSBOOL4" />
+  <meta name="google-site-verification" content="CWhzutd5nWmcBYN-YovNFFM6vZyTpeS6DCjiGSBOOL4"/>
 
   {% if page %}
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "{{ page.title }}",
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "{{ page.title }}",
     "description": "{{ page_desc }}",
     "author": {
       "@type": "Person",
@@ -83,21 +82,43 @@
     },
     "datePublished": "{{ page.date }}",
     "dateModified": "{{ page.date }}",
-    {% if current_url %}"url": "{{ current_url | safe }}",{% endif %}
-    "image": "https://amureki.me/og.png",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
+      {% if current_url %}"url": "{{ current_url | safe }}",{% endif %}
+      "image": "https://amureki.me/og.png",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
       {% if current_url %}"@id": "{{ current_url | safe }}"{% endif %}
+      }
     }
-  }
-  </script>
+    </script>
   {% endif %}
 
   <script defer src="https://t.rsts.me/script.js" data-website-id="f9969ea9-2804-4e29-82f4-bddb955b68a4"></script>
 </head>
 
-<body class="bg-gray-50 text-neutral-900 dark:bg-gray-950 dark:text-neutral-100">
-<main class="py-16 md:py-24 lg:py-30 px-6 sm:px-10 lg:px-20 xl:px-40 max-w-screen-xl overflow-x-hidden">
+<body class="bg-white text-neutral-900 dark:bg-neutral-900 dark:text-white">
+<main class="px-[clamp(1.5rem,4vw,5rem)] py-[clamp(3rem,8vh,5rem)] max-w-screen-xl overflow-x-hidden">
+  {% block header %}
+    <header>
+      <h1>Rust Saiargaliev</h1>
+      <p class="about">
+        {% block header_description %}Curious engineer in Berlin, passionate about open source and maintainable
+          code.{% endblock %}
+      </p>
+    </header>
+  {% endblock %}
+
+  {% block tabs %}
+    <nav class="tabs">
+      <a href="/" class="tab-link {% if current_path and current_path == "/" %}active{% endif %}">Now</a>
+      <a href="/past/"
+         class="tab-link {% if current_path and current_path is starting_with("/past") %}active{% endif %}">Past</a>
+      <a href="{{ get_url(path='@/notes/_index.md') }}"
+         class="tab-link {% if current_path and current_path is starting_with("/notes") %}active{% endif %}">Notes</a>
+      <a href="/wish/"
+         class="tab-link {% if current_path and current_path is starting_with("/wish") %}active{% endif %}">Wishes</a>
+    </nav>
+  {% endblock %}
+
   {% block content %} {% endblock %}
 </main>
 </body>

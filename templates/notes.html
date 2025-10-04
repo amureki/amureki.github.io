@@ -2,21 +2,12 @@
 
 {% block content %}
   <div class="max-w-2xl xl:max-w-4xl">
-    <h1>
-      <span class="text-neutral-400 dark:text-neutral-500">
-        <a href="/">Rust Saiargaliev</a>
-         /
-      </span>
-      <span class="title-page">
-        Notes
-      </span>
-    </h1>
     {% for year, notes in section.pages | group_by(attribute="year") %}
       <h2 class="year-heading">{{ year }}</h2>
       <ul class="article-list">
         {% for note in notes %}
           <li class="nav-item">
-            <a href="{{ note.permalink | safe }}">{{ note.title }}</a>
+            <a href="{{ note.permalink | safe }}">{{ note.title }}</a>,
             <time datetime="{{ note.date }}" class="article-date">{{ note.date }}</time>
           </li>
         {% endfor %}

@@ -1,34 +1,36 @@
 {% extends "base.html" %}
 
+{% block header %} {% endblock %}
+{% block tabs %} {% endblock %}
 {% block content %}
-<style>
+  <style>
     main {
-        padding: 0 !important;
-        max-width: none !important;
-        overflow: visible !important;
+      padding: 0 !important;
+      max-width: none !important;
+      overflow: visible !important;
     }
 
     body {
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .loading-spinner {
-        font-size: 4rem;
-        animation: spin 1s linear infinite;
+      font-size: 4rem;
+      animation: spin 1s linear infinite;
     }
 
     @keyframes spin {
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(360deg);
-        }
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
     }
-</style>
+  </style>
 
-<div class="loading-spinner">🥐</div>
+  <div class="loading-spinner">🥐</div>
 {% endblock %}
