@@ -4,5 +4,5 @@ template = "page.html"
 +++
 
 <div class="not-prose">
-  <img src="/qr.svg" alt="QR Code" class="w-64 max-w-full h-auto" />
+  <img src="/qr.svg" alt="QR Code" class="w-64 max-w-full h-auto dark-invert" />
 </div>

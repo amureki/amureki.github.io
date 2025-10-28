@@ -8,14 +8,18 @@
   }
 
   :root {
-    --link-hover-bg-default: var(--color-neutral-900);
-    --link-hover-color-default: var(--color-white);
+    --link-hover-bg-default: #000;
+    --link-hover-color-default: #fff;
   }
 
   @media (prefers-color-scheme: dark) {
     :root {
-      --link-hover-bg-default: var(--color-white);
-      --link-hover-color-default: var(--color-neutral-900);
+      --link-hover-bg-default: #fff;
+      --link-hover-color-default: #000;
+    }
+
+    .dark-invert {
+      filter: invert(1);
     }
   }
 
