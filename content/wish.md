@@ -16,7 +16,8 @@ description: Personal wishlist including things to build, learn, and gear to acq
 
 ## Things I'd Like to Get
 
-* Seiko SRPL37 / SPB121
+* Seiko SPB237 / SRPL37
+* Sony PlayStation 5 Pro
 * Fujifilm X-M5
 * Aranet4 Home air quality monitor
 * Steam Gift Cards
