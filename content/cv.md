@@ -13,8 +13,9 @@ I am working in a brilliant small team, maintaining and enhancing digital B2B-pl
 
 * Revamped the existing data warehouse and lifted the overall company's data culture by conducting workshops
 * Implemented a video-on-demand solution based on AWS infrastructure (MediaConvert, Lambda, CloudFront)
-* Co-developed [emark](https://github.com/voiio/emark) - an open-source Django library to create and send markdown-based emails
+* Co-developed [emark](https://github.com/voiio/emark) — an open-source Django library to create and send markdown-based emails
 * Created an AI deployment pipeline for OpenAI-based internal and external assistants
+* Achievement unlocked: survived a team event bike accident with a concussion — commitment level 100%
 
 ### Core Maintainer of [Model Bakery](https://github.com/model-bakers/model_bakery)
 _December 2018 – present, 6 years and counting_
@@ -33,6 +34,7 @@ I was maintaining backend monolithic (~150kloc) and microservice applications fo
 * Created a bidirectional sync microservice for CRM communication ([Salesforce](https://www.salesforce.com/)+[Close.com](https://close.com/))
 * Bootstrapped a [Slack bot](https://github.com/Thermondo/stanley) to share feedback between team members
 * Built [an incident monitoring tool for 3rd party services](https://monitar.io/)
+* Bonus stat: broke a finger and injured a knee during team events — unmatched dedication to teamwork
 
 ### Web Developer (volunteering) @ MKCorp
 _November 2014 – March 2016, 1.5 years_
@@ -82,3 +84,4 @@ Thesis: "Innovations in a corporate network security infrastructure"
 * __Community__ — Moderated [@pydjango](https://t.me/pydjango) (6000 members) and founded [@django_jobs](https://t.me/django_jobs) (4000 members)
 * __Talks__ — co-organized and talked at DUG and PUG Berlin meetups
 * __Hobbies__ — jogging, photography, video games
+* __Fun fact__ — known to turn ordinary team events into survival challenges
