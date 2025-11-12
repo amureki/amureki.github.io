@@ -112,6 +112,8 @@
       <a href="/" class="tab-link {% if current_path and current_path == "/" %}active{% endif %}">Now</a>
       <a href="/past/"
          class="tab-link {% if current_path and current_path is starting_with("/past") %}active{% endif %}">Past</a>
+      <a href="/hire/"
+         class="tab-link {% if current_path and current_path is starting_with("/hire") %}active{% endif %}">Hire</a>
       <a href="{{ get_url(path='@/notes/_index.md') }}"
          class="tab-link {% if current_path and current_path is starting_with("/notes") %}active{% endif %}">Notes</a>
       <a href="/wish/"
