@@ -4,6 +4,8 @@ template: page.html
 description: Senior Django consultant to steady legacy codebases, speed up teams, and build guardrails for shipping faster. Berlin-based, EU timezone.
 ---
 
+## How I Can Help
+
 Your Django project deserves better than duct tape fixes and slow CI pipelines.  
 I help teams **clean up**, **stabilize**, and **speed up** their codebases — without derailing ongoing work.
 

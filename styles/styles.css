@@ -3,6 +3,13 @@
 @plugin "@tailwindcss/typography";
 
 @layer base {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-x: clip;
+  }
+
   body {
     @apply leading-relaxed text-lg;
     background-color: var(--page-bg);
@@ -39,21 +46,29 @@
     grid-template-rows: auto minmax(0, 1fr);
   }
 
+  main {
+    padding-block: clamp(1.25rem, 4vh, 2.5rem);
+  }
+
   h1 {
     @apply font-bold pb-2 leading-tight text-neutral-700 dark:text-neutral-300;
     font-size: clamp(1.875rem, 4vw, 3rem);
   }
 
   .about {
-    @apply font-bold mb-4 leading-tight;
+    @apply font-bold leading-tight;
     font-size: clamp(1.5rem, 3.5vw, 2.5rem);
     max-width: clamp(22ch, 50vw, 28ch);
     text-wrap: balance;
-    min-height: calc(clamp(1.5rem, 3.5vw, 2.5rem) * 1.25 * 3);
+    margin-bottom: clamp(0.75rem, 2vh, 1.25rem);
+    min-height: 0;
   }
 
   nav.tabs {
-    @apply flex gap-6 mb-8 pt-2;
+    @apply flex;
+    gap: clamp(0.9rem, 2vw, 1.5rem);
+    margin-bottom: clamp(1rem, 2.8vh, 1.75rem);
+    padding-top: clamp(0.25rem, 0.8vh, 0.5rem);
   }
 
   nav.tabs a.tab-link {
@@ -70,19 +85,23 @@
   }
 
   section {
-    @apply mb-8;
+    margin-bottom: clamp(0.8rem, 2.4vh, 1.5rem);
   }
 
   section h3,
   .year-heading,
   .prose section h3 {
-    padding-top: 1rem;
-    padding-bottom: 0.5rem;
+    padding-top: clamp(0.3rem, 1vh, 0.75rem);
+    padding-bottom: clamp(0.2rem, 0.8vh, 0.45rem);
     margin: 0;
     font-size: 1.125rem;
     line-height: 1.75rem;
     font-weight: 700;
     color: var(--muted-heading-color);
+  }
+
+  main .prose > h2:first-child {
+    padding-top: clamp(0.3rem, 1vh, 0.75rem);
   }
 
   ul {
@@ -92,6 +111,7 @@
   :not(.prose) li {
     @apply font-semibold;
     color: currentColor;
+    line-height: 1.48;
   }
 
   .prose li {
@@ -179,6 +199,10 @@
   .year {
     @apply font-normal text-neutral-700 dark:text-neutral-300;
     white-space: nowrap;
+  }
+
+  :not(.prose) section ul li + li {
+    margin-top: clamp(0.12rem, 0.45vh, 0.24rem);
   }
 }
 
