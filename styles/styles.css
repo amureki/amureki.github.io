@@ -29,7 +29,7 @@
   }
 
   h1 {
-    @apply font-bold pb-2 leading-tight text-neutral-400 dark:text-neutral-500;
+    @apply font-bold pb-2 leading-tight text-neutral-500 dark:text-neutral-400;
     font-size: clamp(1.875rem, 4vw, 3rem);
   }
 
@@ -46,7 +46,7 @@
   }
 
   nav.tabs a.tab-link {
-    @apply text-base font-bold text-neutral-400 dark:text-neutral-500 transition-colors duration-200;
+    @apply text-base font-bold text-neutral-500 dark:text-neutral-400 transition-colors duration-200;
     --link-inline-pad: 0.08em;
     --link-underline-thickness: 2px;
     --link-underline-offset: 4px;
@@ -65,19 +65,21 @@
   section h3,
   .year-heading,
   .prose section h3 {
-    padding-top: 1rem !important;
-    padding-bottom: 0.5rem !important;
-    margin: 0 !important;
-    font-size: 1.125rem !important;
-    line-height: 1.75rem !important;
-    font-weight: 700 !important;
-    color: oklch(0.708 0 0) !important;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    margin: 0;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    color: oklch(0.556 0 0);
   }
 
-  :is(.dark) section h3,
-  :is(.dark) .year-heading,
-  :is(.dark .prose) section h3 {
-    color: oklch(0.577 0 0) !important;
+  @media (prefers-color-scheme: dark) {
+    section h3,
+    .year-heading,
+    .prose section h3 {
+      color: oklch(0.708 0 0);
+    }
   }
 
   ul {
@@ -85,15 +87,15 @@
   }
 
   :not(.prose) li {
-    @apply font-bold;
+    @apply font-semibold;
   }
 
   .prose li {
-    font-weight: normal !important;
+    font-weight: normal;
   }
 
   a {
-    @apply font-bold;
+    @apply font-semibold;
     color: var(--link-color, inherit);
     text-decoration: var(--link-text-decoration, underline);
     text-decoration-thickness: var(--link-underline-thickness, 2px);
@@ -146,7 +148,7 @@
   }
 
   .year {
-    @apply text-neutral-400 dark:text-neutral-500;
+    @apply font-normal text-neutral-500 dark:text-neutral-400;
     white-space: nowrap;
   }
 }
