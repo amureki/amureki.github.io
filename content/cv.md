@@ -1,13 +1,13 @@
 ---
 title: Curriculum vitae
 template: page.html
-description: Lead Software Engineer with 10+ years of experience in Python/Django, open source contributions, team leadership, and full-stack development.
+description: Lead Engineer with 10+ years of experience in Python/Django, open source contributions, team leadership, and full-stack development.
 ---
 ## Experience
 
-### Lead Software Engineer @ [voiio](https://www.voiio.de/)
+### Lead Engineer @ [voiio](https://www.voiio.de/)
 _July 2024 – present_  
-_June 2021 – July 2024, 3 years_ as a Senior Software Engineer
+_June 2021 – July 2024, 3 years_ as a Senior Engineer
 
 I am working in a brilliant small team, maintaining and enhancing digital B2B-platform and related services.
 
@@ -17,12 +17,12 @@ I am working in a brilliant small team, maintaining and enhancing digital B2B-pl
 * Created an AI deployment pipeline for OpenAI-based internal and external assistants
 * Achievement unlocked: survived a team event bike accident with a concussion — commitment level 100%
 
-### Core Maintainer of [Model Bakery](https://github.com/model-bakers/model_bakery)
-_December 2018 – present, 6 years and counting_
+### [Model Bakery](https://github.com/model-bakers/model_bakery)
+_2018–present_
 
 Honored to be a part of the core team of a popular library for creating fixtures for tests.
 
-### Senior Software Engineer @ [thermondo](https://www.thermondo.de/)
+### Senior Engineer @ [thermondo](https://www.thermondo.de/)
 _April 2019 – May 2021, 2 years_  
 _March 2016 – April 2019, 3 years as a Software Engineer_
 
@@ -60,7 +60,7 @@ _February 2013 – October 2013, 9 months_
 
 Security administrator in charge of the corporate antivirus and antispam security systems covering 20,000 users.
 
-### Engineer's degree @ [Ufa State Aviation Technical University (now UUST)](https://uust.ru/en)
+### Engineer's degree @ [UUST (ex USATU)](https://uust.ru/en)
 _2008 – 2013, 5 years_
 
 Thesis: "Innovations in a corporate network security infrastructure"
