@@ -5,15 +5,26 @@
 @layer base {
   body {
     @apply leading-relaxed text-lg;
+    background-color: var(--page-bg);
   }
 
   :root {
+    --page-bg: oklch(0.89 0.075 20);
+    --muted-heading-color: oklch(0.42 0 0);
+    --divider-color: rgb(0 0 0 / 0.28);
+    --prose-bullet-color: rgb(0 0 0 / 0.6);
+    --prose-counter-color: rgb(0 0 0 / 0.72);
     --link-hover-bg-default: #000;
     --link-hover-color-default: #fff;
   }
 
   @media (prefers-color-scheme: dark) {
     :root {
+      --page-bg: #000;
+      --muted-heading-color: oklch(0.82 0 0);
+      --divider-color: rgb(255 255 255 / 0.28);
+      --prose-bullet-color: rgb(255 255 255 / 0.55);
+      --prose-counter-color: rgb(255 255 255 / 0.72);
       --link-hover-bg-default: #fff;
       --link-hover-color-default: #000;
     }
@@ -29,7 +40,7 @@
   }
 
   h1 {
-    @apply font-bold pb-2 leading-tight text-neutral-500 dark:text-neutral-400;
+    @apply font-bold pb-2 leading-tight text-neutral-700 dark:text-neutral-300;
     font-size: clamp(1.875rem, 4vw, 3rem);
   }
 
@@ -46,7 +57,7 @@
   }
 
   nav.tabs a.tab-link {
-    @apply text-base font-bold text-neutral-500 dark:text-neutral-400 transition-colors duration-200;
+    @apply text-base font-bold text-neutral-700 dark:text-neutral-300 transition-colors duration-200;
     --link-inline-pad: 0.08em;
     --link-underline-thickness: 2px;
     --link-underline-offset: 4px;
@@ -71,15 +82,7 @@
     font-size: 1.125rem;
     line-height: 1.75rem;
     font-weight: 700;
-    color: oklch(0.556 0 0);
-  }
-
-  @media (prefers-color-scheme: dark) {
-    section h3,
-    .year-heading,
-    .prose section h3 {
-      color: oklch(0.708 0 0);
-    }
+    color: var(--muted-heading-color);
   }
 
   ul {
@@ -88,10 +91,12 @@
 
   :not(.prose) li {
     @apply font-semibold;
+    color: currentColor;
   }
 
   .prose li {
     font-weight: normal;
+    color: currentColor;
   }
 
   a {
@@ -132,6 +137,16 @@
     color: var(--tw-prose-links);
   }
 
+  main .prose {
+    --tw-prose-hr: var(--divider-color);
+    --tw-prose-bullets: var(--prose-bullet-color);
+    --tw-prose-counters: var(--prose-counter-color);
+  }
+
+  hr {
+    border-color: var(--divider-color);
+  }
+
   .external-link::after,
   .prose a[target="_blank"]::after {
     content: "";
@@ -162,7 +177,21 @@
   }
 
   .year {
-    @apply font-normal text-neutral-500 dark:text-neutral-400;
+    @apply font-normal text-neutral-700 dark:text-neutral-300;
     white-space: nowrap;
+  }
+}
+
+@layer utilities {
+  .prose hr {
+    border-color: var(--divider-color);
+  }
+
+  .prose ul > li::marker {
+    color: var(--prose-bullet-color);
+  }
+
+  .prose ol > li::marker {
+    color: var(--prose-counter-color);
   }
 }
