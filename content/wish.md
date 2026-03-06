@@ -18,7 +18,6 @@ description: Personal wishlist including things to build, learn, and gear to acq
 
 * Seiko SPB237 / SRPL37
 * Fujifilm X-M5
-* Aranet4 Home air quality monitor
 * ReFraction Packable Backpack (in white)
 * Steam Gift Cards
 
