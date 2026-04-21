@@ -23,4 +23,4 @@ description: Personal wishlist including things to build, learn, and gear to acq
 
 ## Ways to Show Appreciation
 
-Check out my [/thanks](/thanks) page to support my work — from buying me a coffee to connecting on social media.
+Check out my [/support](/support) page to support my work — from buying me a coffee to connecting on social media.
