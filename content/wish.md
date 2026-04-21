@@ -21,6 +21,10 @@ description: Personal wishlist including things to build, learn, and gear to acq
 * ReFraction Packable Backpack (in white)
 * Steam Gift Cards
 
+## Places I'd Like to Visit
+
+* South Korea
+
 ## Ways to Show Appreciation
 
 Check out my [/support](/support) page to support my work — from buying me a coffee to connecting on social media.
