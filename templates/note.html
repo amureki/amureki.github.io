@@ -3,30 +3,23 @@
 {% block header_description %}{{ page.title }}{% endblock %}
 
 {% block content %}
-  <div class="max-w-2xl xl:max-w-4xl">
-    <div class="text-sm text-neutral-700 dark:text-neutral-300 mb-4">
+  <div class="content note-page">
+    <div class="note-date">
       <time datetime="{{ page.date }}">{{ page.date }}</time>
     </div>
-    <article class="
-                    max-w-2xl xl:max-w-4xl
-                    prose dark:prose-invert
-                    prose-h1:text-2xl xl:prose-h1:text-3xl
-                    prose-h1:mb-4 prose-h1:mt-6
-                    prose-h1:font-semibold
-      ">
+
+    <article class="content-prose prose dark:prose-invert">
       {{ page.content | safe }}
 
-      <div class="mt-12 border-t border-black/28 dark:border-white/28 pt-6">
-        <p class="text-base font-medium text-neutral-700 dark:text-neutral-300">
+      <div class="note-support">
+        <p>
           Enjoyed this?
-          <a href="/support/">
-            Please consider supporting my work.
-          </a>
+          <a href="/support/">Please consider supporting my work.</a>
         </p>
       </div>
     </article>
 
-    <div class="pt-10">
+    <div class="note-back">
       <a href="{{ get_url(path='@/notes/_index.md') }}">← Back to notes</a>
     </div>
   </div>

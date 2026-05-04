@@ -1,52 +1,82 @@
 {% extends "base.html" %}
 
+{% block main_class %}home-page px-[clamp(1.5rem,4vw,5rem)] py-[clamp(3rem,8vh,5rem)] max-w-4xl mx-auto overflow-x-hidden{% endblock %}
+
+{% block header_description %}Building reliable Django systems, open-source tools, and useful web apps for 10+ years.{% endblock %}
+
 {% block content %}
-  <section>
-    <h3>Work</h3>
-    <ul>
-      <li>
-        Lead Engineer at <a href="https://voiio.de" target="_blank" class="external-link">voiio</a>, <span
-        class="year">2021–present</span>
-      </li>
-    </ul>
-  </section>
+  {% set notes_section = get_section(path="notes/_index.md") %}
 
-  <section>
-    <h3>Sides</h3>
-    <ul>
-      <li>
-        <a href="https://github.com/model-bakers/model_bakery" target="_blank" class="external-link">Model
-        Bakery</a>, <span class="year">2018–present</span>
-      </li>
-      <li>
-        <a href="https://github.com/amureki/django-devbar" target="_blank" class="external-link">django-devbar</a>, <span class="year">2025</span>
-      </li>
-      <li>
-        <a href="https://year.amureki.me" target="_blank" class="external-link">YearYear</a>, <span class="year">2026</span>
-      </li>
-      <li>
-        <a href="https://limethat.com/" target="_blank" class="external-link">Limethat</a>, <span class="year">2021–present</span>
-      </li>
-    </ul>
-  </section>
+  <div class="home">
+    <section class="home-section home-now">
+      <h2>I am</h2>
+      <ul class="home-list">
+        <li>
+          a lead engineer at <a href="https://voiio.de" target="_blank" rel="noopener noreferrer" class="external-link">voiio</a>, working on an employee wellbeing platform, data workflows, AI adoption, and video infrastructure.
+        </li>
+      </ul>
+    </section>
 
-  <section>
-    <h3>Connect</h3>
-    <ul>
-      <li>
-        <a href="https://github.com/amureki" target="_blank" class="external-link">GitHub</a>, <span class="year">2011–present</span>
-      </li>
-      <li>
-        <a href="https://linkedin.com/in/amureki" target="_blank" class="external-link">LinkedIn</a>, <span
-        class="year">2015–present</span>
-      </li>
-      <li>
-        <a href="https://stackoverflow.com/users/2024807/amureki" target="_blank" class="external-link">Stack
-          Overflow</a>, <span class="year">2013–present</span>
-      </li>
-      <li>
-        <a href="https://twitter.com/amureki" target="_blank" class="external-link">Twitter</a>, <span class="year">2009–present</span>
-      </li>
-    </ul>
-  </section>
+    <section class="home-section">
+      <h2>Open source and side projects</h2>
+      <ul class="home-list">
+        <li>
+          <a href="https://github.com/model-bakers/model_bakery" target="_blank" rel="noopener noreferrer" class="external-link">Model Bakery</a> — I maintain this go-to Django fixture library with 1.4M+ monthly downloads.
+        </li>
+        <li>
+          <a href="https://year.amureki.me" target="_blank" rel="noopener noreferrer" class="external-link">YearYear</a> — a small app for yearly reflection and planning.
+        </li>
+        <li>
+          <a href="https://pypigraph.org/" target="_blank" rel="noopener noreferrer" class="external-link">pypigraph.org</a> — a visualization tool for exploring Python package dependencies.
+        </li>
+        <li>
+          <a href="https://github.com/amureki/django-devbar" target="_blank" rel="noopener noreferrer" class="external-link">django-devbar</a> — a developer toolbar for Django I built.
+        </li>
+      </ul>
+    </section>
+
+    <section class="home-section">
+      <h2>Occasionally, I write</h2>
+      <ul class="article-list">
+        {% for note in notes_section.pages | slice(end=3) %}
+          <li class="nav-item">
+            <a href="{{ note.permalink | safe }}">{{ note.title }}</a>,
+            <time datetime="{{ note.date }}" class="article-date">{{ note.date }}</time>
+          </li>
+        {% endfor %}
+      </ul>
+      <p class="section-link">
+        Read my <a href="{{ notes_section.permalink | safe }}">other notes</a>.
+      </p>
+    </section>
+
+    <section class="home-section">
+      <h2>Previously, I used to</h2>
+      <ul class="home-list">
+        <li>
+          work at <a href="https://thermondo.de" target="_blank" rel="noopener noreferrer" class="external-link">thermondo</a>, <a href="https://smena.space" target="_blank" rel="noopener noreferrer" class="external-link">SMENA</a>, and in other places.
+        </li>
+        <li>
+          create and moderate engineering communities, host meetups, and give lightning talks.
+        </li>
+        <li>
+          abandon a lot of side projects.
+        </li>
+      </ul>
+      <p class="section-link">
+        See my full <a href="/cv/">CV</a>.
+      </p>
+    </section>
+
+    <section class="home-section">
+      <h2>Find me on</h2>
+      <ul class="inline-list">
+        <li><a href="https://github.com/amureki" target="_blank" rel="noopener noreferrer" class="external-link">GitHub</a></li>
+        <li><a href="https://linkedin.com/in/amureki" target="_blank" rel="noopener noreferrer" class="external-link">LinkedIn</a></li>
+        <li><a href="https://stackoverflow.com/users/2024807/amureki" target="_blank" rel="noopener noreferrer" class="external-link">Stack Overflow</a></li>
+        <li><a href="https://mastodon.social/@amureki" target="_blank" rel="noopener noreferrer" class="external-link">Mastodon</a></li>
+        <li><a href="https://twitter.com/amureki" target="_blank" rel="noopener noreferrer" class="external-link">Twitter</a></li>
+      </ul>
+    </section>
+  </div>
 {% endblock content %}
