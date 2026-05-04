@@ -21,10 +21,10 @@ Building and evolving a B2B platform and related services together with a brilli
 * Created an AI deployment pipeline for OpenAI-based internal and external assistants
 * Achievement unlocked: survived a team event bike accident with a concussion — commitment level 100%
 
-### [Model Bakery](https://github.com/model-bakers/model_bakery)
+### Maintainer @ [Model Bakery](https://github.com/model-bakers/model_bakery)
 _2018–present_
 
-Core maintainer of a popular Django fixture library — [1.4M+ monthly downloads](https://pypistats.org/packages/model-bakery), [listed in the official Django ecosystem](https://www.djangoproject.com/community/ecosystem/#testing-fixtures).
+Maintaining a popular Django fixture library — [1.4M+ monthly downloads](https://pypistats.org/packages/model-bakery), [listed in the official Django ecosystem](https://www.djangoproject.com/community/ecosystem/#testing-fixtures).
 
 ### Senior Engineer @ [thermondo](https://www.thermondo.de/)
 _April 2019 – May 2021, 2 years_  
@@ -85,7 +85,6 @@ Thesis: "Innovations in a corporate network security infrastructure"
 ## Extra
 * __Languages__ — English (fluent), Russian (native), German (intermediate)
 * __Open Source__ — active OSS contributor, see [github.com/amureki](https://github.com/amureki)
-* __Community__ — Moderated [@pydjango](https://t.me/pydjango) (6000 members) and founded [@django_jobs](https://t.me/django_jobs) (4000 members)
-* __Talks__ — co-organized and talked at DUG and PUG Berlin meetups
+* __Community__ — moderated [@pydjango](https://t.me/pydjango) (6,000+ members), founded [@django_jobs](https://t.me/django_jobs) (4,000+ members), co-organized and spoke at DUG and PUG Berlin meetups
 * __Hobbies__ — jogging, photography, video games
 * __Fun fact__ — known to turn ordinary team events into survival challenges

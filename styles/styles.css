@@ -13,27 +13,50 @@
   body {
     @apply leading-relaxed text-lg;
     background-color: var(--page-bg);
+    color: var(--page-text);
+  }
+
+  .skip-link {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    z-index: 50;
+    transform: translateY(calc(-100% - 1rem));
+    background: var(--link-hover-bg-default);
+    color: var(--link-hover-color-default);
+    padding: 0.5rem 0.75rem;
+    font-weight: 700;
+  }
+
+  .skip-link:focus-visible {
+    transform: translateY(0);
   }
 
   :root {
-    --page-bg: oklch(0.89 0.075 20);
-    --muted-heading-color: oklch(0.42 0 0);
-    --divider-color: rgb(0 0 0 / 0.28);
-    --prose-bullet-color: rgb(0 0 0 / 0.6);
-    --prose-counter-color: rgb(0 0 0 / 0.72);
-    --link-hover-bg-default: #000;
+    --page-bg: #fff;
+    --page-text: rgb(0 0 0 / 0.9);
+    --secondary-text: rgb(0 0 0 / 0.6);
+    --tertiary-text: rgb(0 0 0 / 0.4);
+    --muted-heading-color: rgb(0 0 0 / 0.6);
+    --divider-color: rgb(0 0 0 / 0.2);
+    --prose-bullet-color: rgb(0 0 0 / 0.4);
+    --prose-counter-color: rgb(0 0 0 / 0.6);
+    --link-hover-bg-default: rgb(0 0 0 / 0.9);
     --link-hover-color-default: #fff;
   }
 
   @media (prefers-color-scheme: dark) {
     :root {
-      --page-bg: #000;
-      --muted-heading-color: oklch(0.82 0 0);
-      --divider-color: rgb(255 255 255 / 0.28);
-      --prose-bullet-color: rgb(255 255 255 / 0.55);
-      --prose-counter-color: rgb(255 255 255 / 0.72);
+      --page-bg: #161616;
+      --page-text: rgb(255 255 255 / 0.9);
+      --secondary-text: rgb(255 255 255 / 0.6);
+      --tertiary-text: rgb(255 255 255 / 0.3);
+      --muted-heading-color: rgb(255 255 255 / 0.6);
+      --divider-color: rgb(255 255 255 / 0.18);
+      --prose-bullet-color: rgb(255 255 255 / 0.3);
+      --prose-counter-color: rgb(255 255 255 / 0.55);
       --link-hover-bg-default: #fff;
-      --link-hover-color-default: #000;
+      --link-hover-color-default: #161616;
     }
 
     .dark-invert {
@@ -51,14 +74,16 @@
   }
 
   h1 {
-    @apply font-bold pb-2 leading-tight text-neutral-700 dark:text-neutral-300;
-    font-size: clamp(1.875rem, 4vw, 3rem);
+    @apply font-bold pb-2 leading-tight;
+    color: var(--page-text);
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
   }
 
   .about {
-    @apply font-bold leading-tight;
-    font-size: clamp(1.5rem, 3.5vw, 2.5rem);
-    max-width: clamp(22ch, 50vw, 28ch);
+    @apply font-semibold leading-tight;
+    color: var(--secondary-text);
+    font-size: clamp(1.25rem, 2.4vw, 1.875rem);
+    max-width: 100%;
     text-wrap: balance;
     margin-bottom: clamp(0.75rem, 2vh, 1.25rem);
     min-height: 0;
@@ -66,13 +91,16 @@
 
   nav.tabs {
     @apply flex;
-    gap: clamp(0.9rem, 2vw, 1.5rem);
+    flex-wrap: wrap;
+    gap: clamp(0.4rem, 1.5vw, 0.7rem) clamp(0.9rem, 2vw, 1.5rem);
     margin-bottom: clamp(1rem, 2.8vh, 1.75rem);
     padding-top: clamp(0.25rem, 0.8vh, 0.5rem);
   }
 
   nav.tabs a.tab-link {
-    @apply text-base font-bold text-neutral-700 dark:text-neutral-300 transition-colors duration-200;
+    @apply text-base font-bold transition-colors duration-200;
+    color: var(--secondary-text);
+    line-height: 1.6;
     --link-inline-pad: 0.08em;
     --link-underline-thickness: 2px;
     --link-underline-offset: 4px;
@@ -88,6 +116,53 @@
     margin-bottom: clamp(0.8rem, 2.4vh, 1.5rem);
   }
 
+  .content,
+  .home {
+    max-width: 52rem;
+  }
+
+  .home-section {
+    margin-bottom: clamp(1.25rem, 3vh, 2.25rem);
+  }
+
+  .home-list {
+    display: grid;
+    gap: clamp(0.35rem, 1vh, 0.6rem);
+  }
+
+  .home-list li {
+    max-width: 72ch;
+  }
+
+  .article-list {
+    display: grid;
+    gap: clamp(0.35rem, 1vh, 0.6rem);
+  }
+
+  .home-list li + li,
+  .article-list li + li {
+    margin-top: 0;
+  }
+
+  .section-link {
+    margin-top: clamp(0.7rem, 1.8vh, 1.05rem);
+    font-weight: 600;
+    color: var(--secondary-text);
+  }
+
+  .article-date {
+    @apply font-normal;
+    color: var(--secondary-text);
+    white-space: nowrap;
+  }
+
+  .inline-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.75rem;
+  }
+
+  section h2,
   section h3,
   .year-heading,
   .prose section h3 {
@@ -102,6 +177,69 @@
 
   main .prose > h2:first-child {
     padding-top: clamp(0.3rem, 1vh, 0.75rem);
+  }
+
+  main .content-prose {
+    max-width: 52rem;
+    color: currentColor;
+  }
+
+  main .content-prose :where(h1, h2, h3, h4) {
+    color: var(--page-text);
+  }
+
+  main .content-prose :where(h2) {
+    padding-top: clamp(0.3rem, 1vh, 0.75rem);
+    padding-bottom: clamp(0.2rem, 0.8vh, 0.45rem);
+    margin: 0;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    color: var(--muted-heading-color);
+  }
+
+  main .content-prose :where(h3) {
+    margin-top: clamp(0.65rem, 1.8vh, 1.1rem);
+    margin-bottom: 0.15rem;
+    font-size: 1.05rem;
+    line-height: 1.55;
+    font-weight: 700;
+  }
+
+  main .content-prose :where(p, ul, ol) {
+    margin-top: 0;
+    margin-bottom: clamp(0.45rem, 1vh, 0.7rem);
+  }
+
+  main .content-prose :where(li) {
+    margin-top: 0.16rem;
+    margin-bottom: 0.16rem;
+  }
+
+  main .content-prose :where(em) {
+    color: var(--secondary-text);
+  }
+
+  .note-date {
+    margin-bottom: clamp(0.8rem, 2vh, 1.25rem);
+    font-size: 0.95rem;
+    color: var(--secondary-text);
+  }
+
+  .note-support {
+    margin-top: clamp(2rem, 5vh, 3rem);
+    padding-top: clamp(1rem, 2.5vh, 1.5rem);
+    border-top: 1px solid var(--divider-color);
+  }
+
+  .note-support p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--secondary-text);
+  }
+
+  .note-back {
+    padding-top: clamp(2rem, 5vh, 2.75rem);
   }
 
   ul {
@@ -138,6 +276,15 @@
     color: var(--link-hover-color, var(--link-hover-color-default));
     background-color: var(--link-hover-bg, var(--link-hover-bg-default));
     text-decoration: var(--link-hover-text-decoration, none);
+  }
+
+  a:focus-visible {
+    outline: 3px solid currentColor;
+    outline-offset: 3px;
+  }
+
+  a:focus-visible:not(:hover) {
+    background-color: transparent;
   }
 
   .prose :where(a):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
@@ -197,16 +344,38 @@
   }
 
   .year {
-    @apply font-normal text-neutral-700 dark:text-neutral-300;
+    @apply font-normal;
+    color: var(--secondary-text);
     white-space: nowrap;
   }
 
-  :not(.prose) section ul li + li {
+  :not(.prose) section ul:not(.inline-list) li + li {
     margin-top: clamp(0.12rem, 0.45vh, 0.24rem);
   }
 }
 
 @layer utilities {
+  main .content-prose.prose :where(h2):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: clamp(0.3rem, 1vh, 0.75rem);
+    padding-bottom: clamp(0.2rem, 0.8vh, 0.45rem);
+  }
+
+  main .content-prose.prose :where(p, ul, ol):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+    margin-top: 0;
+    margin-bottom: clamp(0.35rem, 0.8vh, 0.55rem);
+  }
+
+  main .content-prose.prose :where(h2 + p, h2 + ul, h2 + ol):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+    margin-top: 0;
+  }
+
+  main .content-prose.prose :where(hr):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+    margin-top: clamp(1.1rem, 2.6vh, 1.8rem);
+    margin-bottom: clamp(0.65rem, 1.6vh, 1.1rem);
+  }
+
   .prose hr {
     border-color: var(--divider-color);
   }

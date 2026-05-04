@@ -1,58 +1,47 @@
-{% extends "base.html" %} {% block content %}
-  <section>
-    <h3>Experience</h3>
-    <ul>
-      <li>Lead Engineer at <a href="https://voiio.de" target="_blank" class="external-link">voiio</a>, <span
-        class="year">2021–present</span></li>
-      <li>Senior Engineer at <a href="https://thermondo.de" target="_blank" class="external-link">thermondo</a>,
-        <span class="year">2016–2021</span></li>
-      <li>Web Developer at <a href="https://smena.space" target="_blank" class="external-link">SMENA</a>, <span
-        class="year">2013–2015</span></li>
-      <li>Security Engineer at <a href="https://bashneft.ru" target="_blank" class="external-link">Bashneft</a>, <span
-        class="year">2013</span></li>
-    </ul>
-  </section>
+{% extends "base.html" %}
 
-  <section>
-    <h3>Sides</h3>
-    <ul>
-      <li><a href="https://github.com/model-bakers/model_bakery" target="_blank" class="external-link">Model
-        Bakery</a>, <span class="year">2018–present</span></li>
-      <li><a href="https://github.com/amureki/django-devbar" target="_blank" class="external-link">django-devbar</a>, <span class="year">2025</span></li>
-      <li><a href="https://github.com/amureki/metabase-explorer" target="_blank" class="external-link">Metabase
-        Explorer</a>, <span class="year">2025</span></li>
-      <li><a href="https://year.amureki.me" target="_blank" class="external-link">YearYear</a>, <span class="year">2026</span></li>
-      <li><a href="https://limethat.com/" target="_blank" class="external-link">Limethat</a>, <span class="year">2021–present</span>
-      </li>
-      <li><a href="https://emoji.amureki.me/" target="_blank" class="external-link">Emoji Patterns</a>, <span
-        class="year">2023</span></li>
-    </ul>
-  </section>
+{% block content %}
+  <div class="content home">
+    <section class="home-section">
+      <h2>Experience</h2>
+      <ul class="home-list">
+        <li>Lead Engineer at <a href="https://voiio.de" target="_blank" rel="noopener noreferrer" class="external-link">voiio</a>, <span class="year">2021–present</span></li>
+        <li>Senior Engineer at <a href="https://thermondo.de" target="_blank" rel="noopener noreferrer" class="external-link">thermondo</a>, <span class="year">2016–2021</span></li>
+        <li>Web Developer at <a href="https://smena.space" target="_blank" rel="noopener noreferrer" class="external-link">SMENA</a>, <span class="year">2013–2015</span></li>
+        <li>Security Engineer at <a href="https://bashneft.ru" target="_blank" rel="noopener noreferrer" class="external-link">Bashneft</a>, <span class="year">2013</span></li>
+      </ul>
+    </section>
 
-  <section>
-    <h3>Community</h3>
-    <ul>
-      <li>Moderated <a href="https://t.me/pydjango" target="_blank" class="external-link">@pydjango</a>, <span
-        class="year">6000 members</span></li>
-      <li>Founded <a href="https://t.me/django_jobs" target="_blank" class="external-link">@django_jobs</a>, <span
-        class="year">4000 members</span></li>
-      <li>Co-organized and talked at <a href="https://www.meetup.com/de-DE/django-user-group-berlin/" target="_blank"
-                                        class="external-link">DUG</a> and <a
-        href="https://www.meetup.com/python-users-berlin-pub/" target="_blank" class="external-link">PUG</a> Berlin
-        meetups
-      </li>
-    </ul>
-  </section>
+    <section class="home-section">
+      <h2>Sides</h2>
+      <ul class="home-list">
+        <li><a href="https://github.com/model-bakers/model_bakery" target="_blank" rel="noopener noreferrer" class="external-link">Model Bakery</a>, <span class="year">2018–present</span></li>
+        <li><a href="https://github.com/amureki/django-devbar" target="_blank" rel="noopener noreferrer" class="external-link">django-devbar</a>, <span class="year">2025</span></li>
+        <li><a href="https://github.com/amureki/metabase-explorer" target="_blank" rel="noopener noreferrer" class="external-link">Metabase Explorer</a>, <span class="year">2025</span></li>
+        <li><a href="https://year.amureki.me" target="_blank" rel="noopener noreferrer" class="external-link">YearYear</a>, <span class="year">2026</span></li>
+        <li><a href="https://limethat.com/" target="_blank" rel="noopener noreferrer" class="external-link">Limethat</a>, <span class="year">2021–present</span></li>
+        <li><a href="https://emoji.amureki.me/" target="_blank" rel="noopener noreferrer" class="external-link">Emoji Patterns</a>, <span class="year">2023</span></li>
+      </ul>
+    </section>
 
-  <section>
-    <h3>Education</h3>
-    <ul>
-      <li>Engineer's degree at <a href="https://uust.ru/en" target="_blank" class="external-link">UUST (ex USATU)</a>,
-        <span class="year">2008–2013</span></li>
-    </ul>
-  </section>
+    <section class="home-section">
+      <h2>Community</h2>
+      <ul class="home-list">
+        <li>Moderated <a href="https://t.me/pydjango" target="_blank" rel="noopener noreferrer" class="external-link">@pydjango</a>, <span class="year">6,000+ members</span></li>
+        <li>Founded <a href="https://t.me/django_jobs" target="_blank" rel="noopener noreferrer" class="external-link">@django_jobs</a>, <span class="year">4,000+ members</span></li>
+        <li>Co-organized and spoke at <a href="https://www.meetup.com/de-DE/django-user-group-berlin/" target="_blank" rel="noopener noreferrer" class="external-link">DUG</a> and <a href="https://www.meetup.com/python-users-berlin-pub/" target="_blank" rel="noopener noreferrer" class="external-link">PUG</a> Berlin meetups</li>
+      </ul>
+    </section>
 
-  <p>
-    <a href="/cv/">Full CV →</a>
-  </p>
+    <section class="home-section">
+      <h2>Education</h2>
+      <ul class="home-list">
+        <li>Engineer's degree at <a href="https://uust.ru/en" target="_blank" rel="noopener noreferrer" class="external-link">UUST (ex USATU)</a>, <span class="year">2008–2013</span></li>
+      </ul>
+    </section>
+
+    <p>
+      <a href="/cv/">Full CV →</a>
+    </p>
+  </div>
 {% endblock content %}

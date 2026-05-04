@@ -3,7 +3,10 @@
 
 <head>
   <meta charset="utf-8"/>
-  <link rel="icon" type="image/svg+xml" href="/favicon.png"/>
+  <link rel="icon" type="image/png" href="/favicon.png"/>
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#161616" media="(prefers-color-scheme: dark)">
+  <link rel="preconnect" href="https://t.rsts.me">
   <link rel="preload" href="/fonts/instrument-sans/instrument-sans-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/instrument-sans/instrument-sans-v4-latin-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/instrument-sans/instrument-sans-v4-latin-700.woff2" as="font" type="font/woff2" crossorigin>
@@ -15,7 +18,7 @@
   <link rel="stylesheet" href="/styles.css">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  {% set default_desc = "A software engineer with a curiosity for technology, a passion for open-source contributions, and a care about code quality." %}
+  {% set default_desc = "Building reliable Django systems, open-source tools, and useful web apps for 10+ years." %}
   {% if page.description %}
     {% set page_desc = page.description %}
   {% elif section and section.description %}
@@ -37,7 +40,7 @@
     <link rel="canonical" href="{{ current_url | safe }}">
   {% endif %}
 
-  {% if page %}
+  {% if page and page.date %}
     <meta property="og:type" content="article">
     <meta property="article:author" content="Rust Saiargaliev">
     <meta property="article:published_time" content="{{ page.date }}">
@@ -64,61 +67,85 @@
   <meta name="twitter:image" content="https://amureki.me/og.png">
   <meta name="google-site-verification" content="CWhzutd5nWmcBYN-YovNFFM6vZyTpeS6DCjiGSBOOL4"/>
 
-  {% if page %}
-    <script type="application/ld+json">
+  <script type="application/ld+json">
+    {% if page and page.date %}
       {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "{{ page.title }}",
-    "description": "{{ page_desc }}",
-    "author": {
-      "@type": "Person",
-      "name": "Rust Saiargaliev",
-      "url": "https://amureki.me"
-    },
-    "publisher": {
-      "@type": "Person",
-      "name": "Rust Saiargaliev",
-      "url": "https://amureki.me"
-    },
-    "datePublished": "{{ page.date }}",
-    "dateModified": "{{ page.date }}",
-      {% if current_url %}"url": "{{ current_url | safe }}",{% endif %}
-      "image": "https://amureki.me/og.png",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-      {% if current_url %}"@id": "{{ current_url | safe }}"{% endif %}
+        "headline": {{ page.title | json_encode | safe }},
+        "description": {{ page_desc | json_encode | safe }},
+        "author": {
+          "@type": "Person",
+          "name": "Rust Saiargaliev",
+          "url": "https://amureki.me"
+        },
+        "publisher": {
+          "@type": "Person",
+          "name": "Rust Saiargaliev",
+          "url": "https://amureki.me"
+        },
+        "datePublished": "{{ page.date }}",
+        "dateModified": "{{ page.updated | default(value=page.date) }}",
+        {% if current_url %}"url": "{{ current_url | safe }}",{% endif %}
+        "image": "https://amureki.me/og.png",
+        "mainEntityOfPage": {
+          "@type": "WebPage"{% if current_url %},
+          "@id": "{{ current_url | safe }}"{% endif %}
+        }
       }
-    }
-    </script>
-  {% endif %}
+    {% elif current_path and current_path == "/" %}
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Rust Saiargaliev",
+        "url": "https://amureki.me/",
+        "image": "https://amureki.me/og.png",
+        "jobTitle": "Lead Engineer",
+        "sameAs": [
+          "https://github.com/amureki",
+          "https://linkedin.com/in/amureki",
+          "https://stackoverflow.com/users/2024807/amureki",
+          "https://mastodon.social/@amureki",
+          "https://twitter.com/amureki"
+        ]
+      }
+    {% else %}
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": {{ full_title | json_encode | safe }},
+        "description": {{ page_desc | json_encode | safe }}{% if current_url %},
+        "url": "{{ current_url | safe }}"{% endif %}
+      }
+    {% endif %}
+  </script>
 
   <script defer src="https://t.rsts.me/script.js" data-website-id="f9969ea9-2804-4e29-82f4-bddb955b68a4"></script>
 </head>
 
-<body class="text-black dark:bg-black dark:text-white">
-<main class="px-[clamp(1.5rem,4vw,5rem)] py-[clamp(3rem,8vh,5rem)] max-w-screen-xl overflow-x-hidden">
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+<main id="content" tabindex="-1" class="{% block main_class %}px-[clamp(1.5rem,4vw,5rem)] py-[clamp(3rem,8vh,5rem)] max-w-4xl mx-auto overflow-x-hidden{% endblock %}">
   {% block header %}
     <header>
       <h1>Rust Saiargaliev</h1>
       <p class="about">
-        {% block header_description %}Curious engineer in Berlin, passionate about open source and maintainable
-          code.{% endblock %}
+        {% block header_description %}Building reliable Django systems, open-source tools, and useful web apps for 10+ years.{% endblock %}
       </p>
     </header>
   {% endblock %}
 
   {% block tabs %}
-    <nav class="tabs">
-      <a href="/" class="tab-link {% if current_path and current_path == "/" %}active{% endif %}">Now</a>
-      <a href="/past/"
-         class="tab-link {% if current_path and current_path is starting_with("/past") %}active{% endif %}">Past</a>
+    <nav class="tabs" aria-label="Primary">
+      <a href="/" class="tab-link {% if current_path and current_path == "/" %}active{% endif %}"{% if current_path and current_path == "/" %} aria-current="page"{% endif %}>Now</a>
+      <a href="/cv/"
+         class="tab-link {% if current_path and current_path is starting_with("/cv") %}active{% endif %}"{% if current_path and current_path is starting_with("/cv") %} aria-current="page"{% endif %}>CV</a>
       <a href="/hire/"
-         class="tab-link {% if current_path and current_path is starting_with("/hire") %}active{% endif %}">Hire</a>
+         class="tab-link {% if current_path and current_path is starting_with("/hire") %}active{% endif %}"{% if current_path and current_path is starting_with("/hire") %} aria-current="page"{% endif %}>Hire</a>
       <a href="{{ get_url(path='@/notes/_index.md') }}"
-         class="tab-link {% if current_path and current_path is starting_with("/notes") %}active{% endif %}">Notes</a>
+         class="tab-link {% if current_path and current_path is starting_with("/notes") %}active{% endif %}"{% if current_path and current_path is starting_with("/notes") %} aria-current="page"{% endif %}>Notes</a>
       <a href="/wish/"
-         class="tab-link {% if current_path and current_path is starting_with("/wish") %}active{% endif %}">Wishes</a>
+         class="tab-link {% if current_path and current_path is starting_with("/wish") %}active{% endif %}"{% if current_path and current_path is starting_with("/wish") %} aria-current="page"{% endif %}>Wishes</a>
     </nav>
   {% endblock %}
 
