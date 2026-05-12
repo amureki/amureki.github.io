@@ -13,7 +13,7 @@ I help teams **clean up**, **stabilize**, and **speed up** their codebases — w
 - Untangle legacy Django projects and bring them back to a maintainable state
 - Hunt down performance bottlenecks — from *10 queries per page* to *1000 hidden inside a serializer*
 - Modernize your stack: upgrade to the latest **Python / Django**, refresh outdated dependencies, and make your builds reproducible (uv / poetry / pipenv — whatever fits best)
-- Improve CI, linting, and testing setups so code reviews focus on logic, not formatting
+- Improve CI, linting, and testing setups, with reproducible dev environments and sensible supply-chain safeguards
 - Add observability and resilience: **Sentry**, **prefetch/caching**, async, and test coverage where it actually matters
 
 ### Why Me
