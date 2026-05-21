@@ -2,7 +2,7 @@
 
 {% block main_class %}home-page px-[clamp(1.5rem,4vw,5rem)] py-[clamp(3rem,8vh,5rem)] max-w-4xl mx-auto overflow-x-hidden{% endblock %}
 
-{% block header_description %}Building reliable Django systems, open-source tools, and useful web apps for 10+ years.{% endblock %}
+{% block header_description %}Lead Engineer focused on reliable Django platforms, operational reliability, and developer tooling.{% endblock %}
 
 {% block content %}
   {% set notes_section = get_section(path="notes/_index.md") %}
@@ -12,13 +12,23 @@
       <h2>I am</h2>
       <ul class="home-list">
         <li>
-          a lead engineer at <a href="https://voiio.de" target="_blank" rel="noopener noreferrer" class="external-link">voiio</a>, working on an employee wellbeing platform, data workflows, AI adoption, and video infrastructure.
+          currently lead engineer at <a href="https://voiio.de" target="_blank" rel="noopener noreferrer" class="external-link">voiio</a>, helping scale and maintain a platform spanning wellbeing content, AI workflows, and video infrastructure.
         </li>
       </ul>
     </section>
 
     <section class="home-section">
-      <h2>Open source and side projects</h2>
+      <h2>What I focus on</h2>
+      <ul class="home-list">
+        <li>improving mature Django systems without rewriting them from scratch.</li>
+        <li>making production systems easier to debug, observe, and safely evolve.</li>
+        <li>reducing operational friction through better tooling, testing, CI, and deployment practices.</li>
+        <li>shipping pragmatic solutions quickly while keeping long-term maintainability in mind.</li>
+      </ul>
+    </section>
+
+    <section class="home-section">
+      <h2>Selected projects and open-source work</h2>
       <ul class="home-list">
         <li>
           <a href="https://github.com/model-bakers/model_bakery" target="_blank" rel="noopener noreferrer" class="external-link">Model Bakery</a> — the go-to Django fixture library with 1.4M+ monthly downloads.

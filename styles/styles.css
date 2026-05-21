@@ -131,12 +131,28 @@
   }
 
   .home-list li {
+    position: relative;
     max-width: 72ch;
+    padding-left: 1.05em;
+  }
+
+  .home-list li::before,
+  .article-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--prose-bullet-color);
+    font-weight: 700;
   }
 
   .article-list {
     display: grid;
     gap: clamp(0.35rem, 1vh, 0.6rem);
+  }
+
+  .article-list li {
+    position: relative;
+    padding-left: 1.05em;
   }
 
   .home-list li + li,
