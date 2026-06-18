@@ -367,6 +367,30 @@
     opacity: 1;
   }
 
+  .prose pre {
+    position: relative;
+  }
+
+  .copy-code {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.6rem;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid rgb(255 255 255 / 0.25);
+    border-radius: 0.375rem;
+    background: rgb(0 0 0 / 0.45);
+    color: rgb(255 255 255 / 0.85);
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .copy-code:hover,
+  .copy-code:focus-visible {
+    background: rgb(255 255 255 / 0.15);
+    color: #fff;
+  }
+
   .year {
     @apply font-normal;
     color: var(--secondary-text);

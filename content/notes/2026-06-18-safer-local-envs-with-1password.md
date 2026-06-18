@@ -1,6 +1,6 @@
 ---
 title: Safer local envs with 1Password and op run
-date: 2026-05-05
+date: 2026-06-18
 description: Using 1Password secret references and a tiny shell helper to reduce plaintext secret sprawl in local development.
 ---
 
@@ -92,7 +92,7 @@ opr() {
 
 This helper is intentionally tiny. Nearby options include:
 
-- [`dotenvx`](https://github.com/dotenvx/dotenvx), which supports encrypted `.env` workflows and stays close to the familiar dotenv model.
+- [dotenvx](https://github.com/dotenvx/dotenvx), which supports encrypted `.env` workflows and stays close to the familiar dotenv model.
 - [Varlock](https://github.com/dmno-dev/varlock), which adds a committed `.env.schema`, type/required metadata, redacted config checks, and secret leak scanning.
 
 Those add more tool surface area, but can be worth it when you want a stronger team workflow or an explicit env contract for humans and AI agents.
