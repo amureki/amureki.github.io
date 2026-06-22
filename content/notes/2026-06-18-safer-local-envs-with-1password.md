@@ -94,7 +94,12 @@ This helper is intentionally tiny. If you are interested in the idea, but did no
 
 - [dotenvx](https://github.com/dotenvx/dotenvx), which supports encrypted `.env` workflows and stays close to the familiar dotenv model.
 - [Varlock](https://github.com/dmno-dev/varlock), which adds a committed `.env.schema`, type/required metadata, redacted config checks, and secret leak scanning.
+- [git-secret](https://sobolevn.me/git-secret/), which encrypts secret files before committing them to Git. Useful, but a different trade-off: after decrypting, you still have plaintext files in the worktree.
 
-Both are bigger tools than my alias, but that can be the right trade-off for a team, especially if you want an explicit env contract for humans and agents.
+Devcontainers can also help by isolating the tooling that touches a project, but they do not remove the secrets problem by themselves: the container still needs those values from somewhere.
+
+These are bigger tools than my alias, but that can be the right trade-off for a team, especially if you want an explicit env contract for humans and agents.
 
 None of this protects you from code running inside the target process: that code can read its own environment. The win is smaller than that, but still useful: fewer plaintext secrets sitting around for tools, agents, or accidental commits to stumble over.
+
+I would not add this to every project by default. It is most useful when the same checkout is touched by lots of tools, scripts, or agents.
