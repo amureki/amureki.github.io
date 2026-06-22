@@ -30,6 +30,10 @@ Then `op run` resolves those pointers only for the command it starts:
 op run --env-file .env -- uv run manage.py runserver
 ```
 
+A nice side effect: reading the real values goes through 1Password. If something unexpected tries to resolve them, I get an unlock prompt first, which gives me a chance to stop and ask: "did I actually mean to give this command my secrets?"
+
+![1Password unlock prompt](https://github.com/user-attachments/assets/d5f86e6d-bb04-4bd0-ad06-933dd6b333db)
+
 That is already enough, but I did not want to type the full command every time, so I wrapped it in a tiny zsh helper:
 
 ```zsh
