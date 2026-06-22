@@ -4,25 +4,33 @@ date: 2026-06-18
 description: Using 1Password secret references and a tiny shell helper to reduce plaintext secret sprawl in local development.
 ---
 
-TIL: `op run` can make local development secrets a little less ambient.
+I kept too many secrets in my `.env` files.
 
-I wanted a safer way to run local commands without keeping all sensitive environment variables in plaintext `.env` files inside a project directory.
+The goal: run local commands without keeping sensitive environment variables in plaintext inside the project directory.
 
-The threat model was not perfect security. It was reducing easy leaks from:
+This led me to looking for ways to be protected against:
 
 - supply-chain attacks: a random dependency or tool reading local files;
 - agentic workflows: coding agents accidentally seeing or exposing secrets from the workspace.
 
-The nice trick: keep a local `.env` file, but make it contain 1Password secret references instead of plaintext secrets:
+I already use a password manager for secrets. In my case, that is 1Password, and like many password managers it has a CLI integration.
+
+The CLI can read items from your vault and pass them to local commands without you copying values around. The part I care about here is `op run`: it can start a process with environment variables resolved from 1Password.
+
+That means I can keep the local `.env` workflow, but stop putting real secret values in the file:
 
 ```env
 SECRET_KEY=op://dev/project/SECRET_KEY
 DATABASE_URL=op://dev/project/DATABASE_URL
 ```
 
-Then use the 1Password CLI to resolve those references only when running a command.
+Then `op run` resolves those pointers only for the command it starts:
 
-I wrapped it in a tiny zsh helper:
+```sh
+op run --env-file .env -- uv run manage.py runserver
+```
+
+That is already enough, but I did not want to type the full command every time, so I wrapped it in a tiny zsh helper:
 
 ```zsh
 opr() {
@@ -36,40 +44,26 @@ Now I can run my Django server like this:
 opr uv run manage.py runserver
 ```
 
+or a FastAPI app:
+
+```sh
+opr fastapi dev
+```
+
 The process still gets the environment it needs, but the secrets are managed by 1Password instead of sitting casually in the repository/worktree.
-
-For FastAPI:
-
-```sh
-opr uv run uvicorn app.main:app --reload
-```
-
-or, depending on your project layout:
-
-```sh
-opr uv run fastapi dev app/main.py
-```
 
 ## Advanced: aliases
 
-One gotcha: shell aliases are not executables.
-
-This works in the shell:
+I am also quite lazy and like [aliases](/notes/2019-03-15-heroku-aliases/), so I wanted this to work too:
 
 ```zsh
 alias runserver="uv run manage.py runserver"
-runserver
-```
-
-But this does not work with the minimal `opr` helper:
-
-```sh
 opr runserver
 ```
 
-because `op run` tries to execute `runserver` as a real command from `$PATH`.
+The minimal `opr` helper does not support that, because shell aliases are not executables. `op run` tries to execute `runserver` as a real command from `$PATH`.
 
-If you want `opr` to understand zsh aliases too, you can expand the first argument before calling `op run`:
+To make `opr` understand zsh aliases too, I expand the first argument before calling `op run`:
 
 ```zsh
 opr() {
@@ -88,13 +82,19 @@ opr() {
 }
 ```
 
+Then the lazy version works:
+
+```sh
+opr runserver
+```
+
 ## Alternatives
 
-This helper is intentionally tiny. Nearby options include:
+This helper is intentionally tiny. If you are interested in the idea, but did not like my solution or want something more production-like, here are some alternatives:
 
 - [dotenvx](https://github.com/dotenvx/dotenvx), which supports encrypted `.env` workflows and stays close to the familiar dotenv model.
 - [Varlock](https://github.com/dmno-dev/varlock), which adds a committed `.env.schema`, type/required metadata, redacted config checks, and secret leak scanning.
 
-Those add more tool surface area, but can be worth it when you want a stronger team workflow or an explicit env contract for humans and AI agents.
+Both are bigger tools than my alias, but that can be the right trade-off for a team, especially if you want an explicit env contract for humans and agents.
 
-This does not protect against code running inside the target process: that code can read its own environment. It mainly reduces workspace-level secret sprawl: fewer plaintext files for tools, agents, or accidental commits to stumble over.
+None of this protects you from code running inside the target process: that code can read its own environment. The win is smaller than that, but still useful: fewer plaintext secrets sitting around for tools, agents, or accidental commits to stumble over.
