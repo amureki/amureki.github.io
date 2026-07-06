@@ -2,8 +2,6 @@
 
 {% block content %}
   <div class="content notes-list">
-    <p class="section-link"><a href="/rss.xml">RSS feed</a></p>
-
     {% for year, notes in section.pages | group_by(attribute="year") %}
       <section class="home-section">
         <h2 class="year-heading">{{ year }}</h2>
@@ -17,5 +15,7 @@
         </ul>
       </section>
     {% endfor %}
+
+    <p class="section-link">Follow new notes via <a href="/rss.xml">RSS</a>.</p>
   </div>
 {% endblock content %}
