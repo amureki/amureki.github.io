@@ -1,5 +1,9 @@
 # The URL the site will be built for
 base_url = "https://amureki.me"
+title = "Rust Saiargaliev"
+description = "Notes from Rust Saiargaliev"
+generate_feeds = true
+feed_filenames = ["rss.xml"]
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
