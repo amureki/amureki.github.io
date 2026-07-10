@@ -3,6 +3,9 @@ title: Curriculum vitae
 template: page.html
 description: Lead Engineer with 10+ years building and operating Python/Django systems at startup and scale-up companies, spanning backend architecture, data platforms, integrations, open source, and technical leadership.
 ---
+[hi@amureki.me](mailto:hi@amureki.me)  
+[linkedin.com/in/amureki](https://linkedin.com/in/amureki)
+
 ## Summary
 
 Lead Engineer with 10+ years of experience building and operating Python/Django systems at startup and scale-up companies. Experienced in backend architecture, data platforms, integrations, open source, and technical leadership. Maintainer of Model Bakery, one of the most widely used testing libraries in the Django ecosystem.
