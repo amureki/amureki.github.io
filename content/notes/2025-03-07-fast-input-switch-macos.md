@@ -22,8 +22,8 @@ After a lot of trial and error, I stumbled upon this in *System Preferences → 
 
 ![Input Sources](https://github.com/user-attachments/assets/4314b71d-a55b-4555-941c-660460e60916)
 
-- The default shortcut for **"Select the previous input source"** (*Control + Space*) has a delay.
-- The shortcut for **"Select next source in Input menu"** (*Control + Option + Space*) does *not* have a delay.
+- The default shortcut for **“Select the previous input source”** (*Control + Space*) has a delay.
+- The shortcut for **“Select next source in Input menu”** (*Control + Option + Space*) does *not* have a delay.
 
 For whatever reason, Apple made the slower one the default. The fix?
 
@@ -36,7 +36,7 @@ and the *Control + Option + Space* shortcut has the delay (who cares?).
 
 I still have questions:
 
-- Why does the "previous" shortcut have a delay while the "next" one doesn’t?
+- Why does the “previous” shortcut have a delay while the “next” one doesn’t?
 - Why isn’t the faster shortcut the default?
 - Is this a bug, a design choice, or just legacy behavior?
 
@@ -47,7 +47,7 @@ If you know the answer, I’d love to hear it.
 In case you like are using Apple's keyboard with the Globe icon,
 you may also experience a delay when switching input languages.
 For you I found another hint:
-In *System Preferences → Keyboard → Shortcuts -> Mission Control* you can disable the shortcut for "Quick Note" (🌐Q)
+In *System Preferences → Keyboard → Shortcuts → Mission Control* you can disable the shortcut for “Quick Note” (🌐Q)
 which can cause the delay if you just want to switch the input language.
 
 ![Mission Control](https://github.com/user-attachments/assets/c36fd69b-e05f-473b-93b5-75c8daf6f0a4)
