@@ -1,3 +1,5 @@
+/* Hallmark · pre-emit critique: P4 H5 E4 S5 R5 V4 */
+/* Hallmark · macrostructure: Long Document · tone: editorial · anchor hue: warm */
 @import "tailwindcss";
 
 @plugin "@tailwindcss/typography";
@@ -33,32 +35,42 @@
   }
 
   :root {
-    --page-bg: #fff;
-    --page-text: rgb(0 0 0 / 0.9);
-    --secondary-text: rgb(0 0 0 / 0.6);
-    --tertiary-text: rgb(0 0 0 / 0.4);
-    --muted-heading-color: rgb(0 0 0 / 0.6);
-    --divider-color: rgb(0 0 0 / 0.2);
-    --prose-bullet-color: rgb(0 0 0 / 0.4);
-    --prose-counter-color: rgb(0 0 0 / 0.6);
-    --link-hover-bg-default: rgb(0 0 0 / 0.9);
-    --link-hover-color-default: #fff;
+    --page-bg: oklch(98% 0.008 85);
+    --page-text: oklch(20% 0.014 85);
+    --secondary-text: oklch(43% 0.012 85);
+    --tertiary-text: oklch(55% 0.01 85);
+    --muted-heading-color: oklch(43% 0.012 85);
+    --divider-color: oklch(82% 0.012 85);
+    --prose-bullet-color: oklch(55% 0.01 85);
+    --prose-counter-color: oklch(43% 0.012 85);
+    --link-hover-bg-default: var(--page-text);
+    --link-hover-color-default: var(--page-bg);
+    --focus-color: oklch(56% 0.17 50);
+    --copy-border: oklch(52% 0.012 85);
+    --copy-bg: oklch(24% 0.014 85);
+    --copy-text: oklch(95% 0.008 85);
+    --copy-hover-bg: oklch(34% 0.014 85);
     --content-width: 52rem;
     --measure-width: 66ch;
   }
 
   @media (prefers-color-scheme: dark) {
     :root {
-      --page-bg: #161616;
-      --page-text: rgb(255 255 255 / 0.9);
-      --secondary-text: rgb(255 255 255 / 0.6);
-      --tertiary-text: rgb(255 255 255 / 0.3);
-      --muted-heading-color: rgb(255 255 255 / 0.6);
-      --divider-color: rgb(255 255 255 / 0.18);
-      --prose-bullet-color: rgb(255 255 255 / 0.3);
-      --prose-counter-color: rgb(255 255 255 / 0.55);
-      --link-hover-bg-default: #fff;
-      --link-hover-color-default: #161616;
+      --page-bg: oklch(16% 0.012 85);
+      --page-text: oklch(94% 0.008 85);
+      --secondary-text: oklch(72% 0.008 85);
+      --tertiary-text: oklch(62% 0.008 85);
+      --muted-heading-color: oklch(72% 0.008 85);
+      --divider-color: oklch(32% 0.012 85);
+      --prose-bullet-color: oklch(62% 0.008 85);
+      --prose-counter-color: oklch(72% 0.008 85);
+      --link-hover-bg-default: var(--page-text);
+      --link-hover-color-default: var(--page-bg);
+      --focus-color: oklch(72% 0.15 50);
+      --copy-border: oklch(52% 0.012 85);
+      --copy-bg: oklch(24% 0.014 85);
+      --copy-text: oklch(95% 0.008 85);
+      --copy-hover-bg: oklch(34% 0.014 85);
     }
 
     .dark-invert {
@@ -76,9 +88,16 @@
   }
 
   h1 {
-    @apply font-bold pb-2 leading-tight;
+    @apply pb-2;
     color: var(--page-text);
-    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-family: var(--font-display);
+    font-size: clamp(2.25rem, 4vw, 3.25rem);
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    line-height: 1.05;
+    overflow-wrap: anywhere;
+    min-width: 0;
   }
 
   .about {
@@ -106,6 +125,7 @@
     --link-inline-pad: 0.08em;
     --link-underline-thickness: 2px;
     --link-underline-offset: 4px;
+    white-space: nowrap;
   }
 
   nav.tabs a.tab-link.active {
@@ -126,6 +146,42 @@
 
   .home-section {
     margin-bottom: clamp(1.25rem, 3vh, 2.25rem);
+  }
+
+  .home-projects {
+    margin-block: clamp(2.5rem, 6vh, 4rem);
+    padding-block: clamp(1.25rem, 3vh, 2rem);
+    border-block: 1px solid var(--divider-color);
+  }
+
+  .home-projects .home-list {
+    gap: 0;
+  }
+
+  .home-projects .home-list li {
+    padding-block: 0.75rem;
+    padding-left: 0;
+  }
+
+  .home-projects .home-list li + li {
+    border-top: 1px solid var(--divider-color);
+  }
+
+  .home-projects .home-list li::before {
+    content: none;
+  }
+
+  .home-writing {
+    margin-bottom: clamp(2.5rem, 6vh, 4rem);
+    padding-bottom: clamp(1.5rem, 4vh, 2.5rem);
+    border-bottom: 1px solid var(--divider-color);
+  }
+
+  .home-social {
+    margin-top: clamp(2.5rem, 6vh, 4rem);
+    margin-bottom: 0;
+    padding-top: clamp(1rem, 2.5vh, 1.5rem);
+    border-top: 1px solid var(--divider-color);
   }
 
   .home-list {
@@ -189,10 +245,14 @@
     padding-top: clamp(0.3rem, 1vh, 0.75rem);
     padding-bottom: clamp(0.2rem, 0.8vh, 0.45rem);
     margin: 0;
-    font-size: 1.125rem;
-    line-height: 1.75rem;
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-style: normal;
+    line-height: 1.25;
     font-weight: 700;
-    color: var(--muted-heading-color);
+    color: var(--page-text);
+    overflow-wrap: anywhere;
+    min-width: 0;
   }
 
   main .prose > h2:first-child {
@@ -303,7 +363,7 @@
   }
 
   a:focus-visible {
-    outline: 3px solid currentColor;
+    outline: 3px solid var(--focus-color);
     outline-offset: 3px;
   }
 
@@ -376,10 +436,10 @@
     top: 0.6rem;
     right: 0.6rem;
     padding: 0.25rem 0.5rem;
-    border: 1px solid rgb(255 255 255 / 0.25);
+    border: 1px solid var(--copy-border);
     border-radius: 0.375rem;
-    background: rgb(0 0 0 / 0.45);
-    color: rgb(255 255 255 / 0.85);
+    background: var(--copy-bg);
+    color: var(--copy-text);
     font-size: 0.75rem;
     font-weight: 600;
     cursor: pointer;
@@ -387,8 +447,17 @@
 
   .copy-code:hover,
   .copy-code:focus-visible {
-    background: rgb(255 255 255 / 0.15);
-    color: #fff;
+    background: var(--copy-hover-bg);
+    color: var(--copy-text);
+  }
+
+  .copy-code:focus-visible {
+    outline: 3px solid var(--focus-color);
+    outline-offset: 2px;
+  }
+
+  .copy-code:active {
+    background: var(--copy-bg);
   }
 
   .year {
@@ -414,6 +483,15 @@
     margin-bottom: 0;
     padding-top: clamp(0.3rem, 1vh, 0.75rem);
     padding-bottom: clamp(0.2rem, 0.8vh, 0.45rem);
+    color: var(--page-text);
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 2.5vw, 1.875rem);
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+    min-width: 0;
   }
 
   main .content-prose.prose :where(p, ul, ol):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
@@ -440,6 +518,23 @@
 
   .prose ol > li::marker {
     color: var(--prose-counter-color);
+  }
+}
+
+@media (min-width: 40rem) {
+  .home-writing {
+    display: grid;
+    grid-template-columns: minmax(0, 0.65fr) minmax(0, 1.35fr);
+    column-gap: clamp(2rem, 5vw, 4rem);
+    align-items: start;
+  }
+
+  .home-writing h2 {
+    grid-row: 1 / span 2;
+  }
+
+  .home-writing .section-link {
+    grid-column: 2;
   }
 }
 

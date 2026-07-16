@@ -68,7 +68,7 @@ Security administrator in charge of the corporate antivirus and antispam securit
 ### Engineer's degree @ [UUST (ex USATU)](https://uust.ru/en)
 _2008 – 2013, 5 years_
 
-Thesis: "Innovations in a corporate network security infrastructure"
+Thesis: “Innovations in a corporate network security infrastructure”
 
 ***
 
