@@ -2,6 +2,7 @@
 /* Hallmark · macrostructure: Long Document · tone: editorial · anchor hue: warm */
 @import "../tokens.css";
 @import "./cv.css";
+@import "./utility.css";
 @import "tailwindcss";
 
 @plugin "@tailwindcss/typography";
@@ -358,6 +359,12 @@
   }
 
   main .prose {
+    --tw-prose-body: var(--page-text);
+    --tw-prose-headings: var(--page-text);
+    --tw-prose-lead: var(--secondary-text);
+    --tw-prose-links: var(--page-text);
+    --tw-prose-bold: var(--page-text);
+    --tw-prose-captions: var(--secondary-text);
     --tw-prose-hr: var(--divider-color);
     --tw-prose-bullets: var(--prose-bullet-color);
     --tw-prose-counters: var(--prose-counter-color);
