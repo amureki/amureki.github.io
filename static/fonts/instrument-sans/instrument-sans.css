@@ -1,10 +1,3 @@
-/* Typography tokens */
-:root {
-  --font-display: "Space Grotesk", "Avenir Next", "Segoe UI", sans-serif;
-  --font-body: "Instrument Sans", "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  font-family: var(--font-body);
-}
-
 @font-face {
   font-family: "Space Grotesk";
   font-style: normal;

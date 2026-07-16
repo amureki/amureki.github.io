@@ -1,0 +1,58 @@
+:root {
+  --page-bg: oklch(98% 0.008 85);
+  --page-text: oklch(20% 0.014 85);
+  --secondary-text: oklch(43% 0.012 85);
+  --tertiary-text: oklch(55% 0.01 85);
+  --muted-heading-color: oklch(43% 0.012 85);
+  --divider-color: oklch(82% 0.012 85);
+  --prose-bullet-color: oklch(55% 0.01 85);
+  --prose-counter-color: oklch(43% 0.012 85);
+  --link-hover-bg-default: var(--page-text);
+  --link-hover-color-default: var(--page-bg);
+  --focus-color: oklch(56% 0.17 50);
+  --copy-border: oklch(52% 0.012 85);
+  --copy-bg: oklch(24% 0.014 85);
+  --copy-text: oklch(95% 0.008 85);
+  --copy-hover-bg: oklch(34% 0.014 85);
+
+  --font-display: "Space Grotesk", "Avenir Next", "Segoe UI", sans-serif;
+  --font-body: "Instrument Sans", "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+
+  --content-width: 52rem;
+  --measure-width: 66ch;
+
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs: 0.75rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+
+  --text-sm: 0.9375rem;
+  --text-md: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.5rem;
+
+  --rule-hairline: 1px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --page-bg: oklch(16% 0.012 85);
+    --page-text: oklch(94% 0.008 85);
+    --secondary-text: oklch(72% 0.008 85);
+    --tertiary-text: oklch(62% 0.008 85);
+    --muted-heading-color: oklch(72% 0.008 85);
+    --divider-color: oklch(32% 0.012 85);
+    --prose-bullet-color: oklch(62% 0.008 85);
+    --prose-counter-color: oklch(72% 0.008 85);
+    --link-hover-bg-default: var(--page-text);
+    --link-hover-color-default: var(--page-bg);
+    --focus-color: oklch(72% 0.15 50);
+    --copy-border: oklch(52% 0.012 85);
+    --copy-bg: oklch(24% 0.014 85);
+    --copy-text: oklch(95% 0.008 85);
+    --copy-hover-bg: oklch(34% 0.014 85);
+  }
+}
