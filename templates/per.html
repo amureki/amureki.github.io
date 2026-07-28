@@ -1,0 +1,282 @@
+{% if page %}
+{% set document = page %}
+{% else %}
+{% set document = section %}
+{% endif %}
+<!DOCTYPE html>
+<html lang="en" class="per-page">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fbfaf6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1c1b18" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="stylesheet" href="/fonts/instrument-sans/instrument-sans.css">
+  <link rel="stylesheet" href="/styles.css">
+  <meta name="description" content="{{ document.description }}">
+  <title>{{ document.title }}</title>
+  {% if current_url %}<link rel="canonical" href="{{ current_url | safe }}">{% endif %}
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ document.title }}">
+  <meta property="og:description" content="{{ document.description }}">
+  {% if current_url %}<meta property="og:url" content="{{ current_url | safe }}">{% endif %}
+  <style>
+    /* Hallmark · pre-emit critique: P5 H5 E5 S5 R5 V5 */
+    /* Hallmark · genre: editorial · macrostructure: Long Document · theme: warm editorial · enrichment: none · nav: N9 · footer: Ft2 · contrast: pass (40–41) · slop: pass (42–45) · honest: pass (46) · chrome: pass (47) · tokens: pass (48) · responsive: pass (49) · mobile: pass (34, 49, 50–57) */
+    .per-page,
+    .per-page body {
+      overflow-x: clip;
+    }
+
+    .per-page body {
+      min-height: 100svh;
+      margin: 0;
+      background: var(--page-bg);
+      color: var(--page-text);
+      font-family: var(--font-body);
+    }
+
+    .per-shell {
+      width: min(100%, 72rem);
+      margin-inline: auto;
+      padding-inline: max(clamp(var(--space-sm), 4vw, var(--space-xl)), env(safe-area-inset-left));
+    }
+
+    .per-page main.per-shell {
+      padding-block: 0;
+    }
+
+    .per-page main section {
+      margin-bottom: 0;
+    }
+
+    .per-page a:active {
+      background-color: var(--link-hover-bg-default);
+      color: var(--link-hover-color-default);
+    }
+
+    .per-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-md);
+      padding-block: var(--space-lg);
+      border-bottom: var(--rule-hairline) solid var(--divider-color);
+    }
+
+    .per-nav a,
+    .per-footer a,
+    .per-privacy a {
+      white-space: nowrap;
+    }
+
+    .per-wordmark {
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-decoration: none;
+    }
+
+    .per-nav-link {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      color: var(--secondary-text);
+    }
+
+    .per-nav-link[aria-current="page"] {
+      color: var(--page-text);
+    }
+
+    .per-hero {
+      display: grid;
+      gap: var(--space-md);
+      padding-block-start: var(--space-2xl);
+      padding-block-end: calc(var(--space-2xl) + var(--space-lg));
+    }
+
+    .per-hero h1 {
+      max-width: 13ch;
+      margin: 0;
+      padding: 0;
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 8vw, 5.25rem);
+      font-style: normal;
+      font-weight: 700;
+      letter-spacing: -0.045em;
+      line-height: 1.02;
+      overflow-wrap: anywhere;
+      min-width: 0;
+    }
+
+    .per-hero p {
+      max-width: 50ch;
+      margin: 0;
+      color: var(--secondary-text);
+      font-size: clamp(var(--text-lg), 2.4vw, var(--text-xl));
+      line-height: 1.45;
+    }
+
+    .per-store-placeholder {
+      width: fit-content;
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      margin-top: var(--space-xs);
+      padding-inline: var(--space-md);
+      border: var(--rule-hairline) solid var(--divider-color);
+      color: var(--secondary-text);
+      font-size: var(--text-md);
+      font-weight: 600;
+      white-space: nowrap;
+      cursor: not-allowed;
+      user-select: none;
+    }
+
+    .per-privacy {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--space-sm);
+      padding-block: var(--space-xl);
+      border-top: var(--rule-hairline) solid var(--divider-color);
+    }
+
+    .per-privacy-copy {
+      display: grid;
+      gap: var(--space-xs);
+    }
+
+    .per-privacy h2 {
+      margin: 0;
+      padding: 0;
+      font-family: var(--font-display);
+      font-size: var(--text-xl);
+      font-style: normal;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+      overflow-wrap: anywhere;
+      min-width: 0;
+    }
+
+    .per-privacy p {
+      max-width: 50ch;
+      margin: 0;
+      color: var(--secondary-text);
+      line-height: 1.6;
+    }
+
+    .per-privacy a {
+      width: fit-content;
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .per-page main.per-policy {
+      padding-block: var(--space-2xl);
+    }
+
+    .per-policy-copy {
+      max-width: 66ch;
+    }
+
+    .per-policy-copy h1 {
+      margin: 0 0 var(--space-xl);
+      padding: 0;
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-style: normal;
+      font-weight: 700;
+      letter-spacing: -0.035em;
+      line-height: 1.05;
+      overflow-wrap: anywhere;
+      min-width: 0;
+    }
+
+    .per-policy-copy h2 {
+      margin: var(--space-xl) 0 var(--space-xs);
+      padding: 0;
+      font-family: var(--font-display);
+      font-size: var(--text-xl);
+      font-style: normal;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      line-height: 1.2;
+    }
+
+    .per-policy-copy p {
+      margin: 0 0 var(--space-md);
+      line-height: 1.65;
+    }
+
+    .per-footer {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-xs);
+      padding-block: var(--space-lg) max(var(--space-lg), env(safe-area-inset-bottom));
+      border-top: var(--rule-hairline) solid var(--divider-color);
+      color: var(--secondary-text);
+      font-size: var(--text-sm);
+    }
+
+    .per-footer p {
+      margin: 0;
+    }
+
+    @media (min-width: 40rem) {
+      .per-privacy {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .per-footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="per-nav per-shell">
+    <a class="per-wordmark" href="{{ get_url(path='@/per/_index.md') }}" aria-label="Per home">PER</a>
+    <a class="per-nav-link" href="{{ get_url(path='@/per/privacy.md') }}"{% if page %} aria-current="page"{% endif %}>Privacy</a>
+  </header>
+
+  {% if page %}
+  <main id="content" class="per-shell per-policy" tabindex="-1">
+    <article class="per-policy-copy" aria-labelledby="per-policy-title">
+      <h1 id="per-policy-title">{{ page.title }}</h1>
+      {{ page.content | safe }}
+    </article>
+  </main>
+  {% else %}
+  <main id="content" class="per-shell" tabindex="-1">
+    <section class="per-hero" aria-labelledby="per-title">
+      <h1 id="per-title">See what each subscription costs per use.</h1>
+      <p>Add a monthly or yearly subscription and log each use. Per calculates what it costs per use in the current billing cycle.</p>
+      <span class="per-store-placeholder" aria-disabled="true">App Store · Coming soon</span>
+    </section>
+
+    <section class="per-privacy" aria-labelledby="per-privacy-title">
+      <div class="per-privacy-copy">
+        <h2 id="per-privacy-title">Your data stays on your iPhone.</h2>
+        <p>No account or cloud sync. Per stores your subscriptions and usage history on your device.</p>
+      </div>
+      <a href="{{ get_url(path='@/per/privacy.md') }}">Read the privacy policy →</a>
+    </section>
+  </main>
+  {% endif %}
+
+  <footer class="per-footer per-shell">
+    <p>Per for iPhone</p>
+    <p>Made by <a href="/">Rust Saiargaliev</a></p>
+  </footer>
+</body>
+</html>
