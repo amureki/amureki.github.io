@@ -25,3 +25,4 @@ pnpm-debug.log*
 
 # AI
 CLAUDE.md
+.hallmark/
