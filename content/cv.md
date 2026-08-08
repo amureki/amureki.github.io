@@ -36,7 +36,7 @@ description: Lead Engineer with 10+ years building and operating Python/Django s
   <article class="cv-entry">
     <header class="cv-entry-header">
       <h3>Maintainer @ <a class="external-link" href="https://github.com/model-bakers/model_bakery" target="_blank" rel="noopener noreferrer">Model Bakery</a></h3>
-      <p class="cv-date">2018–present</p>
+      <p class="cv-date">Since 2018</p>
     </header>
     <div class="cv-entry-body">
       <p>Maintaining a popular Django fixture library — <a class="external-link" href="https://pypistats.org/packages/model-bakery" target="_blank" rel="noopener noreferrer">1.4M+ monthly downloads</a>, <a class="external-link" href="https://www.djangoproject.com/community/ecosystem/#testing-fixtures" target="_blank" rel="noopener noreferrer">listed in the official Django ecosystem</a>.</p>
