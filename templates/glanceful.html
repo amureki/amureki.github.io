@@ -1,0 +1,289 @@
+{% if page %}
+{% set document = page %}
+{% else %}
+{% set document = section %}
+{% endif %}
+<!DOCTYPE html>
+<html lang="en" class="glanceful-page">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="preload" href="/fonts/instrument-sans/instrument-sans-v4-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/fonts/instrument-sans/instrument-sans.css">
+  <link rel="stylesheet" href="/styles.css">
+  <meta name="description" content="{{ document.description }}">
+  <title>{{ document.title }}</title>
+  {% if current_url %}<link rel="canonical" href="{{ current_url | safe }}">{% endif %}
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ document.title }}">
+  <meta property="og:description" content="{{ document.description }}">
+  {% if current_url %}<meta property="og:url" content="{{ current_url | safe }}">{% endif %}
+  <style>
+    /* Hallmark · pre-emit critique: P5 H5 E5 S5 R5 V5 */
+    /* Hallmark · genre: modern-minimal · macrostructure: Long Document · theme: monochrome index · inspiration: alexcarpenter.me · enrichment: none · nav: N9 edge-aligned · footer: Ft2 inline rule */
+    :root.glanceful-page {
+      --glanceful-bg: oklch(98.5% 0.001 286);
+      --glanceful-ink: oklch(27.4% 0.006 286);
+      --glanceful-muted: oklch(55.2% 0.016 286);
+      --glanceful-rule: oklch(92% 0.004 286);
+      --glanceful-focus: oklch(54.6% 0.245 263);
+      --glanceful-font-heading: "Instrument Sans", "Avenir Next", "Segoe UI", sans-serif;
+      --glanceful-font-body: ui-monospace, "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      --glanceful-space-1: 0.25rem;
+      --glanceful-space-2: 0.5rem;
+      --glanceful-space-3: 0.75rem;
+      --glanceful-space-4: 1rem;
+      --glanceful-space-5: 1.25rem;
+      --glanceful-space-8: 2rem;
+      --glanceful-space-10: 2.5rem;
+      --glanceful-space-20: 5rem;
+      --glanceful-space-40: 10rem;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root.glanceful-page {
+        color-scheme: dark;
+        --glanceful-bg: oklch(14.1% 0.005 286);
+        --glanceful-ink: oklch(98.5% 0.001 286);
+        --glanceful-muted: oklch(70.5% 0.015 286);
+        --glanceful-rule: oklch(27.4% 0.006 286);
+        --glanceful-focus: oklch(70.7% 0.165 255);
+      }
+    }
+
+    .glanceful-page,
+    .glanceful-page body {
+      overflow-x: clip;
+    }
+
+    .glanceful-page body {
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      background: var(--glanceful-bg);
+      color: var(--glanceful-ink);
+      font-family: var(--glanceful-font-body);
+      font-size: 0.875rem;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .glanceful-shell {
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 65ch;
+      min-width: 0;
+      margin-inline: auto;
+      padding-inline: max(var(--glanceful-space-4), env(safe-area-inset-left));
+    }
+
+    .glanceful-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: var(--glanceful-space-8);
+      padding-block-start: var(--glanceful-space-20);
+    }
+
+    .glanceful-identity {
+      display: grid;
+      gap: 0;
+    }
+
+    .glanceful-identity p,
+    .glanceful-footer p {
+      margin: 0;
+    }
+
+    .glanceful-wordmark,
+    .glanceful-header-link,
+    .glanceful-footer a {
+      white-space: nowrap;
+    }
+
+    .glanceful-wordmark {
+      color: var(--glanceful-ink);
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .glanceful-tagline,
+    .glanceful-header-link,
+    .glanceful-footer {
+      color: var(--glanceful-muted);
+    }
+
+    .glanceful-header-link {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: flex-start;
+    }
+
+    .glanceful-page a {
+      color: inherit;
+      font-weight: inherit;
+      text-decoration-color: var(--glanceful-muted);
+      text-underline-offset: 0.25em;
+      transition: color 150ms cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .glanceful-page a:hover,
+    .glanceful-page a:active {
+      background: transparent;
+      color: var(--glanceful-ink);
+      text-decoration: underline;
+      text-decoration-color: currentColor;
+    }
+
+    .glanceful-page a:focus-visible {
+      outline: 3px solid var(--glanceful-focus);
+      outline-offset: 3px;
+    }
+
+    .glanceful-main {
+      flex: 1;
+      padding-block-start: var(--glanceful-space-40);
+      padding-block-end: var(--glanceful-space-20);
+    }
+
+    .glanceful-document {
+      max-width: 65ch;
+    }
+
+    .glanceful-home h1,
+    .glanceful-document h1 {
+      margin: 0 0 var(--glanceful-space-5);
+      padding: 0;
+      color: var(--glanceful-ink);
+      font-family: var(--glanceful-font-heading);
+      font-size: 1.25rem;
+      font-style: normal;
+      font-weight: 600;
+      letter-spacing: -0.025em;
+      line-height: 1.35;
+      text-wrap: balance;
+      overflow-wrap: anywhere;
+      min-width: 0;
+    }
+
+    .glanceful-home .glanceful-lede {
+      margin: 0 0 var(--glanceful-space-5);
+      color: var(--glanceful-muted);
+      font-size: inherit;
+      line-height: inherit;
+    }
+
+    .glanceful-home > p:not(.glanceful-lede, .glanceful-close) {
+      margin: var(--glanceful-space-5) 0 0;
+      color: var(--glanceful-muted);
+      text-indent: var(--glanceful-space-10);
+    }
+
+    .glanceful-home .glanceful-close {
+      margin: var(--glanceful-space-10) 0 0;
+    }
+
+    .glanceful-document > p {
+      margin: 0 0 var(--glanceful-space-5);
+      color: var(--glanceful-muted);
+    }
+
+    .glanceful-document > p:first-of-type {
+      color: var(--glanceful-ink);
+    }
+
+    .glanceful-document h2 {
+      margin: var(--glanceful-space-10) 0 var(--glanceful-space-3);
+      padding: var(--glanceful-space-10) 0 0;
+      border-top: 1px solid var(--glanceful-rule);
+      color: var(--glanceful-ink);
+      font-family: var(--glanceful-font-body);
+      font-size: inherit;
+      font-style: normal;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: inherit;
+      overflow-wrap: anywhere;
+      min-width: 0;
+    }
+
+    .glanceful-document strong {
+      color: var(--glanceful-ink);
+      font-weight: 500;
+    }
+
+    .glanceful-footer {
+      display: flex;
+      flex-direction: column;
+      gap: var(--glanceful-space-2);
+      padding-block: var(--glanceful-space-5) max(var(--glanceful-space-5), env(safe-area-inset-bottom));
+      border-top: 1px solid var(--glanceful-rule);
+    }
+
+    .glanceful-footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0 var(--glanceful-space-4);
+    }
+
+    @media (min-width: 40rem) {
+      .glanceful-home > p:not(.glanceful-lede, .glanceful-close) {
+        text-align: justify;
+      }
+
+      .glanceful-footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="glanceful-header glanceful-shell">
+    <div class="glanceful-identity">
+      <a class="glanceful-wordmark" href="{{ get_url(path='@/glanceful/_index.md') }}" aria-label="Glanceful home">Glanceful</a>
+      <p class="glanceful-tagline">Lock Screen text for iPhone</p>
+    </div>
+    {% if page and page.slug == "support" %}
+    <a class="glanceful-header-link" href="{{ get_url(path='@/glanceful/privacy.md') }}">Privacy</a>
+    {% else %}
+    <a class="glanceful-header-link" href="{{ get_url(path='@/glanceful/support.md') }}">Support</a>
+    {% endif %}
+  </header>
+
+  {% if page %}
+  <main id="content" class="glanceful-main glanceful-shell" tabindex="-1">
+    <article class="glanceful-document" aria-labelledby="glanceful-title">
+      <h1 id="glanceful-title">{{ page.title }}</h1>
+      {{ page.content | safe }}
+    </article>
+  </main>
+  {% else %}
+  <main id="content" class="glanceful-main glanceful-shell" tabindex="-1">
+    <article class="glanceful-home" aria-labelledby="glanceful-title">
+      <h1 id="glanceful-title">Your words on the Lock Screen.</h1>
+      <p class="glanceful-lede">Glanceful puts your own short texts and emoji where you will see them.</p>
+      <p>Create reminders, prompts, affirmations, quotes, or anything else you want to notice at a glance. Choose what appears now, or let the widget rotate through your texts hourly or daily.</p>
+      <p>Your texts and settings stay on your device. Glanceful has no account and does not require an internet connection.</p>
+      <p class="glanceful-close"><a href="{{ get_url(path='@/glanceful/support.md') }}">Get support →</a><br><a href="{{ get_url(path='@/glanceful/privacy.md') }}">Read the privacy policy →</a></p>
+    </article>
+  </main>
+  {% endif %}
+
+  <footer class="glanceful-footer glanceful-shell">
+    <p>Glanceful for iPhone</p>
+    <p class="glanceful-footer-links">
+      <a href="{{ get_url(path='@/glanceful/privacy.md') }}"{% if page and page.slug == "privacy" %} aria-current="page"{% endif %}>Privacy</a>
+      <a href="{{ get_url(path='@/glanceful/support.md') }}"{% if page and page.slug == "support" %} aria-current="page"{% endif %}>Support</a>
+      <a href="/">Rust Saiargaliev</a>
+    </p>
+  </footer>
+</body>
+</html>
