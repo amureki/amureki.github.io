@@ -20,14 +20,14 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   {% set default_desc = "Lead Engineer focused on reliable Django systems and developer tooling." %}
-  {% if page.description %}
+  {% if page and page.description %}
     {% set page_desc = page.description %}
   {% elif section and section.description %}
     {% set page_desc = section.description %}
   {% else %}
     {% set page_desc = default_desc %}
   {% endif %}
-  {% if page.title %}
+  {% if page and page.title %}
     {% set full_title = page.title ~ " - Rust Saiargaliev" %}
   {% elif section and section.title %}
     {% set full_title = section.title ~ " - Rust Saiargaliev" %}
@@ -142,13 +142,13 @@
     <nav class="tabs" aria-label="Primary">
       <a href="/" class="tab-link {% if current_path and current_path == "/" %}active{% endif %}"{% if current_path and current_path == "/" %} aria-current="page"{% endif %}>Now</a>
       <a href="/cv/"
-         class="tab-link {% if current_path and current_path is starting_with("/cv") %}active{% endif %}"{% if current_path and current_path is starting_with("/cv") %} aria-current="page"{% endif %}>CV</a>
+         class="tab-link {% if current_path and current_path is starting_with(pat="/cv") %}active{% endif %}"{% if current_path and current_path is starting_with(pat="/cv") %} aria-current="page"{% endif %}>CV</a>
       <a href="/hire/"
-         class="tab-link {% if current_path and current_path is starting_with("/hire") %}active{% endif %}"{% if current_path and current_path is starting_with("/hire") %} aria-current="page"{% endif %}>Hire</a>
+         class="tab-link {% if current_path and current_path is starting_with(pat="/hire") %}active{% endif %}"{% if current_path and current_path is starting_with(pat="/hire") %} aria-current="page"{% endif %}>Hire</a>
       <a href="{{ get_url(path='@/notes/_index.md') }}"
-         class="tab-link {% if current_path and current_path is starting_with("/notes") %}active{% endif %}"{% if current_path and current_path is starting_with("/notes") %} aria-current="page"{% endif %}>Notes</a>
+         class="tab-link {% if current_path and current_path is starting_with(pat="/notes") %}active{% endif %}"{% if current_path and current_path is starting_with(pat="/notes") %} aria-current="page"{% endif %}>Notes</a>
       <a href="/wish/"
-         class="tab-link {% if current_path and current_path is starting_with("/wish") %}active{% endif %}"{% if current_path and current_path is starting_with("/wish") %} aria-current="page"{% endif %}>Wishes</a>
+         class="tab-link {% if current_path and current_path is starting_with(pat="/wish") %}active{% endif %}"{% if current_path and current_path is starting_with(pat="/wish") %} aria-current="page"{% endif %}>Wishes</a>
     </nav>
   {% endblock %}
 
