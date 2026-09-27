@@ -2,18 +2,26 @@
 
 {% block content %}
   <div class="content notes-list">
-    {% for year, notes in section.pages | group_by(attribute="year") %}
-      <section class="home-section">
-        <h2 class="year-heading">{{ year }}</h2>
-        <ul class="article-list">
-          {% for note in notes %}
-            <li class="nav-item">
-              <a href="{{ note.permalink | safe }}">{{ note.title }}</a>,
-              <time datetime="{{ note.date }}" class="article-date">{{ note.date }}</time>
-            </li>
-          {% endfor %}
+    {% set_global current_year = 0 %}
+    {% for note in section.pages %}
+      {% if note.year != current_year %}
+        {% if not loop.first %}
+          </ul>
+          </section>
+        {% endif %}
+        <section class="home-section">
+          <h2 class="year-heading">{{ note.year }}</h2>
+          <ul class="article-list">
+        {% set_global current_year = note.year %}
+      {% endif %}
+      <li class="nav-item">
+        <a href="{{ note.permalink | safe }}">{{ note.title }}</a>,
+        <time datetime="{{ note.date }}" class="article-date">{{ note.date }}</time>
+      </li>
+      {% if loop.last %}
         </ul>
-      </section>
+        </section>
+      {% endif %}
     {% endfor %}
 
     <p class="section-link">Follow new notes via <a href="/rss.xml">RSS</a>.</p>
