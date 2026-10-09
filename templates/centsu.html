@@ -1,0 +1,134 @@
+{% if page %}
+{% set document = page %}
+{% else %}
+{% set document = section %}
+{% endif %}
+<!DOCTYPE html>
+<html lang="en" class="centsu-page">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fbfaf6" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1c1b18" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="stylesheet" href="/fonts/instrument-sans/instrument-sans.css">
+  <link rel="stylesheet" href="/styles.css">
+  <meta name="description" content="{{ document.description }}">
+  <title>{{ document.title }}</title>
+  {% if current_url %}<link rel="canonical" href="{{ current_url | safe }}">{% endif %}
+  <style>
+    .centsu-page body {
+      min-height: 100svh;
+      margin: 0;
+      background: var(--page-bg);
+      color: var(--page-text);
+      font-family: var(--font-body);
+    }
+
+    .centsu-shell {
+      max-width: var(--measure-width);
+      margin-inline: auto;
+      padding-inline: max(var(--space-md), env(safe-area-inset-left)) max(var(--space-md), env(safe-area-inset-right));
+    }
+
+    .centsu-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: var(--space-xs) var(--space-lg);
+      padding-block: var(--space-md);
+      border-bottom: var(--rule-hairline) solid var(--divider-color);
+      font-size: var(--text-md);
+    }
+
+    .centsu-nav a {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+    }
+
+    .centsu-wordmark {
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .centsu-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-md);
+    }
+
+    .centsu-links a {
+      color: var(--secondary-text);
+    }
+
+    .centsu-links a[aria-current="page"] {
+      color: var(--page-text);
+      font-weight: 600;
+    }
+
+    .centsu-page a:hover,
+    .centsu-page a:active {
+      background-color: var(--link-hover-bg-default);
+      color: var(--link-hover-color-default);
+    }
+
+    .centsu-page ::selection {
+      background: var(--page-text);
+      color: var(--page-bg);
+    }
+
+    .centsu-page main {
+      padding-block: var(--space-xl);
+      overflow-wrap: break-word;
+    }
+
+    .centsu-page h1 {
+      margin: 0 0 var(--space-lg);
+      padding: 0;
+    }
+
+    .centsu-copy h2 {
+      margin: var(--space-lg) 0 var(--space-xs);
+      font-family: var(--font-display);
+      font-size: var(--text-xl);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      line-height: 1.25;
+      text-wrap: balance;
+    }
+
+    .centsu-copy p {
+      margin: 0 0 var(--space-md);
+      line-height: 1.65;
+    }
+
+    .centsu-footer {
+      padding-block: var(--space-md) max(var(--space-lg), env(safe-area-inset-bottom));
+      border-top: var(--rule-hairline) solid var(--divider-color);
+      color: var(--secondary-text);
+      font-size: var(--text-sm);
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div class="centsu-shell">
+    <header class="centsu-nav">
+      <a class="centsu-wordmark" href="{{ get_url(path='@/centsu/_index.md') }}" aria-label="Centsu home">Centsu</a>
+      <nav class="centsu-links" aria-label="Centsu">
+        <a href="{{ get_url(path='@/centsu/privacy.md') }}"{% if page and page.slug == "privacy" %} aria-current="page"{% endif %}>Privacy</a>
+        <a href="{{ get_url(path='@/centsu/support.md') }}"{% if page and page.slug == "support" %} aria-current="page"{% endif %}>Support</a>
+      </nav>
+    </header>
+    <main id="content" tabindex="-1">
+      <article class="centsu-copy" aria-labelledby="centsu-title">
+        <h1 id="centsu-title">{{ document.title }}</h1>
+        {{ document.content | safe }}
+      </article>
+    </main>
+    <footer class="centsu-footer">Made by <a href="/">Rust Saiargaliev</a></footer>
+  </div>
+</body>
+</html>
