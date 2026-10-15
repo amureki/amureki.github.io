@@ -16,9 +16,8 @@
   }
 
   html {
-    --edge-background: var(--page-bg);
     color-scheme: light dark;
-    background-color: var(--edge-background);
+    background-color: var(--page-bg);
     font-family: var(--font-body);
   }
 
@@ -614,33 +613,12 @@
 
 @media screen {
   body {
-    padding-top: max(12px, env(safe-area-inset-top));
-    padding-bottom: max(12px, env(safe-area-inset-bottom));
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
   }
 
   main.site-main {
     padding-left: max(clamp(1.5rem, 4vw, 5rem), env(safe-area-inset-left));
     padding-right: max(clamp(1.5rem, 4vw, 5rem), env(safe-area-inset-right));
-  }
-
-  .edge-top::after,
-  .edge-bottom::after {
-    content: "";
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 40;
-    pointer-events: none;
-    background: var(--edge-background);
-  }
-
-  .edge-top::after {
-    top: 0;
-    height: max(12px, env(safe-area-inset-top));
-  }
-
-  .edge-bottom::after {
-    bottom: 0;
-    height: max(12px, env(safe-area-inset-bottom));
   }
 }
