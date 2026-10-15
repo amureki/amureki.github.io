@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8"/>
   <link rel="icon" type="image/png" href="/favicon.png"/>
-  <meta name="theme-color" content="#fbfaf6" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#1c1b18" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#fbf8f2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#100d08" media="(prefers-color-scheme: dark)">
   <link rel="preconnect" href="https://t.rsts.me">
   <link rel="preload" href="/fonts/instrument-sans/instrument-sans-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/instrument-sans/instrument-sans-v4-latin-600.woff2" as="font" type="font/woff2" crossorigin>
@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="/fonts/instrument-sans/instrument-sans.css">
   <link rel="stylesheet" href="/styles.css">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
   {% set default_desc = "Lead Engineer focused on reliable Django systems and developer tooling." %}
   {% if page and page.description %}
     {% set page_desc = page.description %}
@@ -127,8 +127,9 @@
 </head>
 
 <body>
+  {% include "safari-edges.html" %}
 <a class="skip-link" href="#content">Skip to content</a>
-<main id="content" tabindex="-1" class="{% block main_class %}px-[clamp(1.5rem,4vw,5rem)] py-[clamp(3rem,8vh,5rem)] max-w-4xl mx-auto overflow-x-hidden{% endblock %}">
+<main id="content" tabindex="-1" class="site-main {% block main_class %}px-[clamp(1.5rem,4vw,5rem)] py-[clamp(3rem,8vh,5rem)] max-w-4xl mx-auto overflow-x-hidden{% endblock %}">
   {% block header %}
     <header>
       <h1>Rust Saiargaliev</h1>

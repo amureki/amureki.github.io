@@ -8,8 +8,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#fbfaf6" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#1c1b18" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#fbf8f2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#100d08" media="(prefers-color-scheme: dark)">
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="stylesheet" href="/fonts/instrument-sans/instrument-sans.css">
   <link rel="stylesheet" href="/styles.css">
@@ -105,7 +105,7 @@
     }
 
     .centsu-footer {
-      padding-block: var(--space-md) max(var(--space-lg), env(safe-area-inset-bottom));
+      padding-block: var(--space-md) var(--space-lg);
       border-top: var(--rule-hairline) solid var(--divider-color);
       color: var(--secondary-text);
       font-size: var(--text-sm);
@@ -113,6 +113,7 @@
   </style>
 </head>
 <body>
+  {% include "safari-edges.html" %}
   <a class="skip-link" href="#content">Skip to content</a>
   <div class="centsu-shell">
     <header class="centsu-nav">

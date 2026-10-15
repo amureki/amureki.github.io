@@ -8,8 +8,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#fafafb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#09090b" media="(prefers-color-scheme: dark)">
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="preload" href="/fonts/instrument-sans/instrument-sans-v4-latin-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/fonts/instrument-sans/instrument-sans.css">
@@ -25,6 +25,7 @@
     /* Hallmark · pre-emit critique: P5 H5 E5 S5 R5 V5 */
     /* Hallmark · genre: modern-minimal · macrostructure: Long Document · theme: monochrome index · inspiration: alexcarpenter.me · enrichment: none · nav: N9 edge-aligned · footer: Ft2 inline rule */
     :root.glanceful-page {
+      --edge-background: var(--glanceful-bg);
       --glanceful-bg: oklch(98.5% 0.001 286);
       --glanceful-ink: oklch(27.4% 0.006 286);
       --glanceful-muted: oklch(55.2% 0.016 286);
@@ -78,7 +79,7 @@
       max-width: 65ch;
       min-width: 0;
       margin-inline: auto;
-      padding-inline: max(var(--glanceful-space-4), env(safe-area-inset-left));
+      padding-inline: max(var(--glanceful-space-4), env(safe-area-inset-left)) max(var(--glanceful-space-4), env(safe-area-inset-right));
     }
 
     .glanceful-header {
@@ -220,7 +221,7 @@
       display: flex;
       flex-direction: column;
       gap: var(--glanceful-space-2);
-      padding-block: var(--glanceful-space-5) max(var(--glanceful-space-5), env(safe-area-inset-bottom));
+      padding-block: var(--glanceful-space-5);
       border-top: 1px solid var(--glanceful-rule);
     }
 
@@ -244,6 +245,7 @@
   </style>
 </head>
 <body>
+  {% include "safari-edges.html" %}
   <a class="skip-link" href="#content">Skip to content</a>
 
   <header class="glanceful-header glanceful-shell">
