@@ -33,7 +33,7 @@
     left: calc(0.75rem + env(safe-area-inset-left));
     z-index: 50;
     margin: 0;
-    transform: translateY(calc(-100% - 1rem));
+    transform: translateY(calc(-100% - 1rem - env(safe-area-inset-top)));
     background: var(--link-hover-bg-default);
     color: var(--link-hover-color-default);
     padding: 0.5rem 0.75rem;
