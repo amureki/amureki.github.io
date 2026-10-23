@@ -1,172 +1,31 @@
 # Design — amureki.me
 
-A locked design system for this site. Page redesigns share its typography,
-palette, spacing, interaction voice, and restrained editorial character.
+## Personal website
 
-## Genre
+The user selected refined direction A: a quiet, white, typography-led portfolio.
+The shared layout is implemented in `templates/base.html` and `styles/styles.css`; personal colors and type roles live in `styles/personal-tokens.css`.
 
-Editorial.
+- Body and headings: locally hosted Instrument Sans; 16px body, 1.65 line height, 32px main heading (29px on mobile), 600 weight headings.
+- White paper `#ffffff`, text `#242824`, secondary text `#626760`, dividers `#e7e9e4`, green focus/hover `#294d39`.
+- Container: maximum 1000px including 48px side padding; 24px side padding below 640px.
+- Header: 44px circular image slot linked to home, then Selected work, Experience, Contact. Use `static/avatar-placeholder.svg` until the user supplies a logo or photo. The image is decorative inside a link with an accessible home label; do not repeat the name as visible header text.
+- Footer: name, Notes, GitHub, Wishes.
+- Home: short introduction, project filters, short project descriptions, two latest notes generated from the notes section.
+- Experience: dates beside concise role descriptions; dates stack on mobile. Keep the full CV at `/cv/`.
+- Contact: email first, social links, brief services introduction. Keep `/hire/`.
+- Notes: readable prose, code scrolling and copy controls, original metadata and RSS.
+- Filters progressively enhance static content: all projects remain visible without JavaScript; controls appear only when their script runs.
+- Navigation and filters have 44px minimum touch heights. Focus outlines remain visible. No animated reveals.
+- Personal pages intentionally use the selected light theme. Print removes navigation and interactive controls.
 
-## Macrostructure family
+## Project websites
 
-- Personal landing pages: Long Document with typographic sections and hairline rules.
-- Service pages: Split Studio with an asymmetric offer/proof pair and one closing action.
-- Utility pages: Index-First or Catalogue with ruled rows and grouped inventories.
-- Articles: Long Document with a 45–75ch reading measure.
+Per, Glanceful, and Centsu keep their independent templates and original appearance.
+`styles/project-pages.css` preserves their previous shared styling, compiled to
+`static/project-pages.css`. Their warm light/dark tokens remain in `tokens.css`.
+Do not apply personal-site design decisions to these product surfaces implicitly.
 
-## Theme
+## URLs
 
-- `--page-bg`: `oklch(98% 0.008 85)`
-- `--page-text`: `oklch(20% 0.014 85)`
-- `--secondary-text`: `oklch(43% 0.012 85)`
-- `--tertiary-text`: `oklch(55% 0.01 85)`
-- `--divider-color`: `oklch(82% 0.012 85)`
-- `--focus-color`: `oklch(56% 0.17 50)`
-
-Dark mode keeps the same warm hue and reverses the lightness hierarchy. The
-canonical values live in `tokens.css`.
-
-## Typography
-
-- Display: Space Grotesk, weight 700, roman.
-- Body: Instrument Sans, weights 400, 600, and 700.
-- Display tracking: `-0.035em` for the site title and `-0.01em` for section heads.
-- Body anchor: `1rem`; display anchor: `clamp(2.25rem, 4vw, 3.25rem)`.
-
-## Spacing
-
-Use the 4-point named scale in `tokens.css`. Page CSS references named tokens;
-raw spacing values are reserved for print layout.
-
-## Motion
-
-- Reveal pattern: none.
-- Interaction feedback: color and background only.
-- Reduced-motion fallback: unnecessary while no spatial motion ships.
-
-## Microinteractions stance
-
-- Success is silent.
-- Focus rings appear instantly and clear 3:1 contrast.
-- Links invert ink and paper on hover or active; prose links retain underlines.
-
-## CTA voice
-
-- Primary action: one underlined typographic link inside a ruled closing block.
-- Secondary action: ordinary inline link; no pills or boxed buttons.
-
-## Per-page allowances
-
-- Personal and utility pages are typography-only.
-- Notes may contain user-supplied screenshots or code blocks.
-- No decorative imagery, cards, gradients, or ambient motion.
-
-## What pages must share
-
-- Rust Saiargaliev wordmark and primary navigation.
-- Warm paper, ink hierarchy, Space Grotesk/Instrument Sans pairing.
-- Hairline divider language and square geometry.
-- Link, focus, external-link, and print behavior.
-
-## What pages may differ on
-
-- Macrostructure within the family assigned above.
-- One-column or two-column composition according to content.
-- Section density: compact for CV/reference pages, more open for service pages.
-
-## Exports
-
-### tokens.css
-
-`tokens.css` is the source of truth. Its core portable roles are:
-
-```css
-:root {
-  --page-bg: oklch(98% 0.008 85);
-  --page-text: oklch(20% 0.014 85);
-  --secondary-text: oklch(43% 0.012 85);
-  --tertiary-text: oklch(55% 0.01 85);
-  --divider-color: oklch(82% 0.012 85);
-  --focus-color: oklch(56% 0.17 50);
-  --font-display: "Space Grotesk", "Avenir Next", "Segoe UI", sans-serif;
-  --font-body: "Instrument Sans", "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  --space-3xs: 0.25rem;
-  --space-2xs: 0.5rem;
-  --space-xs: 0.75rem;
-  --space-sm: 1rem;
-  --space-md: 1.5rem;
-  --space-lg: 2rem;
-  --space-xl: 3rem;
-  --space-2xl: 4.5rem;
-}
-```
-
-### Tailwind v4 `@theme`
-
-```css
-@theme {
-  --color-paper: oklch(98% 0.008 85);
-  --color-ink: oklch(20% 0.014 85);
-  --color-muted: oklch(43% 0.012 85);
-  --color-rule: oklch(82% 0.012 85);
-  --color-focus: oklch(56% 0.17 50);
-  --font-display: "Space Grotesk", "Avenir Next", "Segoe UI", sans-serif;
-  --font-body: "Instrument Sans", "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  --spacing-xs: 0.75rem;
-  --spacing-sm: 1rem;
-  --spacing-md: 1.5rem;
-  --spacing-lg: 2rem;
-  --spacing-xl: 3rem;
-  --text-sm: 0.9375rem;
-  --text-md: 1rem;
-  --text-lg: 1.125rem;
-  --text-xl: 1.5rem;
-}
-```
-
-### DTCG tokens.json
-
-```json
-{
-  "$schema": "https://design-tokens.github.io/community-group/format/",
-  "color": {
-    "paper": { "$value": "oklch(98% 0.008 85)", "$type": "color" },
-    "ink": { "$value": "oklch(20% 0.014 85)", "$type": "color" },
-    "muted": { "$value": "oklch(43% 0.012 85)", "$type": "color" },
-    "rule": { "$value": "oklch(82% 0.012 85)", "$type": "color" },
-    "focus": { "$value": "oklch(56% 0.17 50)", "$type": "color" }
-  },
-  "font": {
-    "display": { "$value": "Space Grotesk, Avenir Next, Segoe UI, sans-serif", "$type": "fontFamily" },
-    "body": { "$value": "Instrument Sans, Avenir Next, Segoe UI, Helvetica Neue, Arial, sans-serif", "$type": "fontFamily" }
-  },
-  "space": {
-    "xs": { "$value": "0.75rem", "$type": "dimension" },
-    "sm": { "$value": "1rem", "$type": "dimension" },
-    "md": { "$value": "1.5rem", "$type": "dimension" },
-    "lg": { "$value": "2rem", "$type": "dimension" },
-    "xl": { "$value": "3rem", "$type": "dimension" }
-  }
-}
-```
-
-### shadcn/ui CSS variables
-
-```css
-:root {
-  --background: 98% 0.008 85;
-  --foreground: 20% 0.014 85;
-  --card: 98% 0.008 85;
-  --card-foreground: 20% 0.014 85;
-  --primary: 20% 0.014 85;
-  --primary-foreground: 98% 0.008 85;
-  --secondary: 82% 0.012 85;
-  --secondary-foreground: 20% 0.014 85;
-  --muted: 82% 0.012 85;
-  --muted-foreground: 43% 0.012 85;
-  --border: 82% 0.012 85;
-  --input: 82% 0.012 85;
-  --ring: 56% 0.17 50;
-  --radius: 0;
-}
-```
+`/experience/` and `/contact/` are new. Existing notes, project, support, privacy,
+CV, hire, utility, feed, and archive URLs remain available. The design drafts have been removed.
