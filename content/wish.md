@@ -15,7 +15,6 @@ description: Personal wishlist including things to build, learn, and gear to acq
   <section class="utility-section" aria-labelledby="wish-learn">
     <h2 id="wish-learn">Things I'd like to learn</h2>
     <ul class="wish-group-list">
-      <li>The Go programming language</li>
       <li>Indie hacker marketing strategies</li>
     </ul>
   </section>
@@ -23,6 +22,7 @@ description: Personal wishlist including things to build, learn, and gear to acq
   <section class="utility-section" aria-labelledby="wish-get">
     <h2 id="wish-get">Things I'd like to get</h2>
     <ul class="wish-group-list">
+      <li>TP–7 field recorder</li>
       <li>Seiko SPB237 / SRPL37</li>
       <li>Fujifilm X-M5</li>
       <li>ReFraction Packable Backpack (in white)</li>
