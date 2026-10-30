@@ -25,7 +25,7 @@ description: Personal wishlist including things to build, learn, and gear to acq
       <li>TP–7 field recorder</li>
       <li>Seiko SPB237 / SRPL37</li>
       <li>Fujifilm X-M5</li>
-      <li>ReFraction Packable Backpack (in white)</li>
+      <li>ReFraction Packable Backpack (in white or blue)</li>
       <li>Steam Gift Cards</li>
     </ul>
   </section>
