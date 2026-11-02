@@ -174,18 +174,6 @@ p {
 .text-link {
   font-size: 14px;
 }
-.focus {
-  max-width: 700px;
-  margin-bottom: 48px;
-}
-.focus ul {
-  list-style: disc;
-  margin: 0;
-  padding-left: 20px;
-}
-.focus li + li {
-  margin-top: 8px;
-}
 .section-top {
   display: flex;
   flex-wrap: wrap;
@@ -213,36 +201,6 @@ p {
   margin: 0 0 24px;
   font-size: 14px;
 }
-#project-count {
-  margin: 0;
-  color: var(--secondary-text);
-  font-size: 13px;
-}
-.filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin: 16px 0 8px;
-}
-.filters button {
-  min-height: 44px;
-  padding: 7px 15px;
-  border: 0;
-  border-radius: 24px;
-  font: inherit;
-  font-size: 14px;
-  background: transparent;
-  color: var(--secondary-text);
-  cursor: pointer;
-}
-.filters button[aria-pressed="true"] {
-  background: #eff1ed;
-  color: var(--page-text);
-}
-.filters button:hover {
-  background: #e7ebe4;
-  color: var(--page-text);
-}
 .project {
   padding: 24px 0;
   max-width: 700px;
@@ -265,13 +223,9 @@ p {
   max-width: 65ch;
   margin: 0;
 }
-.meta,
-.detail {
+.meta {
   color: var(--secondary-text);
   font-size: 14px;
-}
-.project .detail {
-  margin-top: 9px;
 }
 .writing {
   margin-top: 32px;
@@ -370,17 +324,8 @@ footer.site-footer nav a {
   .intro {
     margin-bottom: 40px;
   }
-  .focus {
-    margin-bottom: 40px;
-  }
   .intro .role {
     font-size: 16px;
-  }
-  .filters {
-    gap: 2px;
-  }
-  .filters button {
-    padding-inline: 12px;
   }
   .project {
     padding: 22px 0;
@@ -545,7 +490,6 @@ footer.site-footer nav a {
   .site-header,
   .site-footer,
   .skip-link,
-  .filters,
   .copy-code {
     display: none !important;
   }

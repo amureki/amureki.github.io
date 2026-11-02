@@ -1,58 +1,23 @@
 {% extends "base.html" %}
 {% block header %}
 {% endblock header %}
-{% block scripts %}
-<script defer src="/project-filters.js"></script>
-{% endblock scripts %}
 {% block content %}
 <section class="intro" aria-labelledby="name">
   <h1 id="name">Rust Saiargaliev</h1>
   <p class="role">Lead Engineer at <a class="external-link" href="https://voiio.de">voiio</a>.</p>
   <p>
-    I build and improve Python/Django systems, maintain open-source tools, and
-    make small apps of my own.
+    I build and improve Python/Django systems, with a focus on maintainability,
+    observability, and developer tooling. I also maintain open-source projects
+    and make small apps of my own.
   </p>
   <a class="text-link" href="/cv/">More about my experience</a>
-</section>
-<section class="focus" aria-labelledby="focus-title">
-  <h2 id="focus-title">What I focus on</h2>
-  <ul>
-    <li>Improving mature Django systems without rewriting them from scratch.</li>
-    <li>Making production systems easier to debug, observe, and safely evolve.</li>
-    <li>Reducing operational friction through better tooling, testing, CI, and deployment practices.</li>
-    <li>Shipping pragmatic solutions quickly while keeping long-term maintainability in mind.</li>
-  </ul>
 </section>
 <section aria-labelledby="work-title">
   <div class="section-top">
     <h2 id="work-title">Selected work</h2>
-    <p id="project-count" role="status" aria-live="polite">6 projects</p>
   </div>
-  <div class="filters" role="group" aria-label="Filter projects" hidden>
-    <button
-      type="button"
-      data-filter="All"
-      aria-controls="projects"
-      aria-pressed="true"
-    >
-      All</button
-    ><button
-      type="button"
-      data-filter="Work"
-      aria-controls="projects"
-      aria-pressed="false"
-    >
-      Work</button
-    ><button
-      type="button"
-      data-filter="Personal"
-      aria-controls="projects"
-      aria-pressed="false"
-    >
-      Personal</button>
-  </div>
-  <div id="projects">
-    <article class="project" data-category="Work">
+  <div>
+    <article class="project">
       <div class="project-heading">
         <h3><a class="external-link" href="https://voiio.de">voiio</a></h3>
         <span class="meta">Work · 2021–present</span>
@@ -62,26 +27,22 @@
         reliability, integrations, analytics, video infrastructure, and AI
         workflows.
       </p>
-      <p class="detail">
-        Lead Engineer since 2024 · previously Senior Engineer
-      </p>
     </article>
-    <article class="project" data-category="Personal">
+    <article class="project">
       <div class="project-heading">
         <h3>
           <a class="external-link" href="https://github.com/model-bakers/model_bakery"
             >Model Bakery</a
           >
         </h3>
-        <span class="meta">Open source · since 2018</span>
+        <span class="meta">Open source · Django</span>
       </div>
       <p>
-        A Django fixture library that creates model instances for tests. I
-        maintain the project and help keep it useful across Django releases.
+        A Django fixture library with 1.4M+ monthly downloads.
+        I’ve been maintaining it since 2018.
       </p>
-      <p class="detail">Python · Django · developer tooling</p>
     </article>
-    <article class="project" data-category="Personal">
+    <article class="project">
       <div class="project-heading">
         <h3><a class="external-link" href="https://chalkin.app/">Chalkin</a></h3>
         <span class="meta">Personal · macOS app</span>
@@ -90,9 +51,8 @@
         A small Mac app that turns your desktop background into a canvas for
         notes, sketches, and diagrams.
       </p>
-      <p class="detail">Currently in beta</p>
     </article>
-    <article class="project" data-category="Personal">
+    <article class="project">
       <div class="project-heading">
         <h3><a class="external-link" href="https://year.amureki.me">YearYear</a></h3>
         <span class="meta">Personal · web app</span>
@@ -101,17 +61,17 @@
         A small app for looking back on your year and planning the next one.
       </p>
     </article>
-    <article class="project" data-category="Personal">
+    <article class="project">
       <div class="project-heading">
         <h3><a class="external-link" href="https://pypigraph.org/">pypigraph.org</a></h3>
-        <span class="meta">Developer tool</span>
+        <span class="meta">Open source · developer tool</span>
       </div>
       <p>
         A visual way to explore Python package dependencies and understand how
         packages connect.
       </p>
     </article>
-    <article class="project" data-category="Personal">
+    <article class="project">
       <div class="project-heading">
         <h3>
           <a class="external-link" href="https://github.com/amureki/django-devbar">django-devbar</a>
@@ -133,7 +93,7 @@
   {% set notes = get_section(path="notes/_index.md") %}
 {% for note in
   notes.pages %}
-{% if loop.index <= 2 %}
+{% if loop.index <= 3 %}
   <a class="note" href="{{ note.permalink | safe }}"
     ><span>{{ note.title }}</span
     ><time datetime="{{ note.date }}"
