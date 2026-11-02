@@ -19,6 +19,8 @@ I also noticed that quite often I would open a model's list with `Cmd+K`, then g
 
 So I made [django-cmdbar](https://github.com/amureki/django-cmdbar). Now I can type `user#42` and open that record.
 
+![Django CmdBar showing user#42 with an option to open record #42.](/images/django-admin-dx/cmdbar-record.png)
+
 ## Press `/` to search
 
 This one is tiny, but I use it all the time. On admin list pages, we added `/` to focus the search field.
@@ -26,6 +28,8 @@ This one is tiny, but I use it all the time. On admin list pages, we added `/` t
 We also changed the placeholder so people can discover it:
 
 > Type "/" to search
+
+![Demo book list with the search placeholder Type "/" to search.](/images/django-admin-dx/search-hint.png)
 
 Press `/`, start typing. Saves me reaching for the mouse every time I need to search.
 
@@ -39,8 +43,14 @@ So we recently grouped related fields and inlines into tabs, inspired by [django
 
 It is still the same form with the usual save button. Just much less scrolling.
 
+![Demo book form with Details, Authors, and Reviews tabs and sample data.](/images/django-admin-dx/admin-tabs.png)
+
+*Demo form with sample data.*
+
 ## Tell environments apart
 
 Another idea I liked: a [proposal to use different admin colors when `DEBUG=True`](https://github.com/django/new-features/issues/228). When several browser tabs show the same admin in different environments, it is quite easy to edit something in the wrong one.
+
+---
 
 I like Django admin a lot. And since it is another Django app, we can change the parts that annoy us. If your team spends hours there every day, it is worth spending some time making it better.
