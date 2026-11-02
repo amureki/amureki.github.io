@@ -393,8 +393,7 @@ footer.site-footer nav a {
   display: block;
   width: 44px;
   height: 44px;
-  border-radius: 50%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .content-prose {
   max-width: 66ch;

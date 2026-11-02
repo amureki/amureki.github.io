@@ -8,7 +8,7 @@ The shared layout is implemented in `templates/base.html` and `styles/styles.css
 - Body and headings: locally hosted Instrument Sans; 16px body, 1.65 line height, 32px main heading (29px on mobile), 600 weight headings.
 - White paper `#ffffff`, text `#242824`, secondary text `#626760`, dividers `#e7e9e4`, green focus/hover `#294d39`.
 - Container: maximum 1000px including 48px side padding; 24px side padding below 640px.
-- Header: 44px circular image slot linked to home, then Selected work, Experience, Contact. Use `static/avatar-placeholder.svg` until the user supplies a logo or photo. The image is decorative inside a link with an accessible home label; do not repeat the name as visible header text.
+- Header: 44px logo linked to home, then Selected work, Experience, Contact. Use the supplied pencil logo in `static/logo.png`, contained without cropping. The image is decorative inside a link with an accessible home label; do not repeat the name as visible header text.
 - Footer: name, Notes, GitHub, Wishes.
 - Home: short introduction, project filters, short project descriptions, two latest notes generated from the notes section.
 - Experience: dates beside concise role descriptions; dates stack on mobile. Keep the full CV at `/cv/`.
