@@ -1,8 +1,7 @@
 ---
 title: Making Django admin easier to use every day
-date: 2026-10-30
+date: 2026-11-02
 description: A command palette, a search shortcut, and tabs for long forms make Django admin easier to use every day.
-draft: true
 ---
 
 We use Django admin quite heavily at [voiio](https://www.voiio.de/). Different teams use it every day, and most of its users are not engineers.
