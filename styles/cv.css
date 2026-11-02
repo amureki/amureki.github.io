@@ -3,7 +3,6 @@
 
 .cv-content {
   width: 100%;
-  max-width: 66ch;
   color: var(--page-text);
   font-family: var(--font-body);
   font-size: var(--text-md);
@@ -11,7 +10,7 @@
 }
 
 .cv-intro {
-  max-width: 62ch;
+  max-width: var(--measure-width);
   margin-bottom: var(--space-lg);
 }
 
@@ -115,6 +114,10 @@
 }
 
 .cv-entry-body {
+  max-width: var(--measure-width);
+}
+
+.cv-section > p {
   max-width: var(--measure-width);
 }
 
