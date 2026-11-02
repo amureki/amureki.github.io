@@ -7,6 +7,7 @@ The shared layout is implemented in `templates/base.html` and `styles/styles.css
 
 - Typography: locally hosted Instrument Sans for body text and project titles; Space Grotesk 700 for page and section headings. Body: 16px, 1.65 line height. Page headings: 40px (34px on mobile); section headings: 24px; project titles: 18px, weight 600.
 - White paper `#ffffff`, text `#242824`, secondary text `#626760`, dividers `#e7e9e4`, green focus/hover `#294d39`.
+- System dark mode: background `#171b18`, text `#e6ebe4`, secondary text `#afb8ac`, dividers `#343e34`, green focus/hover `#9cc6a3`. Theme colors, selections, link underlines, and article typography follow the system preference. Keep screenshots unchanged and the QR code on a white surface.
 - Container: maximum 1000px including 48px side padding; 24px side padding below 640px.
 - Header: 44px logo linked to home, then Home, Experience, Notes, Contact. Use the supplied pencil logo in `static/logo.png`, contained without cropping. The image is decorative inside a link with an accessible home label; do not repeat the name as visible header text.
 - Footer: name, Notes, RSS, GitHub, Wishes. RSS uses text links consistent with the navigation; also show it beside the homepage writing section and above the notes index.
@@ -19,7 +20,7 @@ The shared layout is implemented in `templates/base.html` and `styles/styles.css
 - Notes: align title, date, and prose with the shared left edge used by other pages, keeping prose at 66ch. Keep the date close to the title; allow standalone screenshots, code blocks, tables, and figures to use the wider shared container. Preserve code scrolling and copy controls, original metadata, and RSS.
 - Navigation links have 44px minimum touch heights. Focus outlines remain visible. No animated reveals.
 - External web links use the SVG arrow indicator from the previous design. Mark template links with `external-link`; Markdown external links use Zola’s `target="_blank"` marker. Internal links remain text only in development and production. Hide indicators when printing.
-- Personal pages intentionally use the selected light theme. Print removes navigation and interactive controls.
+- Personal pages follow the system light/dark preference without a manual toggle. Print uses the light palette and removes navigation and interactive controls.
 
 ## Project websites
 

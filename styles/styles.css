@@ -13,7 +13,7 @@
 }
 
 html {
-  color-scheme: light;
+  color-scheme: light dark;
   background: var(--page-bg);
   scrollbar-color: var(--tertiary-text) var(--page-bg);
 }
@@ -29,8 +29,8 @@ body {
   padding-bottom: env(safe-area-inset-bottom);
 }
 ::selection {
-  background: #dce9d8;
-  color: #182b1e;
+  background: var(--selection-bg);
+  color: var(--selection-text);
 }
 [hidden] {
   display: none !important;
@@ -217,7 +217,7 @@ p {
   font-size: 18px;
 }
 .project h3 a {
-  text-decoration-color: #b6beb3;
+  text-decoration-color: var(--link-underline-color);
 }
 .project p {
   max-width: 65ch;
@@ -243,7 +243,7 @@ p {
 }
 .note span {
   text-decoration: underline;
-  text-decoration-color: #b6beb3;
+  text-decoration-color: var(--link-underline-color);
 }
 .note time {
   color: var(--secondary-text);
@@ -280,6 +280,8 @@ p {
   display: block;
   width: 100%;
   height: auto;
+  background: #fff;
+  color-scheme: light;
 }
 .qr-page h1 {
   margin: 16px 0 0;
@@ -360,8 +362,16 @@ footer.site-footer nav a {
 .prose {
   --tw-prose-body: var(--page-text);
   --tw-prose-headings: var(--page-text);
+  --tw-prose-lead: var(--secondary-text);
   --tw-prose-links: var(--page-text);
   --tw-prose-bold: var(--page-text);
+  --tw-prose-code: var(--page-text);
+  --tw-prose-quotes: var(--page-text);
+  --tw-prose-quote-borders: var(--divider-color);
+  --tw-prose-pre-code: var(--copy-text);
+  --tw-prose-pre-bg: var(--copy-bg);
+  --tw-prose-th-borders: var(--divider-color);
+  --tw-prose-td-borders: var(--divider-color);
   --tw-prose-bullets: var(--secondary-text);
   --tw-prose-counters: var(--secondary-text);
   --tw-prose-captions: var(--secondary-text);
@@ -477,6 +487,9 @@ footer.site-footer nav a {
   overflow-wrap: anywhere;
 }
 @media print {
+  html {
+    color-scheme: light;
+  }
   .personal-site {
     --page-bg: white;
     --page-text: black;

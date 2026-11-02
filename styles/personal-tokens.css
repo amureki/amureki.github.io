@@ -10,6 +10,9 @@
   --link-hover-bg-default: var(--page-text);
   --link-hover-color-default: var(--page-bg);
   --focus-color: #294d39;
+  --link-underline-color: #b6beb3;
+  --selection-bg: #dce9d8;
+  --selection-text: #182b1e;
   --copy-border: oklch(52% 0.012 85);
   --copy-bg: oklch(24% 0.014 85);
   --copy-text: oklch(95% 0.008 85);
@@ -38,4 +41,21 @@
   --text-xl: 1.5rem;
 
   --rule-hairline: 1px;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --page-bg: #171b18;
+    --page-text: #e6ebe4;
+    --secondary-text: #afb8ac;
+    --tertiary-text: #95a18f;
+    --muted-heading-color: #afb8ac;
+    --divider-color: #343e34;
+    --prose-bullet-color: #95a18f;
+    --prose-counter-color: #afb8ac;
+    --focus-color: #9cc6a3;
+    --link-underline-color: #7a8977;
+    --selection-bg: #34533c;
+    --selection-text: #edf7ed;
+  }
 }
