@@ -2,6 +2,7 @@
 
 {% block content %}
   <div class="content notes-list">
+    <p class="notes-subscribe"><a class="rss-link" href="/rss.xml" type="application/rss+xml">Follow via RSS</a></p>
     {% set_global current_year = 0 %}
     {% for note in section.pages %}
       {% if note.year != current_year %}
@@ -24,6 +25,5 @@
       {% endif %}
     {% endfor %}
 
-    <p class="section-link">Follow new notes via <a href="/rss.xml">RSS</a>.</p>
   </div>
 {% endblock content %}

@@ -15,7 +15,7 @@
   --copy-text: oklch(95% 0.008 85);
   --copy-hover-bg: oklch(34% 0.014 85);
 
-  --font-display: var(--font-body);
+  --font-display: "Space Grotesk", "Avenir Next", "Segoe UI", sans-serif;
   --font-body:
     "Instrument Sans", "Avenir Next", "Segoe UI", "Helvetica Neue", Arial,
     sans-serif;
@@ -35,7 +35,7 @@
   --text-sm: 0.9375rem;
   --text-md: 1rem;
   --text-lg: 1.125rem;
-  --text-xl: 1.125rem;
+  --text-xl: 1.5rem;
 
   --rule-hairline: 1px;
 }

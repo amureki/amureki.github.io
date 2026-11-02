@@ -1,8 +1,5 @@
-+++
-title = "QR Business Card"
-template = "page.html"
-+++
-
-<div class="not-prose">
-  <img src="/qr.svg" alt="QR Code" class="w-64 max-w-full h-auto dark-invert" />
-</div>
+---
+title: Website QR code
+template: qr.html
+description: QR code linking to amureki.me.
+---

@@ -4,6 +4,14 @@
 @import "./cv.css";
 @import "./utility.css";
 
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/space-grotesk/space-grotesk-latin-700-normal.woff2") format("woff2");
+}
+
 html {
   color-scheme: light;
   background: var(--page-bg);
@@ -76,7 +84,8 @@ button:focus-visible {
 }
 nav {
   display: flex;
-  gap: 28px;
+  flex-wrap: wrap;
+  gap: 0 28px;
 }
 nav a {
   display: inline-flex;
@@ -99,18 +108,23 @@ h1,
 h2,
 h3 {
   font-family: var(--font-display);
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.25;
   text-wrap: balance;
 }
 h1 {
-  font-size: 32px;
+  font-size: 40px;
   letter-spacing: -0.025em;
   margin: 0 0 16px;
 }
-h2,
+h2 {
+  font-size: var(--text-xl);
+  margin: 0 0 16px;
+}
 h3 {
-  font-size: var(--text-lg);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 18px;
   margin: 0 0 9px;
 }
 p {
@@ -131,8 +145,21 @@ p {
 .text-link {
   font-size: 14px;
 }
+.focus {
+  max-width: 700px;
+  margin-bottom: 48px;
+}
+.focus ul {
+  list-style: disc;
+  margin: 0;
+  padding-left: 20px;
+}
+.focus li + li {
+  margin-top: 8px;
+}
 .section-top {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: baseline;
   gap: 16px;
@@ -141,6 +168,21 @@ p {
 }
 .section-top h2 {
   margin: 0;
+}
+.section-links {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+}
+.section-links a,
+.rss-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+.notes-subscribe {
+  margin: 0 0 24px;
+  font-size: 14px;
 }
 #project-count {
   margin: 0;
@@ -312,6 +354,20 @@ p {
   color: var(--secondary-text);
   font-size: 15px;
 }
+.qr-page {
+  max-width: 330px;
+  margin-inline: auto;
+  text-align: center;
+}
+.qr-page img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.qr-page h1 {
+  margin: 16px 0 0;
+  font-size: 28px;
+}
 .site-footer {
   display: flex;
   align-items: center;
@@ -340,15 +396,18 @@ footer.site-footer nav a {
     padding: 24px 0 13px;
   }
   nav {
-    gap: 24px;
+    gap: 0 24px;
   }
   main {
     padding: 32px 0 48px;
   }
   h1 {
-    font-size: 29px;
+    font-size: 34px;
   }
   .intro {
+    margin-bottom: 40px;
+  }
+  .focus {
     margin-bottom: 40px;
   }
   .intro .role {
@@ -534,8 +593,10 @@ footer.site-footer nav a {
 }
 
 .cv-section > h2,
-.cv-entry-header h3,
-.cv-facts dt,
 .utility-section h2 {
+  font-weight: 700;
+}
+.cv-entry-header h3,
+.cv-facts dt {
   font-weight: 600;
 }

@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#ffffff">
   <link rel="icon" type="image/png" href="/favicon.png"/>
   <link rel="preconnect" href="https://t.rsts.me">
+  <link rel="preload" href="/fonts/space-grotesk/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/instrument-sans/instrument-sans-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/instrument-sans/instrument-sans-v4-latin-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/instrument-sans/instrument-sans-v4-latin-700.woff2" as="font" type="font/woff2" crossorigin>
@@ -133,6 +134,7 @@
     <nav aria-label="Primary">
       <a href="/"{% if current_path == "/" %} aria-current="page"{% endif %}>Selected work</a>
       <a href="/experience/"{% if current_path == "/experience/" or current_path == "/cv/" %} aria-current="page"{% endif %}>Experience</a>
+      <a href="/notes/"{% if current_path == "/notes/" %} aria-current="page"{% endif %}>Notes</a>
       <a href="/contact/"{% if current_path == "/contact/" or current_path == "/hire/" %} aria-current="page"{% endif %}>Contact</a>
     </nav>
   </header>
@@ -142,7 +144,7 @@
     {% endblock header %}
     {% block content %}{% endblock content %}
   </main>
-  <footer class="site-footer"><span>Rust Saiargaliev</span><nav aria-label="More"><a href="/notes/">Notes</a><a href="https://github.com/amureki">GitHub</a><a href="/wish/">Wishes</a></nav></footer>
+  <footer class="site-footer"><span>Rust Saiargaliev</span><nav aria-label="More"><a href="/notes/">Notes</a><a class="rss-link" href="/rss.xml" type="application/rss+xml">RSS</a><a href="https://github.com/amureki">GitHub</a><a href="/wish/">Wishes</a></nav></footer>
 </div>
 </body>
 </html>

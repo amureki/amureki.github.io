@@ -14,6 +14,15 @@
   </p>
   <a class="text-link" href="/experience/">More about my experience</a>
 </section>
+<section class="focus" aria-labelledby="focus-title">
+  <h2 id="focus-title">What I focus on</h2>
+  <ul>
+    <li>Improving mature Django systems without rewriting them from scratch.</li>
+    <li>Making production systems easier to debug, observe, and safely evolve.</li>
+    <li>Reducing operational friction through better tooling, testing, CI, and deployment practices.</li>
+    <li>Shipping pragmatic solutions quickly while keeping long-term maintainability in mind.</li>
+  </ul>
+</section>
 <section aria-labelledby="work-title">
   <div class="section-top">
     <h2 id="work-title">Selected work</h2>
@@ -40,15 +49,7 @@
       aria-controls="projects"
       aria-pressed="false"
     >
-      Personal</button
-    ><button
-      type="button"
-      data-filter="Open source"
-      aria-controls="projects"
-      aria-pressed="false"
-    >
-      Open source
-    </button>
+      Personal</button>
   </div>
   <div id="projects">
     <article class="project" data-category="Work">
@@ -65,7 +66,7 @@
         Lead Engineer since 2024 · previously Senior Engineer
       </p>
     </article>
-    <article class="project" data-category="Open source">
+    <article class="project" data-category="Personal">
       <div class="project-heading">
         <h3>
           <a href="https://github.com/model-bakers/model_bakery"
@@ -110,7 +111,7 @@
         packages connect.
       </p>
     </article>
-    <article class="project" data-category="Open source">
+    <article class="project" data-category="Personal">
       <div class="project-heading">
         <h3>
           <a href="https://github.com/amureki/django-devbar">django-devbar</a>
@@ -124,7 +125,10 @@
 <section class="writing" aria-labelledby="writing-title">
   <div class="section-top">
     <h2 id="writing-title">Occasionally, I write</h2>
-    <a class="text-link" href="/notes/">All notes</a>
+    <div class="section-links">
+      <a class="text-link" href="/notes/">All notes</a>
+      <a class="text-link rss-link" href="/rss.xml" type="application/rss+xml">RSS</a>
+    </div>
   </div>
   {% set notes = get_section(path="notes/_index.md") %}
 {% for note in
