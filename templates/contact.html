@@ -1,29 +1,23 @@
 {% extends "base.html" %}
 {% block header %}
 {% endblock header %}
-{% block
-content %}
+{% block content %}
 <section class="contact" aria-labelledby="contact-title">
   <h1 id="contact-title">Contact</h1>
   <p class="contact-intro">
-    About a Django codebase, an open-source project, or something you’re
-    building.
+    Based in Berlin. Happy to talk about Django, open source, and project monetization.
   </p>
-  <a class="email" href="mailto:hi@amureki.me">hi@amureki.me</a>
-  <div class="contact-links">
-    <a href="https://linkedin.com/in/amureki">LinkedIn</a
-    ><a href="https://github.com/amureki">GitHub</a
-    ><a href="https://stackoverflow.com/users/2024807/amureki">Stack Overflow</a
-    ><a href="https://mastodon.social/@amureki">Mastodon</a
-    ><a href="https://twitter.com/amureki">Twitter</a>
-  </div>
-  <section class="service" aria-labelledby="service-title">
-    <h2 id="service-title">Working together</h2>
-    <p>
-      I help teams improve mature Django codebases: performance, reliability,
-      upgrades, and developer tooling.
-    </p>
-    <a class="text-link" href="/hire/">How I can help</a>
-  </section>
+  <p>
+    I also <a href="/hire/">help teams improve mature codebases</a>:
+    performance, reliability, upgrades, and developer tooling.
+  </p>
+  <ul class="contact-links">
+    <li><a href="mailto:hi@amureki.me">hi@amureki.me</a></li>
+    <li><a class="external-link" href="https://linkedin.com/in/amureki">LinkedIn</a></li>
+    <li><a class="external-link" href="https://github.com/amureki">GitHub</a></li>
+    <li><a class="external-link" href="https://stackoverflow.com/users/2024807/amureki">Stack Overflow</a></li>
+    <li><a class="external-link" href="https://mastodon.social/@amureki">Mastodon</a></li>
+    <li><a class="external-link" href="https://twitter.com/amureki">Twitter</a></li>
+  </ul>
 </section>
 {% endblock content %}

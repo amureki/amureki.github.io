@@ -12,11 +12,12 @@ The shared layout is implemented in `templates/base.html` and `styles/styles.css
 - Footer: name, Notes, RSS, GitHub, Wishes. RSS uses text links consistent with the navigation; also show it beside the homepage writing section and above the notes index.
 - Home: short introduction, a compact “What I focus on” list from the previous homepage, project filters, short project descriptions, two latest notes generated from the notes section.
 - Experience: dates beside concise role descriptions; dates stack on mobile. Keep the full CV at `/cv/`.
-- Contact: email first, social links, brief services introduction. Keep `/hire/`.
+- Contact: Berlin location and an invitation to talk about Django, open source, and project monetization, continued by a brief paragraph about helping teams with an inline `/hire/` link. Email and social links follow in one vertical list.
 - QR: dedicated `/qr/` page for showing at conferences and meetups. Center the website QR code at up to 330px, with `amureki.me` below it; scale to fit mobile screens.
 - Notes: readable prose, code scrolling and copy controls, original metadata and RSS.
 - Filters use All / Work / Personal. Open source is a project label, not a separate filter; Model Bakery and django-devbar belong to Personal. All projects remain visible without JavaScript; controls appear only when their script runs.
 - Navigation and filters have 44px minimum touch heights. Focus outlines remain visible. No animated reveals.
+- External web links use the SVG arrow indicator from the previous design. Mark template links with `external-link`; Markdown external links use Zola’s `target="_blank"` marker. Internal links remain text only in development and production. Hide indicators when printing.
 - Personal pages intentionally use the selected light theme. Print removes navigation and interactive controls.
 
 ## Project websites
