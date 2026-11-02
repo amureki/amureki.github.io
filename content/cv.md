@@ -9,7 +9,7 @@ description: Lead Engineer with 10+ years building and operating Python/Django s
     <span class="cv-contact-separator" aria-hidden="true">·</span>
     <a class="external-link" href="https://linkedin.com/in/amureki" target="_blank" rel="noopener noreferrer">LinkedIn</a>
   </p>
-  <p class="cv-summary">Over 10 years building and operating Python/Django systems at startup and scale-up companies, spanning backend architecture, data platforms, integrations, open source, and technical leadership. Maintainer of Model Bakery, one of the most widely used testing libraries in the Django ecosystem.</p>
+  <p class="cv-summary">Over ten years building and operating Python/Django systems, from startups to mature platforms.</p>
 </div>
 
 <section class="cv-section" aria-labelledby="cv-experience">
@@ -17,121 +17,115 @@ description: Lead Engineer with 10+ years building and operating Python/Django s
 
   <article class="cv-entry">
     <header class="cv-entry-header">
-      <h3>Lead Engineer @ <a class="external-link" href="https://www.voiio.de/" target="_blank" rel="noopener noreferrer">voiio</a></h3>
-      <p class="cv-date">June 2021 – present · Lead Engineer since July 2024; previously Senior Engineer</p>
+      <h3><a class="external-link" href="https://www.voiio.de/" target="_blank" rel="noopener noreferrer">voiio</a></h3>
+      <p class="cv-date">2021–present<br>Lead Engineer · July 2024–present<br>Senior Engineer · June 2021–July 2024</p>
     </header>
     <div class="cv-entry-body">
-      <p>Building and evolving a B2B employee-wellbeing platform supporting employees and their families across hundreds of German companies.</p>
+      <p>Leading engineering for an employee-wellbeing platform used by hundreds of German companies. My work spans reliability, infrastructure, integrations, analytics, and AI.</p>
       <ul>
-        <li>Led technical direction across platform reliability, infrastructure, integrations, analytics, and AI initiatives within a small engineering team</li>
-        <li>Led ongoing performance work across the stack: frontend profiling and rendering fixes, Django query optimization, dependency cleanup, and faster startup/CI feedback loops</li>
-        <li>Drove infrastructure cost optimization by reducing monitoring noise, removing unused services, right-sizing Heroku resources, and moving Metabase to a faster, lower-cost setup</li>
-        <li>Reworked company analytics by introducing business-oriented materialized views, scheduled refreshes, and indexing, improving dashboard performance and reporting reliability</li>
-        <li>Implemented a video-on-demand pipeline on AWS infrastructure (MediaConvert, Lambda, CloudFront), turning daily live events into searchable platform recordings</li>
-        <li>Built a prompt-to-agent deployment pipeline for LLM assistants, turning prompt changes into a repeatable release process</li>
+        <li>Improved frontend and Django performance, shortened startup and CI feedback loops, and reduced infrastructure costs.</li>
+        <li>Reworked analytics with reporting models, scheduled refreshes, and indexing, and moved Metabase to a faster, lower-cost setup.</li>
+        <li>Built a video pipeline with AWS MediaConvert, Lambda, and CloudFront, turning live events into searchable recordings.</li>
+        <li>Built a deployment pipeline that turns LLM prompt changes into repeatable assistant releases.</li>
       </ul>
     </div>
   </article>
 
   <article class="cv-entry">
     <header class="cv-entry-header">
-      <h3>Maintainer @ <a class="external-link" href="https://github.com/model-bakers/model_bakery" target="_blank" rel="noopener">Model Bakery</a></h3>
-      <p class="cv-date">Since 2018</p>
+      <h3><a class="external-link" href="https://www.thermondo.de/" target="_blank" rel="noopener noreferrer">thermondo</a></h3>
+      <p class="cv-date">2016–2021<br>Senior Engineer · April 2019–May 2021<br>Software Engineer · March 2016–April 2019</p>
     </header>
     <div class="cv-entry-body">
-      <p>Maintaining a popular Django fixture library — <a class="external-link" href="https://pypistats.org/packages/model-bakery" target="_blank" rel="noopener noreferrer">1.4M+ monthly downloads</a>, <a class="external-link" href="https://www.djangoproject.com/community/ecosystem/#testing-fixtures" target="_blank" rel="noopener noreferrer">listed in the official Django ecosystem</a>.</p>
-    </div>
-  </article>
-
-  <article class="cv-entry">
-    <header class="cv-entry-header">
-      <h3>Senior Engineer @ <a class="external-link" href="https://www.thermondo.de/" target="_blank" rel="noopener noreferrer">thermondo</a></h3>
-      <p class="cv-date">March 2016 – May 2021 · Senior Engineer from April 2019; previously Software Engineer</p>
-    </header>
-    <div class="cv-entry-body">
-      <p>Owned backend systems powering heating-system offers and field workflows for hundreds of technicians and thousands of customers.</p>
+      <p>Owned backend systems for heating-system offers and field workflows, serving hundreds of technicians and thousands of customers.</p>
       <ul>
-        <li>Integrated Salesforce into business processes in under 3 months by building the backend-to-Salesforce API layer from scratch</li>
-        <li>Created a bidirectional sync microservice for CRM communication (<a class="external-link" href="https://www.salesforce.com/" target="_blank" rel="noopener noreferrer">Salesforce</a> + <a class="external-link" href="https://close.com/" target="_blank" rel="noopener noreferrer">Close.com</a>)</li>
-        <li>Introduced architectural decision notes, post-mortems, and regular maintenance practices to make decisions traceable, reduce repeat incidents, and keep maintenance debt visible</li>
-        <li>Maintained a well-tested codebase through strong automated test coverage and continuous upgrades of internal and external dependencies</li>
-        <li>Bootstrapped a <a class="external-link" href="https://github.com/Thermondo/stanley" target="_blank" rel="noopener noreferrer">Slack bot</a> to share feedback between team members</li>
-        <li>Built <a class="external-link" href="https://monitar.io/" target="_blank" rel="noopener noreferrer">an incident monitoring tool for third-party services</a></li>
+        <li>Built the Salesforce integration from scratch in under three months, and a bidirectional sync service for Salesforce and Close.com.</li>
+        <li>Introduced decision notes, post-mortems, and regular maintenance practices.</li>
+        <li>Maintained automated test coverage and kept internal and external dependencies up to date.</li>
+        <li>Built a <a class="external-link" href="https://github.com/Thermondo/stanley" target="_blank" rel="noopener noreferrer">Slack feedback bot</a> and an incident monitoring tool for third-party services.</li>
       </ul>
     </div>
   </article>
 
   <article class="cv-entry">
     <header class="cv-entry-header">
-      <h3>Web Developer (volunteering) @ MKCorp</h3>
-      <p class="cv-date">November 2014 – March 2016 · 1.5 years</p>
+      <h3>MKCorp</h3>
+      <p class="cv-date">2014–2016 · Web Developer, volunteering</p>
     </header>
     <div class="cv-entry-body">
-      <p>With a bunch of creative people around the world, we were building an indie MMORPG game. Lack of time and any funding stopped us from going any further than a basic prototype.</p>
-      <ul>
-        <li>Bootstrapped a website</li>
-        <li>Developed a fully functional game forum from scratch</li>
-        <li>Started building a payment system integrated with the game API</li>
-      </ul>
+      <p>Built the website and forum for an indie MMORPG prototype with an international team.</p>
     </div>
   </article>
 
   <article class="cv-entry">
     <header class="cv-entry-header">
-      <h3>Web Developer @ <a class="external-link" href="https://smena.space/" target="_blank" rel="noopener noreferrer">SMENA</a></h3>
-      <p class="cv-date">October 2013 – December 2015 · 2 years</p>
+      <h3><a class="external-link" href="https://smena.space/" target="_blank" rel="noopener noreferrer">SMENA</a></h3>
+      <p class="cv-date">2013–2015 · Web Developer</p>
     </header>
     <div class="cv-entry-body">
-      <p>Built and maintained various websites and complex web services for external clients.</p>
-      <ul>
-        <li>Built a backend for the <a class="external-link" href="https://boostframe.com/" target="_blank" rel="noopener noreferrer">Boostframe</a> crowdfunding platform</li>
-        <li>Maintained a <a class="external-link" href="https://ufa.farfor.ru/" target="_blank" rel="noopener noreferrer">food delivery website and CRM</a></li>
-        <li>Created API libraries and various automations to work with advertising networks <a class="external-link" href="https://direct.yandex.com/" target="_blank" rel="noopener noreferrer">Yandex.Direct</a> and <a class="external-link" href="https://target.my.com/" target="_blank" rel="noopener noreferrer">Mail.Ru Target</a></li>
-      </ul>
+      <p>Built websites and web services for clients, including the backend for the <a class="external-link" href="https://boostframe.com/" target="_blank" rel="noopener noreferrer">Boostframe</a> crowdfunding platform and a <a class="external-link" href="https://ufa.farfor.ru/" target="_blank" rel="noopener noreferrer">food-delivery website and CRM</a>.</p>
+      <p>Developed API libraries and automations for <a class="external-link" href="https://direct.yandex.com/" target="_blank" rel="noopener noreferrer">Yandex.Direct</a> and <a class="external-link" href="https://target.my.com/" target="_blank" rel="noopener noreferrer">Mail.Ru Target</a> integrations.</p>
     </div>
   </article>
 
   <article class="cv-entry">
     <header class="cv-entry-header">
-      <h3>Security Engineer @ <a class="external-link" href="https://bashneft.ru/" target="_blank" rel="noopener noreferrer">Bashneft</a></h3>
-      <p class="cv-date">February 2013 – October 2013 · 9 months</p>
+      <h3><a class="external-link" href="https://bashneft.ru/" target="_blank" rel="noopener noreferrer">Bashneft</a></h3>
+      <p class="cv-date">2013 · Security Engineer</p>
     </header>
     <div class="cv-entry-body">
-      <p>Security administrator in charge of the corporate antivirus and antispam security systems covering 20,000 users.</p>
+      <p>Managed corporate antivirus, antispam, and Windows security and Group Policy settings in an organization with tens of thousands of users.</p>
     </div>
   </article>
+</section>
+
+<section class="cv-section" aria-labelledby="cv-open-source">
+  <h2 id="cv-open-source">Open source &amp; community</h2>
 
   <article class="cv-entry">
     <header class="cv-entry-header">
-      <h3>Engineer's degree @ <a class="external-link" href="https://uust.ru/en" target="_blank" rel="noopener noreferrer">UUST (ex USATU)</a></h3>
-      <p class="cv-date">2008–2013 · 5 years</p>
+      <h3><a class="external-link" href="https://github.com/model-bakers/model_bakery" target="_blank" rel="noopener">Model Bakery</a></h3>
+      <p class="cv-date">2018–present<br>Maintainer</p>
     </header>
     <div class="cv-entry-body">
-      <p>Thesis: “Innovations in a corporate network security infrastructure”</p>
+      <p>Maintaining a Django fixture library with <a class="external-link" href="https://pypistats.org/packages/model-bakery" target="_blank" rel="noopener noreferrer">1.4M+ monthly downloads</a>, <a class="external-link" href="https://www.djangoproject.com/community/ecosystem/#testing-fixtures" target="_blank" rel="noopener noreferrer">listed in the official Django ecosystem</a>.</p>
+    </div>
+  </article>
+  <p>I also build open-source developer tools, including <a class="external-link" href="https://github.com/amureki/django-devbar" target="_blank" rel="noopener noreferrer">django-devbar</a>, a browser devtool for measuring SQL queries.</p>
+  <p>Founded and moderated Python/Django communities with over 10,000 combined members, and co-organized and spoke at Berlin meetups.</p>
+</section>
+
+<section class="cv-section" aria-labelledby="cv-education">
+  <h2 id="cv-education">Education</h2>
+
+  <article class="cv-entry">
+    <header class="cv-entry-header">
+      <h3><a class="external-link" href="https://uust.ru/en" target="_blank" rel="noopener noreferrer">UUST (ex USATU)</a></h3>
+      <p class="cv-date">2008–2013</p>
+    </header>
+    <div class="cv-entry-body">
+      <p>Engineer’s degree. Thesis on corporate network security infrastructure.</p>
     </div>
   </article>
 </section>
 
 <section class="cv-section" aria-labelledby="cv-skills">
-  <h2 id="cv-skills">Skill set</h2>
+  <h2 id="cv-skills">Skills</h2>
   <dl class="cv-facts">
-    <div><dt>Backend &amp; APIs</dt><dd>Python, Django, DRF, FastAPI, Flask, Celery, Dramatiq</dd></div>
-    <div><dt>Frontend</dt><dd>htmx, Lit, Svelte, Vue, React, jQuery</dd></div>
-    <div><dt>Data &amp; storage</dt><dd>PostgreSQL, MySQL, SQLite, Redis, Metabase, Heroku Connect</dd></div>
-    <div><dt>Infrastructure &amp; CI</dt><dd>Docker, AWS (Lambda, S3, SES, etc.), Heroku, GitHub Actions, GitLab CI</dd></div>
-    <div><dt>AI &amp; integrations</dt><dd>LLM pipelines, Salesforce, OpenAI</dd></div>
-    <div><dt>Testing &amp; quality</dt><dd>pytest, automated testing, continuous delivery practices</dd></div>
-    <div><dt>Team leadership</dt><dd>mentoring, technical interviewing, onboarding, engineering process improvement</dd></div>
+    <div><dt>Backend &amp; data</dt><dd>Python, Django, PostgreSQL, APIs, and background jobs.</dd></div>
+    <div><dt>Analytics &amp; automation</dt><dd>Metabase, reporting workflows, data pipelines, and business-system integrations.</dd></div>
+    <div><dt>Infrastructure &amp; delivery</dt><dd>AWS, Heroku, Docker, automated testing, and CI/CD workflows.</dd></div>
+    <div><dt>Engineering leadership</dt><dd>Technical direction, mentoring, hiring, decision records, and incident reviews.</dd></div>
   </dl>
 </section>
 
-<section class="cv-section" aria-labelledby="cv-extra">
-  <h2 id="cv-extra">Extra</h2>
-  <dl class="cv-facts">
-    <div><dt>Languages</dt><dd>English (fluent), Russian (native), German (intermediate)</dd></div>
-    <div><dt>Open Source</dt><dd>Active OSS contributor; see <a class="external-link" href="https://github.com/amureki" target="_blank" rel="noopener noreferrer">github.com/amureki</a></dd></div>
-    <div><dt>Community</dt><dd>Moderated and founded Python/Django communities with 10,000+ combined members; co-organized and spoke at Berlin Python and Django meetups</dd></div>
-    <div><dt>Hobbies</dt><dd>Jogging, photography, video games</dd></div>
-    <div><dt>Fun fact</dt><dd>Known to turn ordinary team events into survival challenges</dd></div>
-  </dl>
+<section class="cv-section" aria-labelledby="cv-languages">
+  <h2 id="cv-languages">Languages</h2>
+  <p>English (fluent), Russian (native), German (intermediate).</p>
+</section>
+
+<section class="cv-section" aria-labelledby="cv-outside">
+  <h2 id="cv-outside">Outside work</h2>
+  <p>Jogging, photography, and video games.</p>
+  <p>Known to turn ordinary team events into survival challenges.</p>
 </section>
