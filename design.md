@@ -11,9 +11,11 @@ The shared layout is implemented in `templates/base.html` and `styles/styles.css
 - Header: 44px logo linked to home, then Selected work, Experience, Notes, Contact. Use the supplied pencil logo in `static/logo.png`, contained without cropping. The image is decorative inside a link with an accessible home label; do not repeat the name as visible header text.
 - Footer: name, Notes, RSS, GitHub, Wishes. RSS uses text links consistent with the navigation; also show it beside the homepage writing section and above the notes index.
 - Home: short introduction, a compact “What I focus on” list from the previous homepage, project filters, short project descriptions, two latest notes generated from the notes section.
-- Experience: dates beside concise role descriptions; dates stack on mobile. Keep the full CV at `/cv/`.
+- Experience: one career page at `/cv/`, labelled Experience in the navigation. `/experience/` redirects to it; maintain career content only in `content/cv.md`.
+- CV: career details in a 66ch reading column, with body-size summary text and semibold company headings. Overall dates sit to the right of companies on wider screens; role and promotion details appear below, aligned left. Stack the header on mobile. Keep subtle separators between jobs; use spacing for sections and skills rows. Preserve the compact print layout.
 - Contact: Berlin location and an invitation to talk about Django, open source, and project monetization, continued by a brief paragraph about helping teams with an inline `/hire/` link. Email and social links follow in one vertical list.
 - QR: dedicated `/qr/` page for showing at conferences and meetups. Center the website QR code at up to 330px, with `amureki.me` below it; scale to fit mobile screens.
+- Wishes: one reading column, category headings, standard bullet lists, and a closing paragraph linking to support. Use spacing between groups without dividers.
 - Notes: readable prose, code scrolling and copy controls, original metadata and RSS.
 - Filters use All / Work / Personal. Open source is a project label, not a separate filter; Model Bakery and django-devbar belong to Personal. All projects remain visible without JavaScript; controls appear only when their script runs.
 - Navigation and filters have 44px minimum touch heights. Focus outlines remain visible. No animated reveals.
@@ -29,5 +31,5 @@ Do not apply personal-site design decisions to these product surfaces implicitly
 
 ## URLs
 
-`/experience/` and `/contact/` are new. Existing notes, project, support, privacy,
+`/contact/` is new; `/experience/` redirects to `/cv/`. Existing notes, project, support, privacy,
 CV, hire, utility, feed, and archive URLs remain available. The design drafts have been removed.
