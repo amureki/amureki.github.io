@@ -9,7 +9,7 @@ The shared layout is implemented in `templates/base.html` and `styles/styles.css
 - Home subtitle: Instrument Sans 600, responsive 20–24px, primary text color, and 1.35 line height to emphasize the current role below the name.
 - White paper `#ffffff`, text `#242824`, secondary text `#626760`, dividers `#e7e9e4`, green focus/hover `#294d39`.
 - System dark mode: background `#171b18`, text `#e6ebe4`, secondary text `#afb8ac`, dividers `#343e34`, green focus/hover `#9cc6a3`. Theme colors, selections, link underlines, and article typography follow the system preference. Keep screenshots unchanged and the QR code on a white surface.
-- Container: maximum 1000px including 48px side padding; 24px side padding below 640px.
+- Container: maximum 900px including 48px side padding; 24px side padding below 640px.
 - Header: 44px logo linked to home, then Home, Experience, Notes, Contact. Use the supplied pencil logo in `static/logo.png`, contained without cropping. The image is decorative inside a link with an accessible home label; do not repeat the name as visible header text.
 - Footer: name, Notes, RSS, GitHub, Wishes. RSS uses text links consistent with the navigation; also show it beside the homepage writing section and above the notes index.
 - Home: introduction combining engineering focus, open-source maintenance, and personal apps; one visible list of selected work with category labels and short descriptions; three latest notes generated from the notes section. Show voiio first; the small list does not need filters or a project count.

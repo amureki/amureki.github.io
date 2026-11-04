@@ -91,7 +91,7 @@ button:focus-visible {
   transform: translateY(0);
 }
 .shell {
-  width: min(100%, 1000px);
+  width: min(100%, 900px);
   padding: 0 max(48px, env(safe-area-inset-right)) 0
     max(48px, env(safe-area-inset-left));
   margin: auto;
