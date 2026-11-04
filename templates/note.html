@@ -6,7 +6,7 @@
   <div class="note-page">
     <header class="note-header">
       <h1>{{ page.title }}</h1>
-      <p class="note-date"><time datetime="{{ page.date }}">{{ page.date }}</time></p>
+      <p class="note-date"><time datetime="{{ page.date }}">{{ page.date | date(format="%-d %b %Y") }}</time></p>
     </header>
 
     <article class="note-body prose">

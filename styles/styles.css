@@ -204,7 +204,7 @@ p {
   font-size: 14px;
 }
 .project {
-  padding: 24px 0;
+  padding: 20px 0;
   max-width: 700px;
 }
 .project-heading {
@@ -240,7 +240,7 @@ p {
   justify-content: space-between;
   gap: 24px;
   padding: 11px 0;
-  font-size: 15px;
+  font-size: 16px;
   text-decoration: none;
 }
 .note span {
@@ -249,7 +249,7 @@ p {
 }
 .note time {
   color: var(--secondary-text);
-  font-size: 13px;
+  font-size: 14px;
   white-space: nowrap;
 }
 .page-intro {
@@ -327,9 +327,6 @@ footer.site-footer nav a {
   }
   .intro {
     margin-bottom: 40px;
-  }
-  .project {
-    padding: 22px 0;
   }
   .project-heading {
     flex-direction: column;
