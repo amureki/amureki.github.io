@@ -6,6 +6,7 @@ The user selected refined direction A: a quiet, white, typography-led portfolio.
 The shared layout is implemented in `templates/base.html` and `styles/styles.css`; personal colors and type roles live in `styles/personal-tokens.css`.
 
 - Typography: locally hosted Instrument Sans for body text and project titles; Space Grotesk 700 for page and section headings. Body: 16px, 1.65 line height. Page headings: 40px (34px on mobile); section headings: 24px; project titles: 18px, weight 600.
+- Home subtitle: Instrument Sans 600, responsive 20–24px, primary text color, and 1.35 line height to emphasize the current role below the name.
 - White paper `#ffffff`, text `#242824`, secondary text `#626760`, dividers `#e7e9e4`, green focus/hover `#294d39`.
 - System dark mode: background `#171b18`, text `#e6ebe4`, secondary text `#afb8ac`, dividers `#343e34`, green focus/hover `#9cc6a3`. Theme colors, selections, link underlines, and article typography follow the system preference. Keep screenshots unchanged and the QR code on a white surface.
 - Container: maximum 1000px including 48px side padding; 24px side padding below 640px.

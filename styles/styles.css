@@ -164,8 +164,10 @@ p {
   margin-bottom: 48px;
 }
 .intro .role {
-  color: var(--secondary-text);
-  font-size: 18px;
+  color: var(--page-text);
+  font-size: clamp(20px, 2.4vw, 24px);
+  font-weight: 600;
+  line-height: 1.35;
   margin-bottom: 16px;
 }
 .intro > p:not(.role) {
@@ -325,9 +327,6 @@ footer.site-footer nav a {
   }
   .intro {
     margin-bottom: 40px;
-  }
-  .intro .role {
-    font-size: 16px;
   }
   .project {
     padding: 22px 0;
