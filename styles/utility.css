@@ -129,45 +129,30 @@
   font-weight: 600;
 }
 
+.utility-wish {
+  max-width: 66ch;
+  line-height: inherit;
+}
+
 .wish-groups {
   display: grid;
-  gap: var(--space-lg) var(--space-xl);
+  gap: var(--space-lg);
 }
 
-.wish-group-list {
+.utility-wish .wish-group-list {
   display: grid;
   gap: var(--space-2xs);
-}
-
-.wish-group-list li {
-  position: relative;
-  padding-left: var(--space-sm);
-  line-height: 1.48;
-}
-
-.wish-group-list li::before {
-  content: "—";
-  position: absolute;
-  left: 0;
-  color: var(--tertiary-text);
+  list-style: disc;
+  padding-left: 20px;
 }
 
 .wish-appreciation {
-  margin-top: var(--space-xl);
-}
-
-.wish-appreciation p {
-  max-width: 58ch;
-  margin: 0;
+  margin: var(--space-xl) 0 0;
 }
 
 @media (min-width: 48rem) {
   .hire-split {
     grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
-  }
-
-  .wish-groups {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 

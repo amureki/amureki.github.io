@@ -3,15 +3,14 @@
 
 .cv-content {
   width: 100%;
-  max-width: var(--content-width);
   color: var(--page-text);
   font-family: var(--font-body);
   font-size: var(--text-md);
-  line-height: 1.5;
+  line-height: inherit;
 }
 
 .cv-intro {
-  max-width: 62ch;
+  max-width: var(--measure-width);
   margin-bottom: var(--space-lg);
 }
 
@@ -36,20 +35,15 @@
 }
 
 .cv-summary {
-  max-width: 60ch;
   margin: 0;
-  font-size: var(--text-lg);
-  line-height: 1.5;
 }
 
 .cv-section {
   margin: 0 0 var(--space-xl);
-  padding-top: var(--space-md);
-  border-top: var(--rule-hairline) solid var(--divider-color);
 }
 
 .cv-section > h2 {
-  margin: 0 0 var(--space-xs);
+  margin: 0 0 var(--space-sm);
   padding: 0;
   color: var(--page-text);
   font-family: var(--font-display);
@@ -66,13 +60,17 @@
   padding: var(--space-sm) 0 var(--space-md);
 }
 
+.cv-section > h2 + .cv-entry {
+  padding-top: 0;
+}
+
 .cv-entry + .cv-entry {
   border-top: var(--rule-hairline) solid var(--divider-color);
 }
 
 .cv-entry-header {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(14rem, 1.15fr);
+  grid-template-columns: minmax(0, 1fr) auto;
   gap: var(--space-2xs) var(--space-md);
   align-items: baseline;
   margin-bottom: var(--space-2xs);
@@ -85,7 +83,7 @@
   font-family: var(--font-body);
   font-size: var(--text-lg);
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.35;
   overflow-wrap: anywhere;
   min-width: 0;
@@ -95,17 +93,31 @@
   font-weight: inherit;
 }
 
-.cv-date {
+.cv-date,
+.cv-roles {
   margin: 0;
   color: var(--secondary-text);
-  font-size: var(--text-sm);
+  font-size: 14px;
   font-style: normal;
   font-variant-numeric: tabular-nums;
   line-height: 1.4;
+}
+
+.cv-date {
   text-align: right;
+  color: var(--page-text);
+  font-weight: 600;
+}
+
+.cv-roles {
+  grid-column: 1 / -1;
 }
 
 .cv-entry-body {
+  max-width: var(--measure-width);
+}
+
+.cv-section > p {
   max-width: var(--measure-width);
 }
 
@@ -123,7 +135,7 @@
   margin: var(--space-3xs) 0;
   color: var(--page-text);
   font-weight: 400;
-  line-height: 1.45;
+  line-height: inherit;
 }
 
 .cv-entry-body li::marker {
@@ -141,10 +153,6 @@
   padding: var(--space-xs) 0;
 }
 
-.cv-facts > div + div {
-  border-top: var(--rule-hairline) solid var(--divider-color);
-}
-
 .cv-facts dt,
 .cv-facts dd {
   margin: 0;
@@ -152,7 +160,7 @@
 
 .cv-facts dt {
   color: var(--secondary-text);
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .cv-facts dd {
@@ -164,21 +172,16 @@
     margin-bottom: var(--space-md);
   }
 
-  .cv-summary {
-    font-size: var(--text-md);
-  }
-
   .cv-section {
     margin-bottom: var(--space-lg);
-    padding-top: var(--space-sm);
   }
 
-  .cv-entry-header,
   .cv-facts > div {
     grid-template-columns: minmax(0, 1fr);
   }
 
   .cv-entry-header {
+    grid-template-columns: minmax(0, 1fr);
     gap: var(--space-3xs);
   }
 
@@ -238,9 +241,14 @@
     line-height: 1.2;
   }
 
-  .cv-date {
+  .cv-date,
+  .cv-roles {
     font-size: 8.5pt;
     line-height: 1.2;
+  }
+
+  .cv-date {
+    text-align: right;
   }
 
   .cv-entry-body p,

@@ -1,93 +1,117 @@
 {% extends "base.html" %}
-
+{% block header %}
+{% endblock header %}
 {% block content %}
-  {% set notes_section = get_section(path="notes/_index.md") %}
-
-  <div class="home">
-    <section class="home-section home-now">
-      <h2>I am</h2>
-      <ul class="home-list">
-        <li>
-          currently lead engineer at <a href="https://voiio.de" target="_blank" rel="noopener noreferrer" class="external-link">voiio</a>, helping scale and maintain a platform spanning wellbeing content, AI workflows, and video infrastructure.
-        </li>
-      </ul>
-    </section>
-
-    <section class="home-section">
-      <h2>What I focus on</h2>
-      <ul class="home-list">
-        <li>improving mature Django systems without rewriting them from scratch.</li>
-        <li>making production systems easier to debug, observe, and safely evolve.</li>
-        <li>reducing operational friction through better tooling, testing, CI, and deployment practices.</li>
-        <li>shipping pragmatic solutions quickly while keeping long-term maintainability in mind.</li>
-      </ul>
-    </section>
-
-    <section class="home-section home-projects">
-      <h2>Selected projects and open-source work</h2>
-      <ul class="home-list">
-        <li>
-          <a href="https://github.com/model-bakers/model_bakery" target="_blank" rel="noopener" class="external-link">Model Bakery</a> — the go-to Django fixture library, which I have been maintaining since 2018, with 1.4M+ monthly downloads.
-        </li>
-        <li>
-          <a href="https://chalkin.app/" target="_blank" rel="noopener" class="external-link">Chalkin</a> (beta) — turns your Mac desktop background into a canvas for notes, sketches, and diagrams.
-        </li>
-        <li>
-          <a href="https://year.amureki.me" target="_blank" rel="noopener" class="external-link">YearYear</a> — a small app for yearly reflection and planning.
-        </li>
-        <li>
-          <a href="https://pypigraph.org/" target="_blank" rel="noopener" class="external-link">pypigraph.org</a> — a visualization tool for exploring Python package dependencies.
-        </li>
-        <li>
-          <a href="https://github.com/amureki/django-devbar" target="_blank" rel="noopener" class="external-link">django-devbar</a> — a browser devtool for measuring SQL queries.
-        </li>
-      </ul>
-    </section>
-
-    <section class="home-section home-writing">
-      <h2>Occasionally, I write</h2>
-      <ul class="article-list">
-        {% for note in notes_section.pages %}
-          {% if loop.index <= 3 %}
-            <li class="nav-item">
-              <a href="{{ note.permalink | safe }}">{{ note.title }}</a>,
-              <time datetime="{{ note.date }}" class="article-date">{{ note.date }}</time>
-            </li>
-          {% endif %}
-        {% endfor %}
-      </ul>
-      <p class="section-link">
-        Read my <a href="{{ notes_section.permalink | safe }}">other notes</a>.
-      </p>
-    </section>
-
-    <section class="home-section">
-      <h2>Previously, I used to</h2>
-      <ul class="home-list">
-        <li>
-          work at <a href="https://thermondo.de" target="_blank" rel="noopener noreferrer" class="external-link">thermondo</a>, <a href="https://smena.space" target="_blank" rel="noopener noreferrer" class="external-link">SMENA</a>, and in other places.
-        </li>
-        <li>
-          create and moderate engineering communities, host meetups, and give lightning talks.
-        </li>
-        <li>
-          abandon a lot of side projects.
-        </li>
-      </ul>
-      <p class="section-link">
-        See my full <a href="/cv/">CV</a>.
-      </p>
-    </section>
-
-    <section class="home-section home-social">
-      <h2>Find me on</h2>
-      <ul class="inline-list">
-        <li><a href="https://github.com/amureki" target="_blank" rel="noopener noreferrer" class="external-link">GitHub</a></li>
-        <li><a href="https://linkedin.com/in/amureki" target="_blank" rel="noopener noreferrer" class="external-link">LinkedIn</a></li>
-        <li><a href="https://stackoverflow.com/users/2024807/amureki" target="_blank" rel="noopener noreferrer" class="external-link">Stack Overflow</a></li>
-        <li><a href="https://mastodon.social/@amureki" target="_blank" rel="noopener noreferrer" class="external-link">Mastodon</a></li>
-        <li><a href="https://twitter.com/amureki" target="_blank" rel="noopener noreferrer" class="external-link">Twitter</a></li>
-      </ul>
-    </section>
+<section class="intro" aria-labelledby="name">
+  <h1 id="name">Rust Saiargaliev</h1>
+  <p class="role">Lead Engineer at <a class="external-link" href="https://voiio.de">voiio</a>.</p>
+  <p>
+    I build and improve Python/Django systems, helping teams evolve mature
+    codebases without unnecessary rewrites. I also maintain open-source projects
+    and make small apps of my own.
+  </p>
+</section>
+<section aria-labelledby="work-title">
+  <div class="section-top">
+    <h2 id="work-title">What keeps me busy</h2>
   </div>
+  <div>
+    <article class="project">
+      <div class="project-heading">
+        <h3><a class="external-link" href="https://voiio.de">voiio</a></h3>
+        <span class="meta">Work · 2021–present</span>
+      </div>
+      <p>
+        I lead engineering for an employee-wellbeing platform used by hundreds
+        of German companies. My work spans
+        reliability, integrations, analytics, video infrastructure, and AI
+        workflows.
+      </p>
+    </article>
+    <article class="project">
+      <div class="project-heading">
+        <h3>
+          <a class="external-link" href="https://github.com/model-bakers/model_bakery"
+            >Model Bakery</a
+          >
+        </h3>
+        <span class="meta">Open source · Django</span>
+      </div>
+      <p>
+        A Django fixture library with 1.4M+ monthly downloads.
+        I’ve been maintaining it since 2018.
+      </p>
+    </article>
+    <article class="project">
+      <div class="project-heading">
+        <h3><a class="external-link" href="https://chalkin.app/">Chalkin</a></h3>
+        <span class="meta">Personal · macOS app</span>
+      </div>
+      <p>
+        A small Mac app that turns your desktop background into a canvas for
+        notes, sketches, and diagrams.
+      </p>
+    </article>
+    <article class="project">
+      <div class="project-heading">
+        <h3><a class="external-link" href="https://year.amureki.me">YearYear</a></h3>
+        <span class="meta">Personal · web app</span>
+      </div>
+      <p>
+        A small app for looking back on your year and planning the next one.
+      </p>
+    </article>
+    <article class="project">
+      <div class="project-heading">
+        <h3><a class="external-link" href="https://pypigraph.org/">pypigraph.org</a></h3>
+        <span class="meta">Open source · developer tool</span>
+      </div>
+      <p>
+        A visual way to explore Python package dependencies and understand how
+        packages connect.
+      </p>
+    </article>
+    <article class="project">
+      <div class="project-heading">
+        <h3>
+          <a class="external-link" href="https://github.com/amureki/django-devbar">django-devbar</a>
+        </h3>
+        <span class="meta">Open source · Django</span>
+      </div>
+      <p>A browser devtool for measuring SQL queries while you develop.</p>
+    </article>
+  </div>
+</section>
+<section class="writing" aria-labelledby="writing-title">
+  <div class="section-top">
+    <h2 id="writing-title">Occasionally, I write</h2>
+    <div class="section-links">
+      <a class="text-link" href="/notes/">All notes</a>
+      <a class="text-link rss-link" href="/rss.xml" type="application/rss+xml">RSS</a>
+    </div>
+  </div>
+  {% set notes = get_section(path="notes/_index.md") %}
+{% for note in
+  notes.pages %}
+{% if loop.index <= 3 %}
+  <a class="note" href="{{ note.permalink | safe }}"
+    ><span>{{ note.title }}</span
+    ><time datetime="{{ note.date }}"
+      >{{ note.date | date(format="%-d %b %Y") }}</time
+    ></a
+  >
+  {% endif %}
+{% endfor %}
+</section>
+<section class="home-history content-prose" aria-labelledby="history-title">
+  <h2 id="history-title">Previously</h2>
+  <ul class="home-list">
+    <li>
+      worked at <a class="external-link" href="https://www.thermondo.de/">thermondo</a>
+      and <a class="external-link" href="https://smena.space/">SMENA</a>.
+    </li>
+    <li>helped run engineering communities, hosted meetups, and gave lightning talks.</li>
+    <li>abandoned plenty of side projects.</li>
+  </ul>
+</section>
 {% endblock content %}

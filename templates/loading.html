@@ -1,10 +1,12 @@
 {% extends "base.html" %}
 
 {% block header %} {% endblock %}
-{% block tabs %} {% endblock %}
 {% block content %}
   <style>
+    .site-header, .site-footer { display: none; }
+
     main {
+      min-height: 0;
       padding: 0 !important;
       max-width: none !important;
       overflow: visible !important;

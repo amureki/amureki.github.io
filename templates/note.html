@@ -1,12 +1,15 @@
 {% extends "base.html" %}
 
-{% block content %}
-  <div class="content note-page">
-    <div class="note-date">
-      <time datetime="{{ page.date }}">{{ page.date }}</time>
-    </div>
+{% block header %}{% endblock header %}
 
-    <article class="content-prose prose dark:prose-invert">
+{% block content %}
+  <div class="note-page">
+    <header class="note-header">
+      <h1>{{ page.title }}</h1>
+      <p class="note-date"><time datetime="{{ page.date }}">{{ page.date | date(format="%-d %b %Y") }}</time></p>
+    </header>
+
+    <article class="note-body prose">
       {{ page.content | safe }}
 
       <div class="note-support">

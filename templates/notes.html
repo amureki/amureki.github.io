@@ -2,6 +2,7 @@
 
 {% block content %}
   <div class="content notes-list">
+    <p class="notes-subscribe"><a class="rss-link" href="/rss.xml" type="application/rss+xml">Follow via RSS</a></p>
     {% set_global current_year = 0 %}
     {% for note in section.pages %}
       {% if note.year != current_year %}
@@ -16,7 +17,7 @@
       {% endif %}
       <li class="nav-item">
         <a href="{{ note.permalink | safe }}">{{ note.title }}</a>,
-        <time datetime="{{ note.date }}" class="article-date">{{ note.date }}</time>
+        <time datetime="{{ note.date }}" class="article-date">{{ note.date | date(format="%-d %b %Y") }}</time>
       </li>
       {% if loop.last %}
         </ul>
@@ -24,6 +25,5 @@
       {% endif %}
     {% endfor %}
 
-    <p class="section-link">Follow new notes via <a href="/rss.xml">RSS</a>.</p>
   </div>
 {% endblock content %}

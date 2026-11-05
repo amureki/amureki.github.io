@@ -1,6 +1,7 @@
 ---
-title: Curriculum vitae
+title: Experience
 template: cv.html
+aliases: ["/experience/"]
 description: Lead Engineer with 10+ years building and operating Python/Django systems at startup and scale-up companies, spanning backend architecture, data platforms, integrations, open source, and technical leadership.
 ---
 <div class="cv-intro">
@@ -13,12 +14,13 @@ description: Lead Engineer with 10+ years building and operating Python/Django s
 </div>
 
 <section class="cv-section" aria-labelledby="cv-experience">
-  <h2 id="cv-experience">Experience</h2>
+  <h2 id="cv-experience">Career history</h2>
 
   <article class="cv-entry">
     <header class="cv-entry-header">
       <h3><a class="external-link" href="https://www.voiio.de/" target="_blank" rel="noopener noreferrer">voiio</a></h3>
-      <p class="cv-date">2021–present<br>Lead Engineer · July 2024–present<br>Senior Engineer · June 2021–July 2024</p>
+      <p class="cv-date">2021–present</p>
+      <p class="cv-roles">Lead Engineer · July 2024–present<br>Senior Engineer · June 2021–July 2024</p>
     </header>
     <div class="cv-entry-body">
       <p>Leading engineering for an employee-wellbeing platform used by hundreds of German companies. My work spans reliability, infrastructure, integrations, analytics, and AI.</p>
@@ -34,7 +36,8 @@ description: Lead Engineer with 10+ years building and operating Python/Django s
   <article class="cv-entry">
     <header class="cv-entry-header">
       <h3><a class="external-link" href="https://www.thermondo.de/" target="_blank" rel="noopener noreferrer">thermondo</a></h3>
-      <p class="cv-date">2016–2021<br>Senior Engineer · April 2019–May 2021<br>Software Engineer · March 2016–April 2019</p>
+      <p class="cv-date">2016–2021</p>
+      <p class="cv-roles">Senior Engineer · April 2019–May 2021<br>Software Engineer · March 2016–April 2019</p>
     </header>
     <div class="cv-entry-body">
       <p>Owned backend systems for heating-system offers and field workflows, serving hundreds of technicians and thousands of customers.</p>
@@ -50,7 +53,8 @@ description: Lead Engineer with 10+ years building and operating Python/Django s
   <article class="cv-entry">
     <header class="cv-entry-header">
       <h3>MKCorp</h3>
-      <p class="cv-date">2014–2016 · Web Developer, volunteering</p>
+      <p class="cv-date">2014–2016</p>
+      <p class="cv-roles">Web Developer, volunteering</p>
     </header>
     <div class="cv-entry-body">
       <p>Built the website and forum for an indie MMORPG prototype with an international team.</p>
@@ -60,7 +64,8 @@ description: Lead Engineer with 10+ years building and operating Python/Django s
   <article class="cv-entry">
     <header class="cv-entry-header">
       <h3><a class="external-link" href="https://smena.space/" target="_blank" rel="noopener noreferrer">SMENA</a></h3>
-      <p class="cv-date">2013–2015 · Web Developer</p>
+      <p class="cv-date">2013–2015</p>
+      <p class="cv-roles">Web Developer</p>
     </header>
     <div class="cv-entry-body">
       <p>Built websites and web services for clients, including the backend for the <a class="external-link" href="https://boostframe.com/" target="_blank" rel="noopener noreferrer">Boostframe</a> crowdfunding platform and a <a class="external-link" href="https://ufa.farfor.ru/" target="_blank" rel="noopener noreferrer">food-delivery website and CRM</a>.</p>
@@ -71,7 +76,8 @@ description: Lead Engineer with 10+ years building and operating Python/Django s
   <article class="cv-entry">
     <header class="cv-entry-header">
       <h3><a class="external-link" href="https://bashneft.ru/" target="_blank" rel="noopener noreferrer">Bashneft</a></h3>
-      <p class="cv-date">2013 · Security Engineer</p>
+      <p class="cv-date">2013</p>
+      <p class="cv-roles">Security Engineer</p>
     </header>
     <div class="cv-entry-body">
       <p>Managed corporate antivirus, antispam, and Windows security and Group Policy settings in an organization with tens of thousands of users.</p>
@@ -85,7 +91,8 @@ description: Lead Engineer with 10+ years building and operating Python/Django s
   <article class="cv-entry">
     <header class="cv-entry-header">
       <h3><a class="external-link" href="https://github.com/model-bakers/model_bakery" target="_blank" rel="noopener">Model Bakery</a></h3>
-      <p class="cv-date">2018–present<br>Maintainer</p>
+      <p class="cv-date">2018–present</p>
+      <p class="cv-roles">Maintainer</p>
     </header>
     <div class="cv-entry-body">
       <p>Maintaining a Django fixture library with <a class="external-link" href="https://pypistats.org/packages/model-bakery" target="_blank" rel="noopener noreferrer">1.4M+ monthly downloads</a>, <a class="external-link" href="https://www.djangoproject.com/community/ecosystem/#testing-fixtures" target="_blank" rel="noopener noreferrer">listed in the official Django ecosystem</a>.</p>

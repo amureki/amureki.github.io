@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" class="antialiased leading-tight">
+<html lang="en">
 
 <head>
   <meta charset="utf-8"/>
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#171b18" media="(prefers-color-scheme: dark)">
   <link rel="icon" type="image/png" href="/favicon.png"/>
-  <meta name="theme-color" content="#fbf8f2" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#100d08" media="(prefers-color-scheme: dark)">
   <link rel="preconnect" href="https://t.rsts.me">
+  <link rel="preload" href="/fonts/space-grotesk/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/instrument-sans/instrument-sans-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/instrument-sans/instrument-sans-v4-latin-600.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/instrument-sans/instrument-sans-v4-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/fonts/space-grotesk/space-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 
   <link rel="preload" href="/fonts/instrument-sans/instrument-sans.css" as="style">
   <link rel="preload" href="/styles.css" as="style">
@@ -123,36 +124,29 @@
   </script>
 
   <script defer src="/copy-code.js"></script>
+  {% block scripts %}{% endblock scripts %}
   <script defer src="https://t.rsts.me/script.js" data-website-id="f9969ea9-2804-4e29-82f4-bddb955b68a4" data-domains="amureki.me"></script>
 </head>
 
-<body>
+<body class="personal-site">
 <a class="skip-link" href="#content">Skip to content</a>
-<main id="content" tabindex="-1" class="site-main {% block main_class %}px-[clamp(1.5rem,4vw,5rem)] py-[clamp(3rem,8vh,5rem)] max-w-4xl mx-auto overflow-x-hidden{% endblock %}">
-  {% block header %}
-    <header>
-      <h1>Rust Saiargaliev</h1>
-      <p class="about">
-        {% block header_description %}Lead Engineer focused on reliable Django systems and developer tooling.{% endblock %}
-      </p>
-    </header>
-  {% endblock %}
-
-  {% block tabs %}
-    <nav class="tabs" aria-label="Primary">
-      <a href="/" class="tab-link {% if current_path and current_path == "/" %}active{% endif %}"{% if current_path and current_path == "/" %} aria-current="page"{% endif %}>Now</a>
-      <a href="/cv/"
-         class="tab-link {% if current_path and current_path is starting_with(pat="/cv") %}active{% endif %}"{% if current_path and current_path is starting_with(pat="/cv") %} aria-current="page"{% endif %}>CV</a>
-      <a href="/hire/"
-         class="tab-link {% if current_path and current_path is starting_with(pat="/hire") %}active{% endif %}"{% if current_path and current_path is starting_with(pat="/hire") %} aria-current="page"{% endif %}>Hire</a>
-      <a href="{{ get_url(path='@/notes/_index.md') }}"
-         class="tab-link {% if current_path and current_path is starting_with(pat="/notes") %}active{% endif %}"{% if current_path and current_path is starting_with(pat="/notes") %} aria-current="page"{% endif %}>Notes</a>
-      <a href="/wish/"
-         class="tab-link {% if current_path and current_path is starting_with(pat="/wish") %}active{% endif %}"{% if current_path and current_path is starting_with(pat="/wish") %} aria-current="page"{% endif %}>Wishes</a>
+<div class="shell">
+  <header class="site-header">
+    <a class="identity" href="/" aria-label="Rust Saiargaliev — home"><img src="/logo.png" width="44" height="44" alt=""></a>
+    <nav aria-label="Primary">
+      <a href="/"{% if current_path == "/" %} aria-current="page"{% endif %}>Home</a>
+      <a href="/cv/"{% if current_path == "/cv/" %} aria-current="page"{% endif %}>Experience</a>
+      <a href="/notes/"{% if current_path == "/notes/" %} aria-current="page"{% elif current_path and current_path is starting_with(pat="/notes/") %} aria-current="location"{% endif %}>Notes</a>
+      <a href="/contact/"{% if current_path == "/contact/" or current_path == "/hire/" %} aria-current="page"{% endif %}>Contact</a>
     </nav>
-  {% endblock %}
-
-  {% block content %} {% endblock %}
-</main>
+  </header>
+  <main id="content" tabindex="-1" class="site-main">
+    {% block header %}
+      <header class="page-intro"><h1>{% if page %}{{ page.title }}{% elif section %}{{ section.title }}{% endif %}</h1></header>
+    {% endblock header %}
+    {% block content %}{% endblock content %}
+  </main>
+  <footer class="site-footer"><span>Rust Saiargaliev</span><nav aria-label="More"><a href="/notes/">Notes</a><a class="rss-link" href="/rss.xml" type="application/rss+xml">RSS</a><a class="external-link" href="https://github.com/amureki">GitHub</a><a href="/wish/">Wishes</a></nav></footer>
+</div>
 </body>
 </html>
