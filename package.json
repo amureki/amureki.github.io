@@ -1,10 +1,8 @@
 {
   "name": "amureki.me",
   "scripts": {
-    "build": "npm run build:personal && npm run build:projects",
-    "watch": "npx @tailwindcss/cli -i styles/styles.css -o static/styles.css --watch",
-    "build:personal": "NODE_ENV=production npx @tailwindcss/cli -i styles/styles.css -o static/styles.css -m",
-    "build:projects": "NODE_ENV=production npx @tailwindcss/cli -i styles/project-pages.css -o static/project-pages.css -m"
+    "build": "NODE_ENV=production npx @tailwindcss/cli -i styles/styles.css -o static/styles.css -m && NODE_ENV=production npx @tailwindcss/cli -i styles/project-pages.css -o static/project-pages.css -m",
+    "watch": "trap 'kill $(jobs -p) 2>/dev/null' EXIT; npx @tailwindcss/cli -i styles/styles.css -o static/styles.css --watch & npx @tailwindcss/cli -i styles/project-pages.css -o static/project-pages.css --watch & wait"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.20",
