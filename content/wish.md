@@ -35,6 +35,7 @@ description: Personal wishlist including things to build, learn, and gear to acq
     <h2 id="wish-visit">Places I'd like to visit</h2>
     <ul class="wish-group-list">
       <li>South Korea</li>
+      <li>Mexico</li>
     </ul>
   </section>
 </div>
