@@ -22,6 +22,7 @@ description: Personal wishlist including things to build, learn, and gear to acq
   <section aria-labelledby="wish-get">
     <h2 id="wish-get">Things I'd like to get</h2>
     <ul class="wish-group-list">
+      <li>M-VAVE FM 1</li>
       <li>TP–7 field recorder</li>
       <li>Seiko SPB237 / SRPL37</li>
       <li>Fujifilm X-M5</li>
