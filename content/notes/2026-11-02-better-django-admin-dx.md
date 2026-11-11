@@ -18,7 +18,12 @@ I often opened a model's list with `Cmd+K`, then added the record ID to the URL 
 
 So I made [django-cmdbar](https://github.com/amureki/django-cmdbar). Now I can type `user#42` and open that record.
 
-![Django CmdBar showing user#42 with an option to open record #42.](/images/django-admin-dx/cmdbar-record.png)
+<figure>
+  <a href="/images/django-admin-dx/cmdbar-record.png" target="_blank" rel="noopener" aria-label="Open full screenshot in a new tab: Django CmdBar showing user#42 with an option to open record #42.">
+    <img src="/images/django-admin-dx/cmdbar-record.png" alt="Django CmdBar showing user#42 with an option to open record #42." width="2000" height="680" loading="lazy">
+  </a>
+  <figcaption>Type user#42 to jump straight to that record.</figcaption>
+</figure>
 
 I thought only power users would use this, but our non-technical colleagues liked it more than I expected.
 
@@ -30,7 +35,12 @@ We also changed the placeholder so people can discover it:
 
 > Type "/" to search
 
-![Demo book list with the search placeholder Type "/" to search.](/images/django-admin-dx/search-hint.png)
+<figure>
+  <a href="/images/django-admin-dx/search-hint.png" target="_blank" rel="noopener" aria-label="Open full screenshot in a new tab: Demo book list with the search placeholder Type &quot;/&quot; to search.">
+    <img src="/images/django-admin-dx/search-hint.png" alt="Demo book list with the search placeholder Type &quot;/&quot; to search." width="960" height="280" loading="lazy">
+  </a>
+  <figcaption>The search field shows the keyboard shortcut.</figcaption>
+</figure>
 
 I can press `/` and start typing without reaching for the mouse.
 
@@ -44,13 +54,16 @@ So we recently grouped related fields and inlines into tabs, inspired by [django
 
 It is still the same form with the usual save button, but we spend less time scrolling.
 
-![Demo book form with Details, Authors, and Reviews tabs and sample data.](/images/django-admin-dx/admin-tabs.png)
-
-*Demo form with sample data.*
+<figure>
+  <a href="/images/django-admin-dx/admin-tabs.png" target="_blank" rel="noopener" aria-label="Open full screenshot in a new tab: Demo book form with Details, Authors, and Reviews tabs and sample data.">
+    <img src="/images/django-admin-dx/admin-tabs.png" alt="Demo book form with Details, Authors, and Reviews tabs and sample data." width="960" height="590" loading="lazy">
+  </a>
+  <figcaption>Related fields are grouped into tabs. Demo form with sample data.</figcaption>
+</figure>
 
 After we added tabs to our heaviest admin page, staff members asked us to do the same for other long admin pages.
 
-## Tell environments apart
+## Next: tell environments apart
 
 Another idea I liked: a [proposal to use different admin colors when `DEBUG=True`](https://github.com/django/new-features/issues/228). When several browser tabs show the same admin in different environments, it is quite easy to edit something in the wrong one.
 

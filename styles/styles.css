@@ -411,6 +411,9 @@ footer.site-footer nav a {
 .copy-code:hover {
   background: var(--copy-hover-bg);
 }
+.note-page {
+  --measure-width: 40rem;
+}
 .note-header,
 .note-back {
   max-width: var(--measure-width);
@@ -422,6 +425,8 @@ footer.site-footer nav a {
   margin-bottom: 12px;
 }
 .note-body {
+  font-size: 1.125rem;
+  line-height: 1.65;
   display: grid;
   grid-template-columns: min(100%, var(--measure-width)) minmax(0, 1fr);
   gap: 20px 0;
@@ -435,6 +440,32 @@ footer.site-footer nav a {
 .note-body > h2,
 .note-body > h3 {
   margin-top: 16px;
+  margin-bottom: -8px;
+}
+.note-body > h2 {
+  font-size: 1.5rem;
+}
+.note-body img {
+  margin-block: 0;
+}
+.note-body figure > a {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  cursor: zoom-in;
+}
+.note-body figure img {
+  border: 1px solid var(--divider-color);
+  border-radius: 4px;
+}
+.note-body figcaption {
+  margin-top: 10px;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--secondary-text);
+}
+.note-body figure > a[target="_blank"]::after {
+  content: none;
 }
 .note-body > :is(pre, table, figure),
 .note-body > p:has(> img:only-child) {
