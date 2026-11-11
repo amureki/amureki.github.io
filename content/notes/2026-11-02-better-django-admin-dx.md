@@ -4,7 +4,7 @@ date: 2026-11-02
 description: A command palette, a search shortcut, and tabs for long forms make Django admin easier to use every day.
 ---
 
-We use Django admin quite heavily at [voiio](https://www.voiio.de/). Different teams use it every day, and most of its users are not engineers.
+Several teams at [voiio](https://www.voiio.de/) use Django admin every day. Most of its users are not engineers.
 
 It is a wonderful tool, but after years of adding models, fields, and inlines, some things become annoying. Too many clicks to find a record, too much scrolling to change a setting.
 
@@ -14,11 +14,13 @@ I spend a lot of time there too, checking records and investigating bugs, so her
 
 I tried [django-command-palette](https://github.com/rajasimon/django-command-palette) and liked it. It had an annoying bug that was spamming Sentry, but otherwise worked fine. I reported it and submitted a fix, but got no response.
 
-I also noticed that quite often I would open a model's list with `Cmd+K`, then go to the address bar and add the ID by hand. I already knew which record I needed, so why not go there directly?
+I often opened a model's list with `Cmd+K`, then added the record ID to the URL by hand. I already knew which record I needed, so why not go there directly?
 
 So I made [django-cmdbar](https://github.com/amureki/django-cmdbar). Now I can type `user#42` and open that record.
 
 ![Django CmdBar showing user#42 with an option to open record #42.](/images/django-admin-dx/cmdbar-record.png)
+
+I thought only power users would use this, but our non-technical colleagues liked it more than I expected.
 
 ## Press `/` to search
 
@@ -30,7 +32,7 @@ We also changed the placeholder so people can discover it:
 
 ![Demo book list with the search placeholder Type "/" to search.](/images/django-admin-dx/search-hint.png)
 
-Press `/`, start typing. Saves me reaching for the mouse every time I need to search.
+I can press `/` and start typing without reaching for the mouse.
 
 [django-admin-keyshortcuts](https://github.com/khanxmetu/django-admin-keyshortcuts) was another inspiration here, if you are interested in more keyboard shortcuts for the admin.
 
@@ -40,15 +42,19 @@ One of our admin forms had grown to around 8–10 inlines. Finding one setting i
 
 So we recently grouped related fields and inlines into tabs, inspired by [django-tabbed-admin2](https://pypi.org/project/django-tabbed-admin2/). General, Access, Staff comments, and so on. Now I can open Access and change what I need without scrolling through the rest of the form.
 
-It is still the same form with the usual save button. Just much less scrolling.
+It is still the same form with the usual save button, but I spend less time scrolling.
 
 ![Demo book form with Details, Authors, and Reviews tabs and sample data.](/images/django-admin-dx/admin-tabs.png)
 
 *Demo form with sample data.*
 
+After we added tabs to our heaviest admin page, staff members asked us to do the same for other long admin pages. That was a good sign that the change helped.
+
 ## Tell environments apart
 
 Another idea I liked: a [proposal to use different admin colors when `DEBUG=True`](https://github.com/django/new-features/issues/228). When several browser tabs show the same admin in different environments, it is quite easy to edit something in the wrong one.
+
+I haven't tried this yet, but I'd like to make our environments easier to tell apart.
 
 ---
 
