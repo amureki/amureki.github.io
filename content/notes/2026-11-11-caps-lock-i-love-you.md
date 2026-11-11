@@ -1,7 +1,6 @@
 ---
 title: Caps Lock, I love you
 date: 2026-11-11
-draft: true
 description: Remapping Caps Lock to a Hyper key made it my favorite key and changed how I switch apps on my Mac.
 ---
 
