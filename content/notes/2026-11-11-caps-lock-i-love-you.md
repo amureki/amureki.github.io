@@ -2,18 +2,18 @@
 title: Caps Lock, I love you
 date: 2026-11-11
 draft: true
-description: Remapping Caps Lock to a Hyper key made it my favorite key and replaced how I switch apps on my Mac.
+description: Remapping Caps Lock to a Hyper key made it my favorite key and changed how I switch apps on my Mac.
 ---
 
-I always loved the position of Caps Lock and hated what it did. Why give such an easy-to-reach key a function I almost never use?
+I’ve always loved the position of Caps Lock and hated what it did. Why give such an easy-to-reach key a function I almost never use?
 
-Several years ago, I discovered the idea of a [Hyper key](https://stevelosh.com/blog/2012/10/a-modern-space-cadet/#hyper): one key that sends Control, Option, Command, and Shift together. Steve Losh’s 2012 article is the earliest mention of the term in this context that I could find on the web. On a Mac, you can set it up with Raycast, Karabiner-Elements, or the standalone Hyperkey app.
+Several years ago, I discovered the idea of a [Hyper key](https://stevelosh.com/blog/2012/10/a-modern-space-cadet/#hyper): one key that sends Control, Option, Command, and Shift together. Steve Losh’s 2012 article is the earliest mention of the term in this context that I could find on the web.
 
-You map all four modifiers to one key, and suddenly you have a whole set of shortcuts that apps and the OS usually leave alone.
+That gives you a whole set of shortcuts that apps and the OS usually leave alone.
 
-So I replaced Caps Lock with Hyper. Now I hold it with my left pinky and press another key to do whatever I assigned to that combination. Finally, some work for that pinky!
+So I replaced Caps Lock with Hyper. On a Mac, you can set it up with Raycast, Karabiner-Elements, or the standalone Hyperkey app.
 
-It felt like magic. It still does.
+Now I hold Caps Lock with my left pinky and press another key to do whatever I assigned to that combination. Finally, some work for that pinky!
 
 ## Everything gets a shortcut
 
@@ -22,11 +22,11 @@ Most of my Hyper shortcuts take me to an app:
 - `Hyper+B`: browser
 - `Hyper+T`: terminal
 - `Hyper+S`: Slack
-- `Hyper+C`: coding environment, T3 Code
+- `Hyper+C`: coding environment
 - `Hyper+E`: editor
 - `Hyper+N`: notes
 
-And `Hyper+Space` switches input languages. I do that often enough to have [written about it before](/notes/2025-03-07-fast-input-switch-macos/).
+And `Hyper+Space` switches input languages. I previously wrote about [fixing the delay when switching languages](/notes/2025-03-07-fast-input-switch-macos/).
 
 Any app I use on my laptop more than once a day deserves a Hyper shortcut. The letters mostly match what I use the app for, so I don't have much to memorize.
 
