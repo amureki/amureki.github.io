@@ -40,15 +40,15 @@ I can press `/` and start typing without reaching for the mouse.
 
 One of our admin forms had grown to around 8–10 inlines. Finding one setting involved enough scrolling to count as exercise.
 
-So we recently grouped related fields and inlines into tabs, inspired by [django-tabbed-admin2](https://pypi.org/project/django-tabbed-admin2/). General, Access, Staff comments, and so on. Now I can open Access and change what I need without scrolling through the rest of the form.
+So we recently grouped related fields and inlines into tabs, inspired by [django-tabbed-admin2](https://pypi.org/project/django-tabbed-admin2/). A couple of admin classes and a JavaScript snippet were enough to build our own version.
 
-It is still the same form with the usual save button, but I spend less time scrolling.
+It is still the same form with the usual save button, but we spend less time scrolling.
 
 ![Demo book form with Details, Authors, and Reviews tabs and sample data.](/images/django-admin-dx/admin-tabs.png)
 
 *Demo form with sample data.*
 
-After we added tabs to our heaviest admin page, staff members asked us to do the same for other long admin pages. That was a good sign that the change helped.
+After we added tabs to our heaviest admin page, staff members asked us to do the same for other long admin pages.
 
 ## Tell environments apart
 
