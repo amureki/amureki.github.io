@@ -4,7 +4,7 @@ date: 2026-11-11
 description: Remapping Caps Lock to a Hyper key made it my favorite key and changed how I switch apps on my Mac.
 ---
 
-I’ve always loved the position of Caps Lock and hated what it did. Why give such an easy-to-reach key a function I almost never use?
+I love Caps Lock now. All it took was making it do something completely different.
 
 Several years ago, I discovered the idea of a [Hyper key](https://stevelosh.com/blog/2012/10/a-modern-space-cadet/#hyper): one key that sends Control, Option, Command, and Shift together. Steve Losh’s 2012 article is the earliest mention of the term in this context that I could find on the web.
 
